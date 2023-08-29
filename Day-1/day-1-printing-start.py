@@ -17,3 +17,6 @@ print("Hello "+ input("What is your name?"))
 #length of your name
 print(len(input("What is your name?")))
 
+#Variable Creation
+#always use descriptive variable name,avoid use of keywords
+username = input("What is your username?")
