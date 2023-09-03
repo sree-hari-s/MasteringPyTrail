@@ -66,3 +66,14 @@ elif (your_choice == 0 and computer_choice == 2) or (your_choice == 1 and comput
     # 0 2 
     # 1 0 
     # 2 1
+
+#----------------------------------------------
+#Alternate code
+# Define the win and lose conditions
+lose_conditions = [(0, 1), (1, 2), (2, 0)]
+win_conditions = [(0, 2), (1, 0), (2, 1)]
+
+if (your_choice,computer_choice) in lose_conditions:
+    print("You Lose")
+elif (your_choice,computer_choice) in win_conditions:
+    print("You Win")
