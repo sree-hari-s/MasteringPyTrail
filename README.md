@@ -15,10 +15,6 @@ The 100 Days of Code-Python Challenge is a personal commitment to engage intensi
 
 Throughout the challenge, I will work on a variety of Python projects to apply what I've learned. You can find these projects in the Projects directory.
 
-## Progress
-
-I will regularly update my progress and share my experiences with the community. You can check my progress in the [Progress](progress.md) file.
-
 ## Goals
 
 During 100 Days Of Code-Python, my goals include:
