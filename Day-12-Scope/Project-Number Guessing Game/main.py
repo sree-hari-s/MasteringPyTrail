@@ -10,7 +10,7 @@ If they run out of turns, provide feedback to the player.
 Include two different difficulty levels (e.g., 10 guesses in easy mode, only 5 guesses in hard mode).
 """
 
-import random
+from random import randint
 from art import logo
 
 def check_guess(guess,number_guessed):
@@ -25,7 +25,7 @@ def game():
     print(logo)
     print("Welcome to the Number Guessing Game")
     print("I'm thinking of a number between 1 and 100.")
-    number_guessed = random.randint(1,100)
+    number_guessed = randint(1,100)
 
     chances = 0
     difficulty = input("Choose a difficulty, Type 'easy' or 'hard': ")
@@ -44,7 +44,7 @@ def game():
             chances-=1
         print(f"You have {chances} attempts remaining to guess the number.")
 
-import os
+from os import system
 while input("\nDo you want to play a Number Guessing Game? (y/n):")=='y':
-    os.system('cls')
+    system('cls')
     game()
