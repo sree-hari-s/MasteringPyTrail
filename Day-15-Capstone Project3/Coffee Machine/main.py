@@ -34,10 +34,10 @@ resources = {
 
 def menuItems():
     print("\nCustomer Menu:")
-    for idx, (item_name, item_info) in enumerate(MENU.items(), start=1):
+    for item,item_info in MENU.items():
         cost = item_info["cost"]
-        print(f"{idx}.{item_name.title()}, Rs {cost}")
-    print("\nFor maintainers\n4.Report\n5.Turn Off")
+        print(f"{item.title()}, Rs {cost} ")
+    print("\nFor maintainers\nReport\nTurn Off")
 
 def is_resource_available(order_ingredients):
     for item in order_ingredients:
@@ -73,7 +73,7 @@ def show_report():
     print("Report:")
     for item in resources:
         print(f"{item} :{resources[item]}")
-
+    print(f"Money: {profit}")
 is_On = True
 
 while is_On:
