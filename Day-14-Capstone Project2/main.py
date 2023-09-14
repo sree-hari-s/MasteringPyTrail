@@ -1,22 +1,29 @@
 from art import logo,vs
 from game_data import data
 import random
-
-# for i in data:
-#     print(i['name'])
+from os import system
 
 def generate_random_data():
+    """
+    Generates a random data from the game data
+    """
     return random.choice(data)
 
 def compare(A_followers,B_followers,guess):
+    """
+    Compare the two players follower count
+    and returns a boolean value indicating whether 
+    the user is correct or not
+    """
     if A_followers>B_followers:
         return guess == 'a'
     else:
         return guess == 'b'
-    
-from os import system
 
 def formatted_data(data):
+    """
+    Formats the data for display from the dictionary
+    """
     return f"{data['name']}, {data['description']}, from {data['country']}"
 
 def game():
@@ -30,11 +37,9 @@ def game():
         B = generate_random_data()
         while A == B:
             B = generate_random_data()
-        print("Compare:")
-        print(formatted_data(A))
+        print("Compare:",formatted_data(A))
         print(vs)
-        print("Against B:")
-        print(formatted_data(B))
+        print("Against B:",formatted_data(B))
         choice = input("Who has more followers? Type 'A' or 'B': ").lower()
         result = compare(A['follower_count'], B['follower_count'],choice)
         if result:
