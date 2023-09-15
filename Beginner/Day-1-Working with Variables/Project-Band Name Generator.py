@@ -4,7 +4,11 @@
 #4. Combine the name of their city and pet and show them their band name.
 #5. Make sure the input cursor shows on a new line:
 
-print("Welcome to the Band Name Generator")
-city_name=input("What's the name of the city you grew up in?\n")
-pet_name=input("What's your pet's name?\n")
-print("Your Band Name could be "+city_name+" "+pet_name)
+def game():
+    print("Welcome to the Band Name Generator")
+    city_name=input("What's the name of the city you grew up in?\n")
+    pet_name=input("What's your pet's name?\n")
+    print("Your Band Name could be "+city_name+" "+pet_name)
+    
+while input("Do you want to Generate a Band Name? (y/n): ") == "y":
+    game()
