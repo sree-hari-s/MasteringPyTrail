@@ -14,23 +14,33 @@ def small_circle():
     t.circle(10)
     t.end_fill()
     
-t.penup()
-# t.hideturtle()
-t.setheading(225)
-t.forward(300)
-t.setheading(0)
-number_of_dots = 100
+def starting_point():  
+    """
+    starting point setup
+    """
+    t.penup()
+    # t.hideturtle()
+    t.setheading(225)
+    t.forward(300)
+    t.setheading(0)
 
-for dot_count in range(1,number_of_dots+1):
-    t.colormode(255)
-    t.dot(20,random_color())
-    t.forward(50)
-    if dot_count % 10 == 0:
-        t.setheading(90)
+def images():
+    t.speed('fastest')
+    number_of_dots = 100
+    for dot_count in range(1,number_of_dots+1):
+        t.colormode(255)
+        t.dot(20,random_color())
         t.forward(50)
-        t.setheading(180)
-        t.forward(500)
-        t.setheading(0)
-        
+        if dot_count % 10 == 0:
+            t.setheading(90)
+            t.forward(50)
+            t.setheading(180)
+            t.forward(500)
+            t.setheading(0)
+            
+starting_point()
+images()
+t.hideturtle()
+
 screen = t.Screen()
 screen.exitonclick()
