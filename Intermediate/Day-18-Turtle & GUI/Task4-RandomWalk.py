@@ -1,7 +1,13 @@
 import turtle as t
 import random
 
-colours = ["CornflowerBlue", "DarkOrchid", "IndianRed", "DeepSkyBlue", "LightSeaGreen", "wheat", "SlateGray", "SeaGreen"]
+t.colormode(255)
+def random_color():
+    r = random.randint(0, 255)
+    g = random.randint(0, 255)
+    b = random.randint(0, 255)
+    return (r, g, b)
+
 
 def movement():
     length = int(t.numinput("Random Walk", "Enter a number:"))
@@ -10,7 +16,7 @@ def movement():
     for _ in range(length):
         tim.pensize(10)
         tim.speed('fastest')
-        tim.color(random.choice(colours))
+        tim.color(random_color())
         tim.forward(30) 
         tim.setheading(random.choice(directions))
 
