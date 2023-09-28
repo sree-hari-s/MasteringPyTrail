@@ -47,10 +47,18 @@ def game():
             ball.reset_position()
             score.r_point()
         
+        if score.l_score == 5:
+            score.game_over()
+            game_is_on = False
+            
+        if score.r_score == 5:
+            score.game_over()
+            game_is_on = False
+        
 screen = Screen()
 Screen_setup()
 while screen.textinput("Ping-Pong Game", "Do you want to play Pong Game? y/n:").lower() == "y":
     game()
-    time.sleep(2)
+    time.sleep(3)
     screen.clearscreen()
     Screen_setup()
