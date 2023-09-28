@@ -1,9 +1,8 @@
-from turtle import Screen, Turtle
+from turtle import Screen
 from paddle import Paddle
 from ball import Ball
 from score import Score
 import time
-
 
 def Screen_setup():
     screen.bgcolor("black")
@@ -27,7 +26,7 @@ def game():
     game_is_on = True
     while game_is_on:
         screen.update()
-        time.sleep(0.05)
+        time.sleep(ball.move_speed)
         ball.move()
 
         #Detect collision with wall
@@ -47,7 +46,7 @@ def game():
         if ball.xcor() < -380:
             ball.reset_position()
             score.r_point()
-            
+        
 screen = Screen()
 Screen_setup()
 while screen.textinput("Ping-Pong Game", "Do you want to play Pong Game? y/n:").lower() == "y":
@@ -55,4 +54,3 @@ while screen.textinput("Ping-Pong Game", "Do you want to play Pong Game? y/n:").
     time.sleep(2)
     screen.clearscreen()
     Screen_setup()
-screen.exitonclick()
