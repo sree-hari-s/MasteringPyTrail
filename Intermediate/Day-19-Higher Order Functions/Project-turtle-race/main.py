@@ -1,12 +1,17 @@
 from turtle import Turtle, Screen
 import random
-
+import time
+ALIGNMENT="center"
+FONT=("Courier", 20, "normal")
 screen = Screen()
 
 def game():
     is_race_on = False
-
+    game_over = Turtle()
+    game_over.hideturtle()
+    game_over.goto(0,0)
     screen.setup(width=500, height=400)
+    screen.title("Turtle Race")
     colors =['violet','indigo','blue','green','yellow','orange','red']
     user_bet = screen.textinput("Make Your Bet",f"Which turtle will win the race: ? Enter a color? {tuple(colors)} ").lower()
 
@@ -30,14 +35,15 @@ def game():
                 is_race_on = False
                 winner =turtle.pencolor()
                 if user_bet == winner:
-                    print(f"You've won! The {winner} turtle has won!")
+                    game_over.write(f"You've won!\nThe {winner} turtle has won!",align=ALIGNMENT,font=FONT)
                 else:
-                    print(f"You lost your bet! The {winner} turtle won!")
+                    game_over.write(f"You lost your bet!\nThe {winner} turtle won!",align=ALIGNMENT,font=FONT)
             movement = random.randint(0,10)
             turtle.forward(movement)
 
 while screen.textinput("Turtle Race", "Do you want to bet on Turtle Race? y/n:").lower() == "y":
     game()
+    time.sleep(3)
     screen.clearscreen()
 
 
