@@ -29,11 +29,13 @@ During 100 Days Of Code-Python, my goals include:
 
 ## Contributing
 
-If you're also enrolled in this challenge or want to contribute in any way, feel free to get involved. You can suggest improvements, share additional resources, or provide support and encouragement.
+If you're also enrolled in this challenge or want to contribute in any way, feel free to get involved. You can suggest improvements, share additional resources, or provide support and encouragement by [opening an issue](https://github.com/sree-hari-s/100DaysOfCode-Python/issues)
+
+Happy coding!
 
 ## Contact
 
-For any queries, feel free to open an issue or reach out to me at [sreeharis1999@gmail.com](mailto:sreeharis1999@gmail.com).
+For any queries, feel free to [open an issue](https://github.com/sree-hari-s/100DaysOfCode-Python/issues) or reach out to me at [sreeharis1999@gmail.com](mailto:sreeharis1999@gmail.com).
 
 ## License
 
