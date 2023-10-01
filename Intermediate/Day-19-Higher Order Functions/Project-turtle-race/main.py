@@ -3,15 +3,17 @@ import random
 import time
 ALIGNMENT="center"
 FONT=("Courier", 20, "normal")
-screen = Screen()
 
+def Screen_setup():
+    screen.setup(width=500, height=400)
+    screen.title("Turtle Race")
+    
 def game():
     is_race_on = False
     game_over = Turtle()
     game_over.hideturtle()
     game_over.goto(0,0)
-    screen.setup(width=500, height=400)
-    screen.title("Turtle Race")
+    Screen_setup()
     colors =['violet','indigo','blue','green','yellow','orange','red']
     user_bet = screen.textinput("Make Your Bet",f"Which turtle will win the race: ? Enter a color? {tuple(colors)} ").lower()
 
@@ -40,6 +42,9 @@ def game():
                     game_over.write(f"You lost your bet!\nThe {winner} turtle won!",align=ALIGNMENT,font=FONT)
             movement = random.randint(0,10)
             turtle.forward(movement)
+
+screen = Screen()
+Screen_setup()
 
 while screen.textinput("Turtle Race", "Do you want to bet on Turtle Race? y/n:").lower() == "y":
     game()
