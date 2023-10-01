@@ -15,7 +15,7 @@ The 100 Days of Code-Python Challenge is a personal commitment to engage intensi
 
 ## Projects
 
-Throughout the challenge, I will work on a variety of Python projects to apply what I've learned. You can find these projects in the Projects directory.
+Throughout the challenge, I will work on a variety of Python projects to apply what I've learned. You can find these projects in the [Projects directory](https://github.com/sree-hari-s/100DaysOfCode-Python/tree/main/Projects).
 
 ## Goals
 
@@ -25,11 +25,11 @@ During 100 Days Of Code-Python, my goals include:
 - Completion of all challenge projects.
 - Active participation in coding challenges and competitions.
 - Networking with fellow challenge participants.
-- Sharing knowledge through blog posts and tutorials.
+- Sharing knowledge.
 
 ## Contributing
 
-If you're also enrolled in this challenge or want to contribute in any way, feel free to get involved. You can suggest improvements, share additional resources, or provide support and encouragement by [opening an issue](https://github.com/sree-hari-s/100DaysOfCode-Python/issues)
+If you're also enrolled in this challenge or want to contribute in any way, feel free to get involved. You can suggest improvements, share additional resources, or provide support and encouragement by [opening an issue](https://github.com/sree-hari-s/100DaysOfCode-Python/issues).
 
 Happy coding!
 
