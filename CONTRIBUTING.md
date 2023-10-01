@@ -1,4 +1,4 @@
-# 🚀 Contributing
+# Contributing
 
 We welcome and appreciate contributions from the community! If you'd like to enhance this project, follow these simple steps to get started:
 
