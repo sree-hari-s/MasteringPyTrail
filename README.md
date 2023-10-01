@@ -1,6 +1,6 @@
 # 100DaysOfCode-Python
 
- Refreshing Python by taking 100 Days of Code Challenge
+100 Days of Code Challenge using python.
 
 ## What is this challenge about?
 
@@ -22,7 +22,6 @@ Throughout the challenge, I will work on a variety of Python projects to apply w
 During 100 Days Of Code-Python, my goals include:
 
 - Mastery of Python programming.
-- Completion of all challenge projects.
 - Active participation in coding challenges and competitions.
 - Networking with fellow challenge participants.
 - Sharing knowledge.
