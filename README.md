@@ -29,7 +29,7 @@ During 100 Days Of Code-Python, my goals include:
 
 ## Contributing
 
-If you're also enrolled in this challenge or want to contribute in any way, feel free to get involved. You can suggest improvements, share additional resources, or provide support and encouragement by [opening an issue](https://github.com/sree-hari-s/100DaysOfCode-Python/issues).
+If you're also enrolled in this challenge or want to [contribute](CONTRIBUTING) in any way, feel free to get involved. You can suggest improvements, share additional resources, or provide support and encouragement by [opening an issue](https://github.com/sree-hari-s/100DaysOfCode-Python/issues).
 
 Happy coding!
 
