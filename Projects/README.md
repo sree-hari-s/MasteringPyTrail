@@ -4,16 +4,11 @@ This repository contains a collection of various projects showcasing different s
 
 ## Project List
 
-1.  [Coffee Machine Program](./coffee-machine) - A program simulating a coffee vending machine.
-2.  [Coffee Machine Program](./coffee-machine-using-OOPs) - A program simulating a coffee vending machine using Object-Oriented Programming (OOP).
-3.  [Higher Lower Game](./higher-lower-game) - An interactive game for guessing higher or lower numbers.
-4.  [Quiz App](./quiz-app) - An application for taking quizzes on different topics.
-5.  [Blackjack Game](./blackjack-game) - A console-based implementation of the classic game Blackjack.
-6.  [Hirst-Style Painting Generator](./hirst-painting-generator) - A program generating artwork in the style of Damien Hirst.
-7.  [Pong Game](./pong-game) - A classic arcade game simulating table tennis.
-8.  [Snake Game](./snake-game) - A classic arcade game where the player controls a snake.
-9.  [Spirograph Drawing](./spirograph-drawing) - A program to generate spirograph-like patterns.
-10. [Turtle Race](./turtle-race) - A turtle race simulation project.
+1. [Coffee Machine Program](./coffee-machine) - A program simulating a coffee vending machine.
+2. [Coffee Machine Program](./coffee-machine-using-OOPs) - A program simulating a coffee vending machine using Object-Oriented Programming (OOP).
+3. [Higher Lower Game](./higher-lower-game) - An interactive game for guessing higher or lower numbers.
+4. [Quiz App](./quiz-app) - An application for taking quizzes on different topics.
+5. [Blackjack Game](./blackjack-game) - A console-based implementation of the classic game Blackjack.
 
 ## Usage
 
