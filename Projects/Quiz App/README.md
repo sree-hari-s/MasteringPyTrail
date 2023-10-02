@@ -54,3 +54,4 @@ Contributions to the Quiz App are welcome! If you'd like to contribute, please f
 
 
 Replace `<repository_url>` with the actual URL of your repository. Customize the content according to your specific project and requirements.
+
