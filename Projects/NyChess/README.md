@@ -32,26 +32,15 @@ These technologies and algorithms work together to provide you with a challengin
 
 [Install AppImage](https://github.com/nnisarggada/NyChess/releases/tag/Linux)
 
-### Linux Manual Install
-
-Install using the included `install.sh` script or by running the following commands after cloning the repo -
+### Manual Install
 
 ```bash
+  git clone https://github.com/nnisarggada/NyChess
   cd NyChess
-  sudo cp ./NyChess-Linux /usr/bin/
-  sudo mkdir ~/.local/share/applications
-  sudo cp ./NyChess.desktop ~/.local/share/applications/
-  sudo cp NyChess.svg /usr/share/icons/
-```
-
-### Linux Manual Uninstalling
-
-Uninstall using the included `uninstall.sh` script or by running the following commands after cloning the repo -
-
-```bash
-  sudo rm -rf /usr/bin/NyChess-Linux
-  sudo rm -rf ~/.local/share/applications/NyChess.desktop
-  sudo rm -rf /usr/share/icons/NyChess.svg
+  python -m venv env
+  source env/bin/activate
+  pip install pygame
+  python main.py
 ```
 
 ## Controls
