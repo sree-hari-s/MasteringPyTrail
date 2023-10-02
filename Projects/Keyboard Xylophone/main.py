@@ -19,7 +19,10 @@ class KeyboardXylophone:
         self, duration_ms: int = 250, volume: float = 0.1, freq_mul: int = 10
     ) -> None:
         """Initialise instance."""
-        self._boombox = BoomBox("")
+        if os.name == "posix":
+            self._boombox = BoomBox("")
+        else:
+            self._boombox = BoomBox(None, is_alias=True)
         self.duration_ms = duration_ms
         self.volume = volume
         self.freq_mul = freq_mul
