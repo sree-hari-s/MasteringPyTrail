@@ -29,7 +29,7 @@ class KeyboardXylophone:
 
     def play_sound(self, frequency: float) -> None:
         """Play sound at given frequency."""
-        self._boombox.play_tone(frequency, self.duration_ms, self.volume)
+        self._boombox.play_tone(frequency, self.duration_ms, volume=self.volume)
 
     def on_press(self, key: Optional[Union[Key, KeyCode]]) -> None:
         """Play sound on key press."""
