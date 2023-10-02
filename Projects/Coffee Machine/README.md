@@ -29,7 +29,6 @@ This Projects works on Coffee Machine Program simulation with following feature:
    - If the transaction is successful and there are enough resources, the program deducts the ingredients needed to make the drink.
    - The user is served their selected drink with a message, "Here is your drink. Enjoy!"
 
-
 ## Usage
 
 To use the Coffee Machine Program, follow these steps:
@@ -38,4 +37,3 @@ To use the Coffee Machine Program, follow these steps:
 2. When prompted, enter your choice of drink (espresso, latte, cappuccino).
 3. Follow the on-screen instructions to complete the transaction.
 4. Enjoy your coffee!
-
