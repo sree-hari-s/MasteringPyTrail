@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+</head> 
+<body style="background-color: skyblue;">
+
+    <canvas id="canvas" height="600px" width="1200px" style="background-color:black;border:20px solid brown;margin-top:50px;margin-left:110px"></canvas>
+    
+    
+    <div id="restart">
+        <button id="restart-button" style="display: none;">RESTART!</button> //RESTART THE GAME
+    </div>
+    <div style="display:none;">
+        <img src="https://i.pinimg.com/originals/af/bd/b3/afbdb38707e942ab171a1a8f24c25231.jpg" id="foodImage">
+        <img src="https://th.bing.com/th/id/R.84e662ff7cdaecf3dfe2207ffc675112?rik=F4Ll0A5h%2bdSDqg&riu=http%3a%2f%2fbeycan.net%2fgames%2fsnake-game%2fimages%2fsnake-game-logo-300x300.png&ehk=PE%2b50%2bMuS6l6hQqL5RkMljK1PahF4N6WUm2JsvcmI4Y%3d&risl=&pid=ImgRaw&r=0" id="headImage" >
+        <img src="https://i.ytimg.com/vi/0ApZadJOJnA/maxresdefault.jpg" id="bodyImage">
+    </div>
+
+    <script>
+
+    function myFunction() {        // RESTART BUTTON HANDLING FUNCTION
+        var divElement=document.getElementById("restart");
+        var buttonElement=document.getElementById("restart-button");
+        buttonElement.style.display="block";
+        divElement.style.backgroundColor = 'blue';
+        divElement.style.border = '2px solid black';
+        divElement.style.position=' fixed';
+        divElement.style.top= '0';
+        divElement.style.left= '0';
+        divElement.style.width= '100%';
+        divElement.style.height= '100%';
+        divElement.style.backgroundColor= 'rgba(0,0,0, 0.5)'; 
+        divElement.style.display= 'flex';
+        divElement.style.alignItems= 'center';
+        divElement.style.justifyContent= 'center'; 
+        divElement.style.zIndex= '9999'; 
+
+
+        buttonElement.addEventListener('mouseenter', function() {
+            buttonElement.style.boxShadow = '2px 2px 5px 10px rgba(174, 119, 124, 0.7)';
+        });
+        buttonElement.addEventListener('mouseleave', function() {
+            buttonElement.style.boxShadow = 'none';
+        });
+        buttonElement.style.fontSize='60px';
+        buttonElement.style.backgroundColor='#E3B448';
+        buttonElement.style.border='1px solid red';
+        buttonElement.style.color='red';
+        buttonElement.style.padding='40px';
+        buttonElement.style.borderRadius='10px';
+    }
+
+    </script>
+    <script src="main.js"></script>
+</body>
+</html>

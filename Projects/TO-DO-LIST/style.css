@@ -1,0 +1,78 @@
+:root{
+    --bg-color: white;
+}
+body{
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+header{
+    width:100%;
+    border:2px solid red; 
+}
+.reset{
+    height:30px;
+    width:30px;
+    position: absolute;
+    right:30px;
+    top:40px;
+}
+#main{
+    background-color: lightgray;
+
+}  
+fieldset{
+    border:1px solid black;
+    width:fit-content;
+    padding:15px 30px;
+    font-size: 24px;
+    margin:25px;
+    background-color: lightgray;
+}
+.theme{
+    
+    appearance: none;
+    width:20px;
+    height:20px;
+    border:1px solid black;
+    border-radius: 50%;
+    margin-right:20px;
+    outline:2px solid var(--color);
+    outline-offset: 3px;
+
+
+}
+input[type="radio"]:checked{
+    background-color: var(--color);
+
+}
+#light{
+    --color:#f8f7f2;
+}
+#blue{
+    --color:#22577a;
+}
+
+#green{
+    --color:#a4e9d5;
+}
+
+#dark{
+    --color:#023047;
+}
+
+
+
+:root:has(#ligt:checked){
+    --bg-color:#f8f7f2;
+}
+:root:has(#blue:checked){
+    --bg-color:#22577a;
+}:root:has(#green:checked){
+    --bg-color:#a4e9d5;
+}:root:has(#dark:checked){
+    --bg-color:#023047;
+}
