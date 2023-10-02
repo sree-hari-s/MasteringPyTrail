@@ -28,7 +28,6 @@ This Project Consists of following file :
 
 ## To Run the Quiz App in your system :
 
-
 1. Fork the Repo
 2. Clone the Repo.
 3. Head to the project section.
