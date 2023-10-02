@@ -1,39 +1,59 @@
-# Coffee Machine Program Using Python
+# Coffee Machine Program
 
-This Projects works on Coffee Machine Program simulation with following feature:
+## Overview
 
-1. **User Prompt:**
-   - Users are prompted with the question : "What would you like? (espresso/latte/cappuccino/):"
-   - The User has to select among the three available options.
+The Coffee Machine Program is a command-line application that simulates a coffee vending machine. Users can interact with the program to choose and customize their coffee, manage resources, and make transactions. The program provides a seamless and enjoyable coffee ordering experience.
 
-2. **Turn Off:**
-   - To turn off the Coffee Machine, the user can enter "off".
-   - The code execution ends when "off" is entered.
+## Key Features
 
-3. **Print Report:**
-   - Users can enter "report" to generate a report showing the current resource : water, milk, coffee, and money and customer menu.
+- **User Interaction:**
+  - Users are prompted to choose their desired coffee type (espresso, latte, cappuccino).
 
-4. **Check Resources:**
-   - The program checks if there are enough resources to make the selected drink.
-   - If resources are insufficient (e.g., not enough water), an error message is displayed.
+- **Power Off:**
+  - The machine can be turned off using a secret command.
 
-5. **Process Notes:**
-   - The Programs ask the customer the number of 100rs Note ,50rs Note ,20rs Note.
+- **Resource Report:**
+  - Users can request a report to view current resource levels (water, milk, coffee, money).
 
-6. **Check Transaction:**
-   - The program verifies if the user has inserted enough money to purchase the selected drink.
-   - If the money is insufficient, the program refunds the money.
-   - If the money is more than the drink cost, the program offers change.
+- **Resource Management:**
+  - The program checks and manages resources to ensure there are enough ingredients to make the selected coffee.
 
-7. **Make Coffee:**
-   - If the transaction is successful and there are enough resources, the program deducts the ingredients needed to make the drink.
-   - The user is served their selected drink with a message, "Here is your drink. Enjoy!"
+- **Coin Processing:**
+  - Users can insert coins, and the program calculates the total value based on coin denominations.
+
+- **Transaction Handling:**
+  - The program validates the user's payment, provides change if necessary, and dispenses the coffee.
+
+- **Coffee Brewing:**
+  - When the transaction is successful, the program brews the coffee and serves it to the user.
 
 ## Usage
 
-To use the Coffee Machine Program, follow these steps:
+1. Run the program using your preferred Python environment.
+2. Follow the prompts to select your coffee type and customize as desired.
+3. Insert coins when prompted and complete the transaction.
+4. Enjoy your freshly brewed coffee!
 
-1. Run the program.
-2. When prompted, enter your choice of drink (espresso, latte, cappuccino).
-3. Follow the on-screen instructions to complete the transaction.
-4. Enjoy your coffee!
+## How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone <repository_url>
+   cd coffee-machine-program
+   ```
+
+2. Run the program:
+   ```bash
+   python coffee_machine.py
+   ```
+
+## Contribution Guidelines
+
+Contributions to the Coffee Machine Program are welcome! If you'd like to contribute, please follow these guidelines:
+
+1. Fork the repository.
+2. Create a new branch for your feature/fix: `git checkout -b feature/your-feature`.
+3. Make your changes and commit them: `git commit -m 'Add feature/fix'`.
+4. Push to the branch: `git push origin feature/your-feature`.
+5. Create a pull request, explaining the changes made.
+
