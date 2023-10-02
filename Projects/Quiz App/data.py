@@ -14,11 +14,14 @@ question_data = [
 ]
 
 
-# https://opentdb.com/api_config.php
+
 """
 API for new question data
+https://opentdb.com/api_config.php
+"""
 """
 import requests
 api_url ="https://opentdb.com/api.php?amount=10&category=19&type=boolean"
 r = requests.get(api_url)
 print(r.text)
+"""
