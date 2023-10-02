@@ -7,4 +7,5 @@ assignees: ''
 
 ---
 
-In the projects folder Create a folder and a README.md file describing your project briefly
+- [ ] Create a folder in the Projects Folder with the name of your project
+- [ ] Create a README.md file describing your project briefly
