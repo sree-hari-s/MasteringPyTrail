@@ -1,37 +1,57 @@
-# QUIZ APP USING PYTHON
+# Quiz App
 
-This is a Quiz App which will display question and the participant has to answer True / False and will be assigned points if the answer is correct .
+## Overview
 
-## Quiz Game
+The Quiz App is an interactive application that allows users to take quizzes on various topics. Users can select a quiz, answer questions, and receive scores based on their performance.
 
-When the program runs: User is prompted with the question of (Do you want to play a Quiz game (Y/N) ?) The user has to type Y or N to continue further.
-If the user types Y then the first question is displayed.
+## Features
 
-Next , After the question is displayed ,the user must answer the question in True or False.
+- **Quiz Selection:**
+  - Users can choose from a list of available quizzes on different topics.
 
-![Quiz Game Image](image.png)
+- **Multiple Choice Questions:**
+  - The app presents questions in a multiple-choice format for users to select the correct answer.
 
-It also shows the correct answer, the score ,and if the answer entered was correct or not.
+- **Score Tracking:**
+  - The app keeps track of the user's score as they progress through the quiz.
 
-This Project Consists of following file :
+- **Quiz Completion:**
+  - The app displays the final score and feedback to the user upon completing the quiz.
 
-1. data.py
-2. main.py
-3. quizbrain.py
-4. question_model.py
+- **Option to Retry:**
+  - Users have the option to retry the quiz to improve their score.
 
-## To Run the Quiz App in your system
+## How to Use
 
-1. Fork the Repo
-2. Clone the Repo.
-3. Head to the project section.
-4. Go to the Quiz App folder and run the file.
+1. Run the Quiz App on your device.
+2. Choose a quiz topic from the available options.
+3. Answer the questions by selecting the correct multiple-choice option.
+4. Your score will be displayed upon completing the quiz.
+5. Optionally, retry the quiz to improve your score.
 
-## Usage
+## How to Run
 
-To use the Quiz App, follow these steps:
+1. Clone the repository:
+   ```bash
+   git clone <repository_url>
+   cd quiz-app
+   ```
 
-1. Run the program.
-2. When prompted, enter Y to continue with the game.
-3. Read the Question on the screen and answer the question either True/False
-4. And check your final score.
+2. Run the app:
+   ```bash
+   python quiz_app.py
+   ```
+
+## Contribution Guidelines
+
+Contributions to the Quiz App are welcome! If you'd like to contribute, please follow these guidelines:
+
+1. Fork the repository.
+2. Create a new branch for your feature/fix: `git checkout -b feature/your-feature`.
+3. Make your changes and commit them: `git commit -m 'Add feature/fix'`.
+4. Push to the branch: `git push origin feature/your-feature`.
+5. Create a pull request, explaining the changes made.
+
+
+Replace `<repository_url>` with the actual URL of your repository. Customize the content according to your specific project and requirements.
+
