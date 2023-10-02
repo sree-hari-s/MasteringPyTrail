@@ -1,4 +1,4 @@
-# Coffee Machine Program
+# Coffee Machine Program 
 
 This Coffee Machine Program simulates a coffee vending machine with the following features:
 
