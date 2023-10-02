@@ -27,7 +27,7 @@ def load_images():
 
     for piece in pieces:
 
-        IMAGES[piece] = p.image.load(resource_path(f'{piece}.png')).convert_alpha()
+        IMAGES[piece] = p.image.load(resource_path(f'assets/images/{piece}.png')).convert_alpha()
         IMAGES[piece] = p.transform.scale(IMAGES[piece], (SQ_SIZE, SQ_SIZE))
 
 
@@ -43,8 +43,6 @@ def main():
     move_made = False
     animate = False
 
-    move_sound = p.mixer.Sound(resource_path('move.wav'))
-    capture_sound = p.mixer.Sound(resource_path('capture.wav'))
 
     load_images()
     running = True
@@ -241,12 +239,6 @@ def main():
                 player_clicks = []
 
         if move_made:
-
-            if len(gs.movelog) > 0:
-                if gs.is_capture:
-                    move_sound.play()
-                else:
-                    capture_sound.play()
 
             if animate:
                 animate_move(gs.movelog[-1], screen, gs.board, clock)
