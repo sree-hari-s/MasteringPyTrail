@@ -4,10 +4,10 @@ The 100 Days of Code-Python Challenge is a personal commitment to engage intensi
 
 ## Who can take this challenge?
 
-- Individuals who want to become a proficient Python developer.
-- Individuals who want to stay updated with the latest Python trends and technologies.
-- Individuals who want to build a strong foundation for a successful career in programming.
-- Individuals who want to join a community of Python enthusiasts and professionals.
+- Individuals who wish to become skilled Python developers.
+- Those who wish to stay current with the newest Python developments.
+- People who are interested in laying the groundwork for a successful career in programming.
+- People who desire to become a part of the Python professional and enthusiast community.
 
 ## Projects
 
