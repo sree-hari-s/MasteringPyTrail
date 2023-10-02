@@ -2,7 +2,7 @@
 
 The 100 Days of Code-Python Challenge is a personal commitment to engage intensive Python programming focused on equipping you with advanced Python skills, best coding practices, and hands-on experience. It covers a wide range of topics, from basic Python concepts to advanced topics and real-world projects.
 
-## Why am I taking this challenge?
+## Why can take this challenge?
 
 - To become a proficient Python developer.
 - To stay updated with the latest Python trends and technologies.
