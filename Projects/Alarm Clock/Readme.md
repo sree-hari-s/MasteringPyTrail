@@ -1,5 +1,34 @@
 # Alarm-Clock-In-Python 
 
+## Overview
+
+The "Alarm Clock" project made using Python consists of two main files: clock.py and alarm_clock.py. These files work together to create a simple alarm clock application that displays the current time and allows you to set alarms.
+
+## How to Run
+
+1. Clone the repository:
+   ```bash
+   git clone <repository_url>
+   cd Alarm Clock
+   ```
+
+2. Run the program:
+   ```bash
+   python alarm_clock.py
+   ```
+
+## Contribution Guidelines
+
+Contributions to the Coffee Machine Program are welcome! If you'd like to contribute, please follow these guidelines:
+
+1. Fork the repository.
+2. Create a new branch for your feature/fix: `git checkout -b feature/your-feature`.
+3. Make your changes and commit them: `git commit -m 'Add feature/fix'`.
+4. Push to the branch: `git push origin feature/your-feature`.
+5. Create a pull request, explaining the changes made.
+
+
+
  <h1>Requirements</h1 >
 
 - Python 3.x installed on your system.
