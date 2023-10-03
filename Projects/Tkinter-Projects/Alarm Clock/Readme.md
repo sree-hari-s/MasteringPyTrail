@@ -1,4 +1,4 @@
-# Alarm-Clock-In-Python 
+# Alarm-Clock-In-Python
 
 ## Overview
 
@@ -7,12 +7,14 @@ The "Alarm Clock" project made using Python consists of two main files: clock.py
 ## How to Run
 
 1. Clone the repository:
+
    ```bash
    git clone <repository_url>
    cd Alarm Clock
    ```
 
 2. Run the program:
+
    ```bash
    python alarm_clock.py
    ```
@@ -27,14 +29,12 @@ Contributions to the Coffee Machine Program are welcome! If you'd like to contri
 4. Push to the branch: `git push origin feature/your-feature`.
 5. Create a pull request, explaining the changes made.
 
-
-
  <h1>Requirements</h1 >
 
 - Python 3.x installed on your system.
 - Tkinter library (usually comes pre-installed with  Python).
 - The code provided in alarm_clock.py and clock.py f iles.
-<br >
+
 <h1>How To Use</h1>
 
 - Navigate to the directory where you saved the files.
@@ -47,4 +47,3 @@ Contributions to the Coffee Machine Program are welcome! If you'd like to contri
 <h1>Output</h1>
 <img width="450" height="190" alt="output" src="Clock.jpg">
 <img width="450" height="190" alt="output" src="Alarm.jpg">
-
