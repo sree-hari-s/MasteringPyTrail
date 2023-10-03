@@ -1,0 +1,7 @@
+# Python Projects using Pygame
+
+## Share Your Work
+
+If you've created something amazing with Pygame or if you have any questions or suggestions, we'd love to hear from you! Join the conversation by [opening an issue](https://github.com/sree-hari-s/100DaysOfCode-Python/issues) or participating in the discussions.
+
+Let's dive into the exciting world of Python programming and unleash our creativity together!
