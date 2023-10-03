@@ -1,47 +1,24 @@
-#Importing all the necessary libraries to form the alarm clock:
+#necessary modules
 from tkinter import *
-import datetime
-import time
-import winsound
+from time import strftime
 
+# main application window
+root = Tk()
+root.title("Clock")
+root.geometry("500x200")
 
+# Function to update the time display
+def time():
+    current_time = strftime("%H:%M:%S %p")  # Get the current time in 'hh:mm:ss AM/PM' format
+    label.config(text=current_time)  # Update the text of the Label widget
+    label.after(1000, time)  # Schedule the time function to be called again after 1000 milliseconds (1 second)
 
-def alarm(set_alarm_timer):
-    while True:
-        time.sleep(1)
-        current_time = datetime.datetime.now()
-        now = current_time.strftime("%H:%M:%S")
-        date = current_time.strftime("%d/%m/%Y")
-        print("The Set Date is:",date)
-        print(now)
-        if now == set_alarm_timer:
-            print("Time to Wake up")
-            winsound.PlaySound("sound.mp3",winsound.SND_ASYNC)
-            break
+# Label widget to display the time
+label = Label(root, font=("Courier New", 40), background="#C5B24B", foreground="black" ,justify="center")
+label.pack(anchor="center")
 
-def actual_time():
-    set_alarm_timer = f"{hour.get()}:{min.get()}:{sec.get()}"
-    alarm(set_alarm_timer)
+# Call function to display time
+time()
 
-clock = Tk()
-clock.title("DataFlair Alarm Clock")
-clock.geometry("400x200")
-time_format=Label(clock, text= "Enter time in 24 hour format!", fg="red",bg="#C5BFA6",font="Arial").place(x=60,y=120)
-addTime = Label(clock,text = "Hour  Min   Sec",font=60).place(x = 110)
-setYourAlarm = Label(clock,text = "When to wake you up",fg="blue",relief = "solid",font=("Helevetica",7,"bold")).place(x=0, y=30)
-
-# The Variables we require to set the alarm(initialization):
-hour = StringVar()
-min = StringVar()
-sec = StringVar()
-
-#Time required to set the alarm clock:
-hourTime= Entry(clock,textvariable = hour,bg = "pink",width = 15).place(x=110,y=30)
-minTime= Entry(clock,textvariable = min,bg = "pink",width = 15).place(x=150,y=30)
-secTime = Entry(clock,textvariable = sec,bg = "pink",width = 15).place(x=200,y=30)
-
-#To take the time input by user:
-submit = Button(clock,text = "Set Alarm",fg="red",width = 10,command = actual_time).place(x =110,y=70)
-
-clock.mainloop()
-#Execution of the window.
+# main event loop
+root.mainloop()
