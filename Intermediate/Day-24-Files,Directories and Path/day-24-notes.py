@@ -24,3 +24,12 @@ Only works in the write mode and when file does not exist
 
 with open('new_file.txt',mode="w") as file:
     file.write("New file created")
+    
+    
+"""
+Absolute File Path
+It is always relative to the root of your computer
+And 
+Relative File Path
+Is to your current working directory,so it depends on where you are currently.
+"""
