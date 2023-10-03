@@ -19,8 +19,10 @@ def main():
   height = float(input("Enter your height in meters: "))
   weight = float(input("Enter your weight in kilograms: "))
 
-  bmi = calculate_bmi(height, weight)
+  result = calculate_bmi(height, weight)
 
+  bmi = round(result, 2)
+  
   print(f"Your BMI is {bmi}.")
 
   if bmi < 18.5:
