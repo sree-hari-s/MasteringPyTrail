@@ -1,3 +1,10 @@
+![https://github.com/sree-hari-s/100DaysOfCode-Python/network/members](https://img.shields.io/github/forks/sree-hari-s/100DaysOfCode-Python?color=green) &nbsp;
+![https://github.com/sree-hari-s/100DaysOfCode-Python/graphs/issues](https://img.shields.io/github/issues/sree-hari-s/100DaysOfCode-Python)  &nbsp;
+![https://github.com/sree-hari-s/100DaysOfCode-Python/graphs/contributors](https://img.shields.io/github/contributors/sree-hari-s/100DaysOfCode-Python) &nbsp;
+![https://github.com/sree-hari-s/100DaysOfCode-Python/stargazers](https://img.shields.io/github/stars/sree-hari-s/100DaysOfCode-Python?color=red) &nbsp;
+![https://github.com/sree-hari-s/100DaysOfCode-Python/watchers](https://img.shields.io/github/watchers/sree-hari-s/100DaysOfCode-Python?color=yellow) &nbsp;
+![https://github.com/sree-hari-s/100DaysOfCode-Python/license](https://img.shields.io/github/license/sree-hari-s/100DaysOfCode-Python) &nbsp;
+
 # What is this challenge about?
 
 The 100 Days of Code-Python Challenge represents a strong commitment to immersing oneself in intensive Python programming. The main goal is to improve proficiency in Python by adopting good coding practices and gaining practical experience. This extensive challenge covers a wide range of topics, starting from basic Python concepts to more advanced subjects and practical real-world projects.
