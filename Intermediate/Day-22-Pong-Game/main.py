@@ -28,7 +28,7 @@ def game():
         screen.update()
         time.sleep(ball.move_speed)
         ball.move()
-
+        
         #Detect collision with wall
         if ball.ycor() > 280 or ball.ycor() < -280:
             ball.bounce_y()
@@ -41,19 +41,17 @@ def game():
         if ball.xcor() > 380:
             ball.reset_position()
             score.l_point()
-
+            if score.l_score == 5:
+                score.game_over()
+                game_is_on = False
+                
         #Detect L paddle misses:
         if ball.xcor() < -380:
             ball.reset_position()
             score.r_point()
-        
-        if score.l_score == 5:
-            score.game_over()
-            game_is_on = False
-            
-        if score.r_score == 5:
-            score.game_over()
-            game_is_on = False
+            if score.r_score == 5:
+                score.game_over()
+                game_is_on = False
         
 screen = Screen()
 Screen_setup()
