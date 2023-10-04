@@ -34,12 +34,15 @@ The Quiz App is an interactive application that allows users to take quizzes on 
 1. Clone the repository:
    ```bash
    git clone <repository_url>
-   cd quiz-app
+   ```
+2. Change directory to Quiz App: 
+   ```bash
+    cd "Quiz App"
    ```
 
-2. Run the app:
+3. Run the app:
    ```bash
-   python quiz_app.py
+   python main.py
    ```
 
 ## Contribution Guidelines
