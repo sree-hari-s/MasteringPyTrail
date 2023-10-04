@@ -24,8 +24,6 @@
 ## Table of Contents
 
 - [100 Days of Code]()
-- [Extras]()
-  - [Hackerank-Problem Solving]()
 - [Free Study Material]()
 - [Projects]()
   - [Django Projects]()
@@ -33,6 +31,8 @@
   - [Pygame Projects]()
   - [Tkinter Projects]()
   - [Turtle Projects]()
+- [Extras]()
+  - [Hackerank-Problem Solving]()
 - [CONTRIBUTING]()
 - [License]()
   
@@ -55,17 +55,26 @@ Are you passionate about Python programming and eager to share your expertise? T
 
 ### 🌟 Why Contribute?
 
-Empower learners: Inspire and support newcomers on their Python journey.
-Enhance your skills: Sharpen your expertise by collaborating with like-minded enthusiasts.
-Build a legacy: Contribute to a resource that helps countless individuals learn Python.
+- Empower learners: Inspire and support newcomers on their Python journey.
+- Enhance your skills: Sharpen your expertise by collaborating with like-minded enthusiasts.
+- Build a legacy: Contribute to a resource that helps countless individuals learn Python.
 
-If you wish to [contribute](CONTRIBUTING.md) in any way, feel free to get involved. You can suggest improvements, share additional resources, or provide support and encouragement by [opening an issue](https://github.com/sree-hari-s/100DaysOfCode-Python/issues).
+### 👨‍💻 How to Contribute:
 
-Join us today and become a part of the 'MasteringPyTrail' community, where your contributions light the way for Python learners worldwide. Together, we master Python, one trailblazing step at a time!"
+ - If you wish to [contribute](CONTRIBUTING.md) in any way, feel free to get involved. You can suggest improvements, share additional resources, or provide support and encouragement by [opening an issue](https://github.com/sree-hari-s/100DaysOfCode-Python/issues).
 
-## Contact
+Join us for Hacktober and empower others on their Python journey through 'MasteringPyTrail.
 
-For any queries, feel free to [open an issue](https://github.com/sree-hari-s/100DaysOfCode-Python/issues) or reach out to me at [sreeharis1999@gmail.com](mailto:sreeharis1999@gmail.com).
+## Contributors
+
+Thank you for your dedication and hard work. Your contributions hold immense value for our project, and we are genuinely thankful for your valuable support. Your unwavering commitment and hard work are truly commendable. Thank you for your continuous dedication and all that you bring to our project.
+
+<p align="center">
+  <a href="https://github.com/sree-hari-s/100DaysOfCode-Python/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=sree-hari-s/100DaysOfCode-Python" alt="Contributors" />
+  </a>
+</p>
+
 
 ## License
 
