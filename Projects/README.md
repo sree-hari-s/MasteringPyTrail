@@ -4,12 +4,11 @@ This repository contains a collection of various projects showcasing different s
 
 ## Project List
 
-
-1. [Coffee Machine Program](https://github.com/sree-hari-s/100DaysOfCode-Python/blob/main/Projects/Coffee%20Machine/README.md) - A program simulating a coffee vending machine.
-2. [Coffee Machine Program](https://github.com/sree-hari-s/100DaysOfCode-Python/blob/main/Projects/Coffee%20Machine%20using%20OOPs/README.md) - A program simulating a coffee vending machine using Object-Oriented Programming (OOP).
-3. [Higher Lower Game](https://github.com/sree-hari-s/100DaysOfCode-Python/blob/main/Projects/Higher%20Lower%20Game/README.md) - An interactive game for guessing higher or lower numbers.
-4. [Quiz App](https://github.com/sree-hari-s/100DaysOfCode-Python/blob/main/Projects/Quiz%20App/README.md) - An application for taking quizzes on different topics.
-5. [Blackjack Game](https://github.com/sree-hari-s/100DaysOfCode-Python/blob/main/Projects/The%20BlackJack/README.md) - A console-based implementation of the classic game Blackjack.
+1. [Coffee Machine Program](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Coffee%20Machine/README.md) - A program simulating a coffee vending machine.
+2. [Coffee Machine Program](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Coffee%20Machine%20using%20OOPs/README.md) - A program simulating a coffee vending machine using Object-Oriented Programming (OOP).
+3. [Higher Lower Game](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Higher%20Lower%20Game/README.md) - An interactive game for guessing higher or lower numbers.
+4. [Quiz App](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Quiz%20App/README.md) - An application for taking quizzes on different topics.
+5. [Blackjack Game](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/The%20BlackJack/README.md) - A console-based implementation of the classic game Blackjack.
 
 ## Usage
 

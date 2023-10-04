@@ -32,12 +32,14 @@ The Snake Game is a classic arcade game in which players control a snake that gr
 ## How to Run
 
 1. Clone the repository:
+
    ```bash
    git clone <repository_url>
    cd snake-game
    ```
 
 2. Run the game:
+
    ```bash
    python snake_game.py
    ```
@@ -52,8 +54,6 @@ Contributions to the Snake Game are welcome! If you'd like to contribute, please
 4. Push to the branch: `git push origin feature/your-feature`.
 5. Create a pull request, explaining the changes made.
 
-
-
 Replace `<repository_url>` with the actual URL of your repository. Customize the content to match your specific Snake game project and requirements.
 
-![Alt text](https://github.com/sree-hari-s/100DaysOfCode-Python/blob/main/Intermediate/Day-21-Snake%20Game(Full)/Game/game.png)
+![Alt text](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Intermediate/Day-21-Snake%20Game(Full)/Game/game.png)

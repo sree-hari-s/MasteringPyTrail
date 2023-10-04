@@ -7,12 +7,12 @@
 
 <div align="center">
 
-![https://github.com/sree-hari-s/100DaysOfCode-Python/network/members](https://img.shields.io/github/forks/sree-hari-s/100DaysOfCode-Python?color=green) &nbsp;
-![https://github.com/sree-hari-s/100DaysOfCode-Python/graphs/issues](https://img.shields.io/github/issues/sree-hari-s/100DaysOfCode-Python)  &nbsp;
-![https://github.com/sree-hari-s/100DaysOfCode-Python/graphs/contributors](https://img.shields.io/github/contributors/sree-hari-s/100DaysOfCode-Python) &nbsp;
-![https://github.com/sree-hari-s/100DaysOfCode-Python/stargazers](https://img.shields.io/github/stars/sree-hari-s/100DaysOfCode-Python?color=red) &nbsp;
-![https://github.com/sree-hari-s/100DaysOfCode-Python/watchers](https://img.shields.io/github/watchers/sree-hari-s/100DaysOfCode-Python?color=yellow) &nbsp;
-![https://github.com/sree-hari-s/100DaysOfCode-Python/license](https://img.shields.io/github/license/sree-hari-s/100DaysOfCode-Python) &nbsp;
+![https://github.com/sree-hari-s/MasteringPyTrail/network/members](https://img.shields.io/github/forks/sree-hari-s/MasteringPyTrail?color=green) &nbsp;
+![https://github.com/sree-hari-s/MasteringPyTrail/graphs/issues](https://img.shields.io/github/issues/sree-hari-s/MasteringPyTrail)  &nbsp;
+![https://github.com/sree-hari-s/MasteringPyTrail/graphs/contributors](https://img.shields.io/github/contributors/sree-hari-s/MasteringPyTrail) &nbsp;
+![https://github.com/sree-hari-s/MasteringPyTrail/stargazers](https://img.shields.io/github/stars/sree-hari-s/MasteringPyTrail?color=red) &nbsp;
+![https://github.com/sree-hari-s/MasteringPyTrail/watchers](https://img.shields.io/github/watchers/sree-hari-s/MasteringPyTrail?color=yellow) &nbsp;
+![https://github.com/sree-hari-s/MasteringPyTrail/license](https://img.shields.io/github/license/sree-hari-s/MasteringPyTrail) &nbsp;
 
 </div>
 
@@ -36,7 +36,6 @@
 - [CONTRIBUTING]()
 - [License]()
   
-
 </details>
 
 ## Projects
@@ -59,9 +58,9 @@ Are you passionate about Python programming and eager to share your expertise? T
 - Enhance your skills: Sharpen your expertise by collaborating with like-minded enthusiasts.
 - Build a legacy: Contribute to a resource that helps countless individuals learn Python.
 
-### 👨‍💻 How to Contribute:
+### 👨‍💻 How to Contribute
 
- - If you wish to [contribute](CONTRIBUTING.md) in any way, feel free to get involved. You can suggest improvements, share additional resources, or provide support and encouragement by [opening an issue](https://github.com/sree-hari-s/100DaysOfCode-Python/issues).
+- If you wish to [contribute](CONTRIBUTING.md) in any way, feel free to get involved. You can suggest improvements, share additional resources, or provide support and encouragement by [opening an issue](https://github.com/sree-hari-s/MasteringPyTrail/issues).
 
 Join us for Hacktober and empower others on their Python journey through 'MasteringPyTrail.
 
@@ -70,11 +69,10 @@ Join us for Hacktober and empower others on their Python journey through 'Master
 Thank you for your dedication and hard work. Your contributions hold immense value for our project, and we are genuinely thankful for your valuable support. Your unwavering commitment and hard work are truly commendable. Thank you for your continuous dedication and all that you bring to our project.
 
 <p align="center">
-  <a href="https://github.com/sree-hari-s/100DaysOfCode-Python/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=sree-hari-s/100DaysOfCode-Python" alt="Contributors" />
+  <a href="https://github.com/sree-hari-s/MasteringPyTrail/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=sree-hari-s/MasteringPyTrail" alt="Contributors" />
   </a>
 </p>
-
 
 ## License
 
