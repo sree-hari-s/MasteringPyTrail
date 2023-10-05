@@ -6,6 +6,7 @@ def clear_display() -> None:
     
     if platform.system() == 'Darwin': # Checks operating system
         os.system("clear") # Runs clear command appropriate for Mac
-        return 
+        return None
 
     os.system("cls") # Runs clear command appropriate for Windows
+    

@@ -74,7 +74,7 @@ while choice != '9':
                     
                     continue
 
-                amount_paid = float(input(f"Cost for car with the number plate [{car.num_plate}] is $ {car.price}: "))
+                amount_paid = float(input(f"Write the cost for car with the number plate {car.num_plate} ($ {car.price}): "))
 
                 if amount_paid != car.price:
                     clear_display()
@@ -125,7 +125,10 @@ while choice != '9':
 
     elif choice == '5':
         clear_display()
-        print("\nCar history")
+        print("Parking history")
+
+        if not bool(mycarpark.history): 
+            print("\nHistory is empty. Removed cars will appear here.")
         for car in mycarpark.history: 
 
             car.display_info()

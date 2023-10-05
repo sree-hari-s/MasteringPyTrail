@@ -46,14 +46,14 @@ class CarPark:
 
     def add_to_car_collection(self, car:Car): 
         if self.is_full(): 
-            return 
+            return None
         self.car_collection.append(car)
 
 
     def display_car_collection(self): 
 
         if self.is_carpark_empty(): 
-            return 
+            return None
         
         print("|  ID | Number Plate|     Entry Time   |  Paid  | Price | Exit Time |")
         for car in self.car_collection:
