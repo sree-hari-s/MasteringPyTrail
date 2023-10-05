@@ -37,7 +37,7 @@ The Parking Operator Sim allows users to take on the role of managing a car park
    ```
 2. Change directory to Quiz App: 
    ```bash
-    cd "Quiz App"
+    cd "Parking Operator"
    ```
 
 3. Run the app:

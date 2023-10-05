@@ -2,6 +2,8 @@ from datetime import datetime
 
 class Car:
     __index__ = 1 
+
+
     def __init__(self, num_plate) -> None:
 
         self.id = self.__index__
@@ -18,8 +20,9 @@ class Car:
         total_seconds = (datetime.now() - self.registered_at).total_seconds()
         price = float() if total_seconds <= 60 else (total_seconds / 60) * 0.50 
         self.price = round(price, 2) if not self.paid else self.price
+
         print(f"|  {self.id}  |   {self.num_plate}  | {self.registered_at.strftime('%H:%M %m-%d-%Y')} |  {self.paid} |" \
-        f" $ {self.price} | {self.exited_at.strftime('%H:%M %m-%d-%Y') if self.exited_at != None else 'N/A'} |")
+              f" $ {self.price} | {self.exited_at.strftime('%H:%M %m-%d-%Y') if self.exited_at is not None else 'N/A'} |")
 
 
 class CarPark: 
@@ -35,18 +38,15 @@ class CarPark:
         return self.name
 
 
-    def get_car(self, car_id): 
-
+    def get_car(self, car_id) -> Car: 
         for car in self.car_collection:
-
             if car.id == car_id: 
-
                 return car 
-    def add_to_car_collection(self, car:Car): 
-        
-        if self.car_collection.__len__() >= self.max_car: 
-            return 
 
+
+    def add_to_car_collection(self, car:Car): 
+        if self.is_full(): 
+            return 
         self.car_collection.append(car)
 
 
@@ -63,23 +63,17 @@ class CarPark:
 
     def is_carpark_empty(self) -> bool:
 
-
-        return True if self.car_collection.__len__() <= 0 else False
+        return not bool(self.car_collection)
 
     def is_full(self) -> bool: 
 
-        return True if self.car_collection.__len__() >= self.max_car else False
-
-
+        return len(self.car_collection) >= self.max_car
 
     def remove_car(self, car_instance): 
 
         new_collection = []
-
         for car in self.car_collection:
-        
             if car.id != car_instance.id: 
-
                 new_collection.append(car)
                 
         
