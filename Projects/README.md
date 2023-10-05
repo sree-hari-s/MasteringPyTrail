@@ -4,16 +4,34 @@ This repository contains a collection of various projects showcasing different s
 
 ## Project List
 
-1. [Coffee Machine Program](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Coffee%20Machine/README.md) - A program simulating a coffee vending machine.
-2. [Coffee Machine Program](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Coffee%20Machine%20using%20OOPs/README.md) - A program simulating a coffee vending machine using Object-Oriented Programming (OOP).
-3. [Higher Lower Game](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Higher%20Lower%20Game/README.md) - An interactive game for guessing higher or lower numbers.
-4. [Quiz App](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Quiz%20App/README.md) - An application for taking quizzes on different topics.
-5. [Blackjack Game](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/The%20BlackJack/README.md) - A console-based implementation of the classic game Blackjack.
+- [Coffee Machine Program](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Coffee%20Machine/README.md) 
+- [Coffee Machine Program](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Coffee%20Machine%20using%20OOPs/README.md) (OOP).
+- [Higher Lower Game](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Higher%20Lower%20Game/README.md) 
+- [Quiz App](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Quiz%20App/README.md)
+- [Blackjack Game](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/The%20BlackJack/README.md)
+- [BMI Calculator]()
+- [Keyboard Xylophone]()
+- [Pygame Projects]()
+  - [NyChess]()
+- [Tkinter-Projects]()
+  - [Alarm Clock]()
+  - [Annoying Button]()
+- [Turtle Projects]()
+  - [Hirst-Style Painting Generator](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Turtle-Projects/Hirst%20Painting/README.md) 
+   - [Pong Game](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Turtle-Projects/Pong%20Game/README.md) 
+   - [Snake Game](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Turtle-Projects/Snake%20Game/README.md) 
+  -  [Spirograph Drawing](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Turtle-Projects/Spirograph/README.md) 
+   - [Turtle Race](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Turtle-Projects/Turtle%20Race/README.md)
+- [Django Projects]()
+- [Flask Projects]()
+- [ML Projects]()
 
 ## Usage
 
 Feel free to explore each project folder and learn more about the individual projects. Instructions for running and contributing to each project can be found in their respective README files.
 
----
+--- 
 
-In this example, each project is listed with a brief description, and links to their respective project folders are provided. The README also encourages users to explore each project in more detail. Customize and expand this format to suit your specific needs.
+## Share Your Work
+
+If you've created something amazing with or if you have any questions or suggestions, we'd love to hear from you! Join the conversation by [opening an issue](https://github.com/sree-hari-s/MasteringPyTrail/issues) or participating in the discussions.
