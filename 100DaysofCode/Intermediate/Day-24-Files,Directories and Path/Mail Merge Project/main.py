@@ -19,7 +19,12 @@ with open('./Input/Letters/starting_letter.txt', 'r') as letter_file:
 
 
     for name in input_names:
-        stripped_name = name.strip() # Name contains a \n at the end which needs to be removed
+        """
+        Name contains a \n at the end which needs to be removed
+        https://www.w3schools.com/python/ref_string_strip.asp
+        https://www.w3schools.com/python/ref_string_replace.asp
+        """
+        stripped_name = name.strip()
         new_letter = letter.replace(PLACEHOLDER,stripped_name)
         
         """
