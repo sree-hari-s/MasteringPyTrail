@@ -7,7 +7,7 @@ def index(request):
     return HttpResponse("Include name of the place '/place_name' in url.")
 
 def rain(request, place_name):
-    owm = pyowm.OWM(${{ secrets.API_Key }})
+    owm = pyowm.OWM(${{ secrets.API_KEY }})
     manager = owm.weather_manager()
 
     try:
