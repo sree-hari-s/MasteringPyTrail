@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #161616;
+}
+
+body > div{
+    font-size: 150px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    color: rgb(230, 230, 230);
+}
