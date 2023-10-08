@@ -1,7 +1,4 @@
 # Aim Trainer
-
-<font size="5">created by </font> <font size="6"> Omer Lachover </font>
-
 ## Overview
 
 This "Aim Trainer" project was written in python and consists of one file
