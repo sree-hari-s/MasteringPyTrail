@@ -18,6 +18,12 @@
 
 "MasteringPyTrail" is your guided journey through the world of Python programming, from novice to expert. This repository is designed to be your companion as you embark on a skillful path to mastering Python.
 
+```markdown
+ **Note:**
+ Don't try to make your code the most efficient as possible.
+ Instead, what you should aim for is readability.
+```
+
 <details>
 <summary>Table of contents</summary>
 
