@@ -32,3 +32,23 @@ passed_students = {
 }
 print(passed_students)
 
+import pandas as pd
+
+student_data = {
+    "names" : ["Sree", "Hari", "Sreehari", "Nandu", "Nandana", "Sreerag"],
+    "mark" : [1,2,3,4,5,6]
+}
+student_data_df = pd.DataFrame(student_data)
+print(student_data_df)
+
+# for (key,value) in student_data_df.items():
+#     print(key)
+
+
+"""
+pandas have an inbuilt loops--iterrows()
+"""
+
+for (index,row) in student_data_df.iterrows():
+    print(row)
+    print(row.mark)
