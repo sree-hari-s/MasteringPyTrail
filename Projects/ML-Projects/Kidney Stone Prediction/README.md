@@ -30,12 +30,6 @@ The goal of this problem statement is to create a prediction model which will pr
       
 4. Atlast, compared the results for better conclusion
 
-**Data Visualization**
-
-- **Visualizing the Success rate in the dataset**
-
-![](https://github.com/prathimacode-hub/MasteringPyTrail/blob/master/Projects/ML-Projects/Kidney%20Stone%20Prediction/Kidney_Visual.png)
-
 **Model Results**
 
 I had applied different algorithms to check the accuracy score of the models. Keeping a glance, all the models reverted with approximately same score of 82.86. We can apply any of the models / algorithms to deploy the final model. Though the outcome is accurate enough, I suggest to go with logstic regression sufficiently.
