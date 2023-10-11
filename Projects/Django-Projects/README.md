@@ -1,12 +1,12 @@
 # Python Django Projects
-    - [Edu Flow]()
-    - [To Do List]()
+  - [Edu Flow]()
+  - [To Do List]()
 
 # Edu Flow
-    A educational platform built with Django, designed to facilitate online learning and interaction between students and teachers. This platform includes authentication features and a system for students to ask questions and seek clarification from their teachers.
+  A educational platform built with Django, designed to facilitate online learning and interaction between students and teachers. This platform includes authentication features and a system for students to ask questions and seek clarification from their teachers.
 
 # To Do List
-    ToDoList includes a user authentication system that allows you to create and manage your tasks securely to can access from everywhere.
+  ToDoList includes a user authentication system that allows you to create and manage your tasks securely to can access from everywhere.
 
 # Installation
 
