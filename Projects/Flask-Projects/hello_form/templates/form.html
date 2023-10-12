@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <title>Enter Your Name</title>
+  </head>
+  <header>
+    <nav class="navbar fixed-top navbar-dark bg-primary">
+      <a class="navbar-brand" href="">Enter your name</a>
+    </nav>
+  </header>
+  <body class="container" style="padding-top: 70px;">
+    <form action="/" method="POST">
+      <label for="name">Enter your name:</label>
+      <input type="text" id="name" name="name"><br>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </body>
+</html>
