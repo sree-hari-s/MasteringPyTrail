@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher</title>
+    <link rel="stylesheet" href="{% static 'teacherform.css' %}">
+</head>
+<body>
+    <div>
+        <div class="form-container">
+            <h1>Teacher Information</h1>
+            {% for t in teacher %}
+            <form action="edit_teacher" method="POST">
+              {% csrf_token %}
+              <input type="text" name="id" value="{{t.id}}">
+              <div class="form-group">
+                <label htmlFor="firstName">First Name:</label>
+                <input type="text" id="firstName" name="first_name" value="{{t.first_name}}" />
+              </div>
+              <div class="form-group">
+                <label htmlFor="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="last_name" value="{{t.last_name}}"  />
+              </div>
+              <div class="form-group">
+              <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+              <option value="">Select your gender</option>
+              {% if t.gender == "male" %}
+              <option value="male" selected>Male</option>
+              {% else %}
+              <option value="female" selected>Female</option>
+              {% endif %}
+            </select>
+            </div>
+              <div class="form-group">
+                <label htmlFor="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" onChange={handleInputChange} value="{{t.dob|date:'Y-m-d'}}" />
+              </div>
+              <div class="form-group">
+                <label htmlFor="Phone">Phone Number:</label>
+                <input
+                  type="tel"
+                  id="Phone_no"
+                  name="phone_no"
+                  value="{{t.phone_no}}"
+                  placeholder="+91"
+                  
+                />
+              </div>
+              <div class="form-group">
+                <label htmlFor="address">Address:</label>
+                <textarea id="address" name="address" rows="2">{{t.address}}</textarea>
+              </div>
+              <div class="form-group">
+                <label >Salary:</label>
+                <input type="text" id="Salary" name="salary" value="{{t.salary}}" />
+              </div>
+              <div class="form-group">
+                <label >Email</label>
+                <input type="mail" id="mail" name="email" value="{{t.email}}"  />
+              </div>
+              <div class="form-group">
+                <label htmlFor="dob">Date of Hire:</label>
+                <input type="date" id="doh" name="hire_date" value="{{t.hire_date|date:'Y-m-d'}}" />
+              </div>
+              <div class="form-group">
+                <button type="submit" onClick={handleNextClick}>
+                  Submit
+                </button>
+              </div>
+              {% endfor %}
+            </form>
+          </div>
+</body>
+</html>

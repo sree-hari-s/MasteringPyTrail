@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Student Table</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<style>
+		body {
+			background-color: #f1f1f1;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+        .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+		.container1 {
+			max-width: 1200px;
+			margin: 0 auto;
+			padding: 20px;
+		}
+		h1 {
+			text-align: center;
+			margin: 20px 0;
+		}
+		table {
+			border-collapse: collapse;
+			width: 100%;
+			margin-bottom: 20px;
+		}
+		th, td {
+			padding: 12px;
+			text-align: left;
+			border-bottom: 1px solid #ddd;
+		}
+		th {
+			background-color: #333;
+			color: #fff;
+			font-weight: normal;
+		}
+		tr:hover {
+			background-color: #f5f5f5;
+		}
+    .button {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 25px;
+    }
+    .button:hover{
+      text-decoration: none;
+      color:black;
+    }
+
+		@media only screen and (max-width: 768px) {
+			table, th, td {
+				display: block;
+			}
+			th, td {
+				text-align: center;
+			}
+			th {
+				display: none;
+			}
+			tr {
+				border-bottom: 2px solid #ddd;
+				margin-bottom: 10px;
+			}
+			td:before {
+				content: attr(data-th) ": ";
+				font-weight: bold;
+				display: inline-block;
+				width: 100px;
+			}
+		}  
+        .container2{
+            margin-left: 40%;
+            width: auto;
+            margin-bottom: 5px;
+        }
+	</style>
+</head>
+	<body>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>                        
+                </button>
+                <a class="navbar-brand" href="#">Logo</a>
+              </div>
+              <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                  <li><a href="{% url 'index' %}">Home</a></li>
+                  <li class="active"><a href="{% url 'show_student' %}">Student</a></li>
+                  <li><a href="{% url 'show_teacher' %}">Teacher</a></li>
+                  <li><a href="{% url 'fees' %}">Fee</a></li>
+                  <li><a href="{% url 'grades' %}">Grade</a></li>
+			            <li><a href="{% url 'show_classes' %}">Classes</a></li>
+
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+        <div class="container1">
+            <h1>Student Table</h1>
+            <div class="container2">
+              <div class="row" style="float: right; padding-bottom: 15px;">
+                <div class="col-sm-4 col-md-4 offset-md-6" style="display: flex;width: 60%;">
+                  <form class="form-inline" method="GET" action="{% url 'show_student' %}">
+                    <div class="input-group">
+                      <input type="text" name="q" class="form-control" placeholder="Search ID" style="border-top-left-radius: 20px; border-bottom-left-radius: 20px;">
+                      <div class="input-group-btn">
+                        <button class="btn btn-primary" type="submit" style="border-top-right-radius: 20px; border-bottom-right-radius: 20px;">
+                          <i class="fa fa-search"></i>
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div style="float: right;margin-right: 10%;">
+                  <a href="{% url 'add_student' %}" class="button">+ADD</a>
+                </div>
+              </div>
+            </div>
+        
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Admission No.</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Date of Birth</th>
+                <th>Gender</th>
+                <th>Admission Date</th>
+                <th>Class Details</th>
+                <th>Parents ID</th>
+                <th>View</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for s in students %}
+              <tr>
+                <td>{{s.addmission_no}}</td>
+                <td>{{s.first_name}}</td>
+                <td>{{s.last_name}}</td>
+                <td>{{s.dob}}</td>
+                <td>{{s.gender}}</td>
+                <td>{{s.addmission_date}}</td>
+                {% if s.class_id %}
+                <td>{{s.class_id}}</td>
+                {% else %}
+                <td style="color:red;">NONE</td>
+                {% endif %}
+                <td>{{s.parent_id.father_name}}</td>
+                <td>
+                  <a href="{% url 'edit_student' s.addmission_no %}"><button class="btn btn-primary" ><i class="bi bi-pencil-square"></i></button></a>
+                  <a href="{% url 'view_student' s.addmission_no %}"><button class="btn btn-primary"><i class="bi bi-eye"></i></button></a>
+                  <a href="{% url 'delete_student' s.addmission_no %}">del</a>
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>  
+          </table>
+        </div>
+      </body>
+      

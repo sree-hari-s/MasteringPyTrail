@@ -1,0 +1,73 @@
+body{
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.box1{
+    width: 400px;
+    height:550px;
+    border-style: solid;
+    border-color: rgb(129, 121, 121);
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    margin-left: 700px;
+    margin-top: 220px;
+    border-radius: 15%;
+    z-index: 1000;
+}
+.heading{
+    margin-left: 110px;
+    margin-top: 50px;
+    font-size: 200%;
+}
+.sub{
+    margin-left: 110px;
+    margin-bottom: 50px;
+}
+.message{
+    margin-left: 120px;
+    color:red;
+}
+.form{
+    margin-top: 30px;
+}
+.username{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: black;
+    margin-left: 105px;
+    height: 30px;
+    width: 47%;
+    margin-bottom: 15px;
+    color:white;
+}
+.email{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: black;
+    margin-left: 105px;
+    height: 30px;
+    width: 47%;
+    margin-bottom: 15px;
+    color:white;
+}
+.submit{
+    margin-left: 140px;
+    background-color: rgb(17, 128, 17);
+    color:white;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 0px;
+}
+.login{
+    margin-top: 40px;
+    margin-left: 100px;
+}
+.button{
+    text-decoration: none;
+}

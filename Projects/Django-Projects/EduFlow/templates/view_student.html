@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{student.first_name}}</title>
+	<style>
+        body {
+                    font-family: Arial, sans-serif;
+                    font-size: 16px;
+                    line-height: 1.5;
+                    background-color: #f9f9f9;
+                }
+        
+                .container {
+                    max-width: 1140px;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+        
+                .col-md-6 {
+                    border: 2px solid #87CEFA;
+                    background-color: #F0FFFF;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                }
+        
+                h3 {
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                    font-size: 24px;
+                }
+        
+                strong {
+                    font-weight: bold;
+                }
+        
+                table {
+                    border-collapse: collapse;
+                    margin-top: 20px;
+                    width: 100%;
+                }
+        
+                th {
+                    background-color: #f2f2f2;
+                    text-align: center;
+                    padding: 10px;
+                }
+        
+                td {
+                    text-align: center;
+                    padding: 10px;
+                }
+        
+                tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+        
+                td:contains(A) {
+                    color: green;
+                    font-weight: bold;
+                }
+        
+                td:contains(B) {
+                    color: orange;
+                    font-weight: bold;
+                }
+        
+                td:contains(C) {
+                    color: red;
+                    font-weight: bold;
+                }
+                .grades{
+                border: 2px solid #87CEFA;
+                    background-color: #F0FFFF;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                }
+                .fee-details{
+                border: 2px solid #87CEFA;
+                    background-color: #F0FFFF;
+                    padding: 20px;
+                    margin-bottom: 20px;
+                }
+            </style>
+                <script>
+                  function printDiv(divName) {
+                    var printContents = document.getElementById(divName).innerHTML;
+                    var originalContents = document.body.innerHTML;
+                    document.body.innerHTML = printContents;
+                    window.print();
+                    document.body.innerHTML = originalContents;
+                  }
+                </script>
+        </head>
+        <body>
+          <div class="container">
+            <div class="profile">
+                <div style="display: flex; justify-content: space-between;">
+                  <h2>Student Profile Details</h2>
+                  <button onclick="printDiv('wholediv')" style=" margin-top:25px;width:60px;height: 30px;text-align: center; background-color: rgb(120, 131, 244);border-radius: 15px; font-size:medium;">+Print</button>
+                </div>
+                <hr>
+            <div id="wholediv">
+                <div class="profile-details">
+                  <div class="row">
+                      <div class="col-md-6">
+                      <h1>Student Details</h1>
+                      <hr>
+                        <p><strong>Admission Number:</strong> {{student.addmission_no}}</p>
+                        <p><strong>First Name:</strong> {{student.first_name}}</p>
+                        <p><strong>Last Name:</strong> {{student.last_name}}</p>
+                        <p><strong>Gender:</strong> {{student.gender}}</p>
+                        <p><strong>Class:</strong> {{student.class_id.class_name}}</p>
+                        <p><strong>Date of Birth:</strong>{{student.dob}}</p>
+                      </div>
+                      <div class="col-md-6">
+                          <h1>Parents Details</h1>
+                          <hr>
+                        <p><strong>Father's Name:</strong> {{student.parent_id.father_name}}</p>
+                        <p><strong>Father's Phone Number:</strong> {{student.parent_id.phone_number}}</p>
+                        <p><strong>Mother's Name:</strong> {{student.parent_id.mother_name}}</p>
+                        <p><strong>Email:</strong> {{student.parent_id.email}}</p>
+                        <p><strong>Address:</strong> {{student.parent_id.address}}</p>
+                      </div>
+                  </div>
+                </div>
+              <div class="grades">
+                <h2>Grades and Fee Details</h2>
+                <hr>
+                <table class="table table-bordered">
+                  <thead>
+                    <tr>
+                      <th>Subject</th>
+                      <th>Type</th>
+                      <th>Score</th>
+                      <th>Date</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% if grades %}
+                      {% for g in grades %}
+                      <tr>
+                        <td>{{g.subject_id.subject_name}}</td>
+                        <td>{{g.exam_type}}</td>
+                        <td>{{g.score_no}}</td>
+                        <td>{{g.exam_date}}</td>
+                      </tr>
+                      {% endfor %}
+                    {% else %}
+                    <tr>
+                      <td colspan="4">No Exams Conducted</td>
+                    </tr>
+                    {% endif %}
+                  </tbody>
+                </table>
+              </div>
+                <div class="fee-details">
+                  <h2>Fee Details</h2>
+                  <hr>
+                    <ol>
+                      {% if fees %}
+                      {% for f in fees%}
+                        <li>
+                          <p><strong>Fee Type:</strong> {{f.fee_type}}</p>
+                          <p><strong>Fee Amount:</strong> Rs.{{f.fee_amount}}</p>
+                          <p><strong>Payment Date:</strong> {{f.payment_date}}</p>
+                        </li>
+                      {% endfor %}
+                      {% else %}
+                      <p>No Payments Done</p>
+                      {% endif %}
+                    </ol>
+                  </div>
+              </div>
+            </div>
+        </body>
+</html>

@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Student</title>
+    <link rel="stylesheet" href="{% static 'studentform.css' %}">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Student Information</h1>
+        {% for s in students %}
+        <form action="student_add" method="POST">
+          {% csrf_token %}
+          <input type="text" value="{{s.id}}" name="id">
+          <div class="form-group">
+            <label htmlFor="firstName">First Name:</label>
+            <input type="text" id="firstName" name="first_name" value="{{s.first_name}}" />
+          </div>
+          <div class="form-group">
+            <label htmlFor="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="last_name" value="{{s.last_name}}" />
+          </div>
+          <div class="form-group">
+            <label htmlFor="motherTongue">Gender:</label>
+            <input type="text" class="motherTongue" name="gender" value="{{s.gender}}" />
+          </div>
+          <div class="form-group">
+            <label for="classroom">Select a class:</label>
+            <select id="classroom" name="classroom">
+              <option value="{{s.class_id.class_id}}">{{s.class_id.class_name}}</option>
+              {% for each in classes %}
+                <option value={{each.id}}>{{each.class_name}}</option>
+              {% endfor %}
+            </select>
+          </div>
+          <div class="form-group">
+            <label htmlFor="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" value="{{s.dob|date:'Y-m-d' }}"/>
+          </div>
+          <div class="form-group">
+            <button type="submit">
+              Next
+            </button>
+          </div>
+        </form>
+        {% endfor %}
+      </div>
+</body>
+</html>

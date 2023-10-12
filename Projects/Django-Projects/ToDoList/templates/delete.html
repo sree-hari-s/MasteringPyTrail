@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>delete</title>
+    <link rel="stylesheet" href="../static/delete.css">
+</head>
+<body>
+    <div class="main">
+        <div class="question">Are u sure u want to delete {{obj.id}}?</div> 
+        <br>
+        <form action="" method="POST">
+            {% csrf_token %}
+            <span style="margin-left:60px;"><a href="{{ request.META.HTTP_REFERER }}" class="back">go back</a></span>
+            <input type="submit" value="confirm" class="confirm">
+        </form>
+    </div>
+</body>
+</html>

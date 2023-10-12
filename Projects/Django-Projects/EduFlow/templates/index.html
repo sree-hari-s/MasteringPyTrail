@@ -1,0 +1,114 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */ 
+    body {
+  background: linear-gradient(45deg,#ddd, #333 );
+  min-height: 100vh;
+}
+
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .container {
+  padding:10%;
+  padding-top: 3%;
+    }
+    .container .row{
+      width: auto;
+    }
+.col-sm-4 img{
+  width: 225px;
+  height:225px;
+}
+a.button {
+display: inline-block;
+background-color: #fff; 
+border: 2px solid black; 
+color: black; 
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 6px 2px;
+cursor: pointer;
+border-radius: 5px;
+transition: all 0.3s ease-in-out; 
+}
+
+a.button:hover {
+background-color: black; 
+color: #fff; 
+}
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="{% url 'index' %}">Home</a></li>
+        <li><a href="{% url 'show_student' %}">Student</a></li>
+        <li><a href="{% url 'show_teacher' %}">Teacher</a></li>
+        <li><a href="{% url 'fees' %}">Fee</a></li>
+        <li><a href="{% url 'grades' %}">Grade</a></li>
+			  <li><a href="{% url 'show_classes' %}">Classes</a></li> 
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container text-center" style="justify-content: center;"> 
+<br>
+  <div class="row">
+    <div class="col-sm-4">
+      <img src="https://cdn-icons-png.flaticon.com/512/663/663045.png?w=740&t=st=1682097368~exp=1682097968~hmac=28ba8913c39dc359bdf1097b6bce8b6164589dc91a9df6b660c977b1400008ef" alt="Image">
+      <br>
+      <a class="button"  href="{% url 'show_student' %}">Student</a>    
+    </div>
+    <div class="col-sm-4">
+      <img src="https://cdn-icons-png.flaticon.com/512/46/46652.png?w=740&t=st=1682095997~exp=1682096597~hmac=d4ca011605bf684e1a76599d686cd183770fd9ff12913f5435ed7c236c6c0df5"  alt="Image">
+    	<a class="button" href="{% url 'show_teacher' %}">Teacher</a>    
+    </div>
+    <div class="col-sm-4">
+      <img src="https://cdn-icons-png.flaticon.com/512/991/991922.png?w=740&t=st=1682161203~exp=1682161803~hmac=be3dfd7eebdfc3a33bfeaa8263e3689faec70d5f0c9b23c6a63224f9062fc83b"  alt="Image">
+    	<a class="button" href="{% url 'show_classes' %}">Classes</a>    
+    </div>
+    </div>
+    <br>
+  <div class="row" style="padding-left: 20%;">
+    <div class="col-sm-4">
+      <img src="https://cdn-icons-png.flaticon.com/512/126/126057.png?w=740&t=st=1682096559~exp=1682097159~hmac=fd0ad51791cc8049e941d6ddf73a15b1c4e98c097babf4324c6ffeec9cf74023"  alt="Image">
+    	<a href="{% url 'fees' %}" class="button">Fee</a>    
+    </div>
+    <div class="col-sm-4" style="margin-left:10%;">
+      <img src="https://cdn-icons-png.flaticon.com/512/1018/1018743.png?w=740&t=st=1682097456~exp=1682098056~hmac=7b3cff5f4b5782d4df74ae1d4e203ea1f6e5488af63c20b2444e1982cf3e8dbf"  alt="Image">
+    	<a href="{% url 'grades' %}" class="button">Grade</a>    
+    </div>
+  </div>
+</div>
+<br>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Add Teacher</title>
+</head>
+<body>
+	<h1>Add Teacher</h1>
+	<form action="{% url 'add_teacher' %}" method="post">
+		{% csrf_token %}
+		<label for="teacher_id">Teacher ID:</label>
+		<input type="text" id="teacher_id" name="teacher_id"><br><br>
+		<label for="first_name">First Name:</label>
+		<input type="text" id="first_name" name="first_name"><br><br>
+		<label for="last_name">Last Name:</label>
+		<input type="text" id="last_name" name="last_name"><br><br>
+		<label for="dob">DOB:</label>
+		<input type="date" id="dob" name="dob"><br><br>
+		<label for="phone_no">Phone No:</label>
+		<input type="text" id="phone_no" name="phone_no"><br><br>
+		<label for="gender">Gender:</label>
+		<input type="text" id="gender" name="gender"><br><br>
+		<label for="address">Address:</label>
+		<input type="text" id="address" name="address"><br><br>
+		<label for="salary">Salary:</label>
+		<input type="text" id="salary" name="salary"><br><br>
+		<label for="hire_date">Hire Date:</label>
+		<input type="date" id="hire_date" name="hire_date"><br><br>
+		<label for="subject_id">Subject Name:</label>
+		<input type="text" id="subject_id" name="subject_id" placeholder="(sub_ID)-(Sub_name)"><br><br>
+		<label for="class_id">Class ID:</label>
+		<select id="class_id" name="class_id">
+			{% for class in classes %}
+			<option value="{{ class.id }}">{{ class.class_name }}</option>
+			{% endfor %}
+		</select><br><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email"><br><br>
+		<input type="submit" value="Submit">
+	</form>
+</body>
+</html>
