@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+</head>
+<body>
+    <div class="topbar">
+        <span class="heading">
+            TO DO LIST
+        </span>
+        <span>
+            <a href="{% url 'logoutuser' %}" class="link">Logout</a>
+        </span>
+    </div>
+    <div class="wel">
+        <span class="hi">
+            Hi,
+        </span>
+        <span class="name">
+            {{user.username}}
+        </span>
+    </div>
+    <div class="additem">
+        <form action="addlist" method="POST">
+            {% csrf_token %}
+            <input type="text" name="task" placeholder="Enter Your Task" class="task">
+            <input type="hidden" name="username" value="{{user.username}}">
+            <input type="submit" value=" + Add Task " class="submit">
+        </form>
+    </div>
+    <div class="table_heading">
+        My Lists
+    </div>
+    <table style="margin-left:700px; margin-top: 40px;">
+        {% for t in tasks %}
+        {% if t.username == user.username %}
+        <tr>
+            <td>
+                <h3 style="width:300px;">{{t.task}}</h3>
+            </td>
+            <td>
+                <a href="{% url 'delete' t.id %}" style="margin-left: 60px;"><svg  class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M135.2 17.7C140.6 6.8 151.7 0 163.8 0H284.2c12.1 0 23.2 6.8 28.6 17.7L320 32h96c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 96 0 81.7 0 64S14.3 32 32 32h96l7.2-14.3zM32 128H416V448c0 35.3-28.7 64-64 64H96c-35.3 0-64-28.7-64-64V128zm96 64c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16zm96 0c-8.8 0-16 7.2-16 16V432c0 8.8 7.2 16 16 16s16-7.2 16-16V208c0-8.8-7.2-16-16-16z"/></svg></a>
+            </td>
+        </tr>
+        {%  endif %}
+        {% endfor %}
+    </table>
+</body>
+</html>

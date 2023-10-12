@@ -1,0 +1,32 @@
+.main{
+    margin-left: 800px;
+    margin-top: 350px;
+}
+.question{
+    font-size: 150%;
+}
+.back{
+    text-decoration: none;
+    border-style: solid;
+    border-color: black;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    padding: 3px 5px 3px 5px;
+}
+.back:hover{
+    background-color: white;
+    color:red;
+}
+.confirm{
+    margin-left: 20px;
+    color:white;
+    padding:3px 7px 3px 7px;
+    border-radius: 20px;
+    background-color: black;
+    font-size: 103%;
+}
+.confirm:hover{
+    color:red;
+    background-color: white;
+}

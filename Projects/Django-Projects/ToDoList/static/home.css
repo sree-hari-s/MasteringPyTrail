@@ -1,0 +1,70 @@
+.topbar{
+	width:101%;
+	background-color: #2185d0;
+	height:60px;
+	margin-left: -10px;
+	margin-top: -10px;
+}
+.heading{
+	font-size: 250%;
+	padding-top: 10px;
+	color: white;
+	margin-left: 800px;
+	margin-bottom: 10px;
+	margin-right: 700px;
+}
+.link{
+	text-decoration: none;
+	color: black;
+	font-size: 150%;
+	border-style: solid;
+	border-color: black;
+	border-radius: 20px;
+	background-color: white;
+	padding: 2px 10px 2px 10px;
+}
+.link:hover{
+	background-color: black;
+	color: white;
+}
+.wel{
+	margin-left: 840px;
+	margin-top: 50px;
+}
+.hi{
+	font-size: 200%;
+}
+.name{
+	font-size: 200%;
+	color:red;
+}
+.additem{
+	margin-top: 20px;
+	margin-left: 750px;
+}
+.task{
+	height:25px;
+	width:250px;
+	font-size: 110%;
+}
+.submit{
+	height:25px;
+	font-size: 110%;
+	border-radius: 30px;
+	background-color: black;
+	color:white;
+}
+.submit:hover{
+	background-color: rgb(50, 5, 253);
+	color:white;
+}
+.table_heading{
+	margin-left: 850px;
+	margin-top: 20px;
+	font-size: 150%;
+}
+.icon{
+	width:20px;
+	height: 20px;
+	fill: red;
+}

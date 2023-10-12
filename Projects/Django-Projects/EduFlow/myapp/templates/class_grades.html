@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Class Grades</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>  
+      .navbar {
+        margin-bottom: 0;
+        border-radius: 0;
+      }
+      .container {
+    padding:10%;
+    padding-top: 3%;
+      }
+      .container .row{
+        width: auto;
+      }
+    .col-sm-4 img{
+        width: 225px;
+        height:225px;
+    }
+    a.button {
+    display: inline-block;
+    background-color: #fff; 
+    border: 2px solid black; 
+    color: black; 
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 6px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out; 
+    }
+    a.button:hover {
+    background-color: black; 
+    color: #fff; 
+    }
+    </style>
+  </head>
+  <body>
+  
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">Logo</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'show_student' %}">Student</a></li>
+          <li><a href="{% url 'show_teacher' %}">Teacher</a></li>
+          <li><a href="{% url 'fees' %}">Fee</a></li>
+          <li class="active"><a href="{% url 'grades' %}">Grade</a></li>
+                <li><a href="{% url 'show_classes' %}">Classes</a></li> 
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div style="width:30%;margin:auto; border: 2px solid #007bff;margin-top: 10%;border-radius: 20px;">
+    <h1 style="text-align: center;">Class : {{class.class_name}}</h1>
+	{% if subs %}
+        <div style="text-align: center;">
+        <h2>Subjects</h2>
+        <ul>
+            {% for sub in subs %}        
+            <form action="class_grades" method="POST">
+                {% csrf_token %}
+                <input type="hidden" name="class_id" value="{{class.class_id}}">
+                <input type="hidden" name="id" value="{{sub.subject_id}}">
+                <input type="submit" value="{{sub.subject_name}}" style="margin-left:-25px; background-color: white;color: black;border:3px solid white; border-bottom: 2px solid red;">
+            </form>
+            {% endfor %}
+        </ul>
+    </div>
+    {% else %}
+        <p>No subjects found.</p>
+    {% endif %}
+  </div>
+</body>
+</html>

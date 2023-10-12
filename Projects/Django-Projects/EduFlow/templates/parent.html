@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'parent.css' %}">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Parent Information</h1>
+        <form method="POST" action="parent_add">
+          {% csrf_token %}
+          <input type="hidden" value="{{data}}" name="id">
+          <div class="father-info">
+            <h2>Father Information</h2>
+            <div class="form-group">
+              <label htmlFor="fatherName">Father's Name:</label>
+              <input type="text" id="fatherName" name="father_name" required />
+            </div>
+            
+            <div class="form-group">
+              <label htmlFor="fatherPhone">Phone Number:</label>
+              <input
+                type="text"
+                id="fatherPhone"
+                name="fatherPhone"
+                placeholder="+91"
+                required
+              />
+            </div>
+          </div>
+          <div class="mother-info">
+            <h2>Mother Information</h2>
+            <div class="form-group">
+              <label htmlFor="motherName">Mother's Name:</label>
+              <input
+                type="text"
+                id="motherName"
+                name="motherName"
+                required
+              />
+            </div>
+            
+
+          </div>
+          <h2>Contact Information</h2>
+          <div class="form-group">
+            <label htmlFor="address">Address:</label>
+            <textarea id="address" name="address" rows="2" required></textarea>
+          </div>
+          <div class="form-group">
+            <label htmlFor="pincode">Email:</label>
+            <input
+              type="email"
+              id="pincode"
+              name="email"
+              required
+            />
+          </div>
+          <button onClick=>Next</button>
+        </form>
+      </div>
+</body>
+</html>

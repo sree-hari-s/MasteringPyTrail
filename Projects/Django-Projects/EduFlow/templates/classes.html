@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <style>
+    body {
+        background-color: #f1f1f1;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    .container1 {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+    h1 {
+        text-align: center;
+        margin: 20px 0;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    th, td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+    }
+    th {
+        background-color: #333;
+        color: #fff;
+        font-weight: normal;
+    }
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+    .button {
+    display: inline-block;
+    padding: 5px 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 25px;
+    }
+    .button:hover{
+    text-decoration: none;
+    color:black;
+    }
+    @media only screen and (max-width: 768px) {
+        table, th, td {
+            display: block;
+        }
+        th, td {
+            text-align: center;
+        }
+        th {
+            display: none;
+        }
+        tr {
+            border-bottom: 2px solid #ddd;
+            margin-bottom: 10px;
+        }
+        td:before {
+            content: attr(data-th) ": ";
+            font-weight: bold;
+            display: inline-block;
+            width: 100px;
+        }
+    }
+    .container2{
+        margin-left: 40%;
+        width: auto;
+        margin-bottom: 5px;
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#">Logo</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li><a href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'show_student' %}">Student</a></li>
+            <li><a href="{% url 'show_teacher' %}">Teacher</a></li>
+            <li><a href="{% url 'fees' %}">Fee</a></li>
+            <li><a href="{% url 'grades' %}">Grade</a></li>
+            <li class="active"><a href="{% url 'show_classes' %}">Classes</a></li>
+        </ul>
+        </div>
+    </div>
+    </nav>
+    <div style="border-radius: 20px;border: 2px solid #007bff; width: 30%; margin: auto;margin-top:8%;">
+        <div>
+            <h1>Classes</h1>
+        </div>
+        <div style="text-align: center;">
+            <a href="{% url 'add_class' %}" class="button">+ADD</a>
+          </div>
+        <div style="margin: 0 auto; width: 50%; margin-top: 20px;">
+            <ul>
+                {% for c in classes %}
+                <li style="font-size: 120%;">{{c.class_name}}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>
