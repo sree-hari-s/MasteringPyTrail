@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
+    <title>Hello, {{ name }}!</title>
+  </head>
+  <header>
+    <nav class="navbar fixed-top navbar-dark bg-primary">
+      <a class="navbar-brand" href="">Hello</a>
+    </nav>
+  </header>
+  <body class="container" style="padding-top: 70px;">
+    <p>Hello, {{ name }}!</p>
+  </body>
+</html>
