@@ -45,7 +45,7 @@ def register(request):
                 messages.info(request,"Email id already exists")
                 return redirect('register')
             elif User.objects.filter(username=username).exists():
-                messages.infor(request,"Username alreadyy in use")
+                messages.info(request,"Username already in use")
                 return redirect('register')
             else:
                 user = User.objects.create_user(username = username, email = email, password=password)
