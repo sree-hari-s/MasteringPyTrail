@@ -7,8 +7,8 @@ window.config(padx=60, pady=20)
 miles_input = Entry(width=5)
 miles_input.grid(column=2,row=1)
 
-label_miles = Label(text="Miles")
-label_miles.grid(column=3,row=1)
+miles_label = Label(text="Miles")
+miles_label.grid(column=3,row=1)
 
 equal_label = Label(text="is equal to")
 equal_label.grid(column=0,row=2)
@@ -16,8 +16,8 @@ equal_label.grid(column=0,row=2)
 result = Label(text="0")
 result.grid(column=2,row=2)
 
-label_kms = Label(text="Km")
-label_kms.grid(column=3,row=2)
+kms_label = Label(text="Km")
+kms_label.grid(column=3,row=2)
 
 def convert():
     try:
