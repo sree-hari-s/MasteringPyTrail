@@ -11,9 +11,16 @@ WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 reps = 0
-
+timer = None
 
 # ---------------------------- TIMER RESET ------------------------------- #
+def reset_timer():
+    global reps
+    reps = 0
+    window.after_cancel(timer)
+    check_mark.config(text="")
+    heading_label.config(text="Timer")
+    canvas.itemconfig(timer_text,text="00:00")
 
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
 def start_timer():
@@ -26,12 +33,15 @@ def start_timer():
 
     if reps == 8:
         # 8th rep
+        heading_label.config(text="Break", fg=RED)
         countdown(long_break_seconds)
     elif reps % 2 == 0:
         # 2nd/4th/6th reps:
+        heading_label.config(text="Short-Break", fg=PINK)
         countdown(short_break_seconds)
     else:
         # 1st/3rd/5th/7th reps:
+        heading_label.config(text="Work", fg=GREEN)
         countdown(work_seconds)
 
 
@@ -46,9 +56,15 @@ def countdown(count):
         count_seconds = f"0{count_seconds}"
     canvas.itemconfig(timer_text, text=f"{count_min}:{count_seconds}")
     if count > 0:
-        window.after(1000, countdown, count - 1)
+        global timer
+        timer = window.after(1000, countdown, count - 1)
     else:
         start_timer()
+        marks = ""
+        work_session = floor(reps / 2)
+        for _ in range(0, work_session):
+            marks += "✔"
+        check_mark.config(text=marks)
 
 
 # ---------------------------- UI SETUP ------------------------------- #
@@ -68,10 +84,10 @@ canvas.grid(column=2, row=2)
 start_button = Button(text="Start", highlightthickness=0, command=start_timer)
 start_button.grid(column=1, row=3)
 
-stop_button = Button(text="Stop", highlightthickness=0)
+stop_button = Button(text="Stop", highlightthickness=0, command=reset_timer)
 stop_button.grid(column=3, row=3)
 
-check_mark = Label(text="✔", bg=YELLOW, fg=GREEN, font=(FONT_NAME, 35, "bold"))
+check_mark = Label(bg=YELLOW, fg=GREEN, font=(FONT_NAME, 35, "bold"))
 check_mark.grid(column=2, row=4)
 
 window.mainloop()
