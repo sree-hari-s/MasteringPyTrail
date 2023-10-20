@@ -1,5 +1,5 @@
 from tkinter import *
-import math
+from math import floor
 
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
@@ -10,13 +10,29 @@ FONT_NAME = "Courier"
 WORK_MIN = 25
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
+reps = 0
 
 
 # ---------------------------- TIMER RESET ------------------------------- #
 
 # ---------------------------- TIMER MECHANISM ------------------------------- # 
 def start_timer():
-    countdown(11)
+    global reps
+    reps += 1
+
+    work_seconds = WORK_MIN * 60
+    short_break_seconds = SHORT_BREAK_MIN * 60
+    long_break_seconds = LONG_BREAK_MIN * 60
+
+    if reps == 8:
+        # 8th rep
+        countdown(long_break_seconds)
+    elif reps % 2 == 0:
+        # 2nd/4th/6th reps:
+        countdown(short_break_seconds)
+    else:
+        # 1st/3rd/5th/7th reps:
+        countdown(work_seconds)
 
 
 # ---------------------------- COUNTDOWN MECHANISM ------------------------------- #
@@ -24,13 +40,15 @@ def countdown(count):
     """
     Display the timer in 00:00 format
     """
-    count_min = math.floor(count / 60)
+    count_min = floor(count / 60)
     count_seconds = count % 60
     if count_seconds < 10:
         count_seconds = f"0{count_seconds}"
     canvas.itemconfig(timer_text, text=f"{count_min}:{count_seconds}")
     if count > 0:
         window.after(1000, countdown, count - 1)
+    else:
+        start_timer()
 
 
 # ---------------------------- UI SETUP ------------------------------- #
