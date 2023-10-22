@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Expense Tracker</h1>
+
+    <h2>Log an Expense</h2>
+    <form method="POST" action="/log">
+        <label for="date">Date:</label>
+        <input type="date" name="date" required>
+        <label for="description">Description:</label>
+        <input type="text" name="description" required>
+        <label for="category">Category:</label>
+        <input type="text" name="category" required>
+        <label for="amount">Amount:</label>
+        <input type="number" name="amount" step="0.01" required>
+        <input type="submit" value="Log Expense">
+    </form>
+
+    <!-- Other content and forms go here -->
+
+    <a href="/monthly_summary">View Monthly Summary</a>
+    <a href="/category_breakdown">Category-wise Breakdown</a>
+</body>
+</html>
