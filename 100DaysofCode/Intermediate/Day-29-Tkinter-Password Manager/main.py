@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter import messagebox
 from random import randint,choice,shuffle
 
 FONT_DEFAULT = ("Arial", 12)
@@ -20,7 +21,19 @@ def generate_password():
     password_input.insert(0, password)
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
+def save_data():
+    website = website_input.get()
+    username = username_input.get()
+    password = password_input.get()
+    
+    if len(website) == 0 or len(password) == 0:
+        messagebox.showerror(title="Error", message="Please enter all fields!")
+    else:
+        with open('password.txt', 'a') as f:
+            f.write(f"{website} | {username} | {password}\n")
 
+        website_input.delete(0,'end')
+        password_input.delete(0,'end')
 # ---------------------------- UI SETUP ------------------------------- #
 
 window = Tk()
@@ -43,11 +56,10 @@ password_label.grid(row=3, column=0)
 
 # Inputs
 website_input = Entry(width=36, font=FONT_DEFAULT)
-website_input.insert(END, string="website url")
 website_input.grid(row=1, column=1, columnspan=2)
 
 username_input = Entry(width=36, font=FONT_DEFAULT)
-username_input.insert(END, string="username/email")
+username_input.insert(END,'example@test.com')
 username_input.grid(row=2, column=1, columnspan=2)
 
 password_input = Entry(width=26, font=FONT_DEFAULT)
@@ -57,7 +69,7 @@ password_input.grid(row=3, column=1)
 generate_button = Button(text="Generate", width=10,command = generate_password)
 generate_button.grid(row=3, column=2)
 
-add_button = Button(text="Add", width=46)
+add_button = Button(text="Add", width=46, command = save_data)
 add_button.grid(row=4, column=1, columnspan=2)
 
 window.mainloop()
