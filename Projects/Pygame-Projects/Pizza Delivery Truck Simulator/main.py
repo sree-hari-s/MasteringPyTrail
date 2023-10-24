@@ -2,7 +2,6 @@ import pygame
 import random
 import sys
 from pygame.locals import *
-import setuptools
 import os
 
 pygame.init()
@@ -34,10 +33,10 @@ hushari = pygame.mixer.Sound(os.path.join(
     base_path, 'audio/Hushari_edit.wav'))
 wide = pygame.mixer.Sound(
     os.path.join(
-        base_path, 'audio/widememe.mp3'))
+        base_path, 'audio/happy-day.mp3'))
 conro = pygame.mixer.Sound(
     os.path.join(
-        base_path, 'audio/Conro - Thrill of it.mp3'))
+        base_path, 'audio/black-box-drum.mp3'))
 title_song = pygame.mixer.Sound(os.path.join(
     base_path, 'audio/toobadtobesad.wav'))
 channel1 = pygame.mixer.Channel(0)
