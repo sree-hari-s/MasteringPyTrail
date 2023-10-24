@@ -5,6 +5,10 @@ from random import randint,choice,shuffle
 FONT_DEFAULT = ("Arial", 12)
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 def generate_password():
+    """
+    Generates a password using alphabets numbers and symbols
+    Password will consist of 8-10 characters, 2-4 numbers and 2-4 symbols.
+    """
     password_input.delete(0,'end')
     letters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
     numbers = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
@@ -22,6 +26,9 @@ def generate_password():
 
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 def save_data():
+    """
+    Save the details entered website, username/email and password into a text file in the machine.
+    """
     website = website_input.get()
     username = username_input.get()
     password = password_input.get()
