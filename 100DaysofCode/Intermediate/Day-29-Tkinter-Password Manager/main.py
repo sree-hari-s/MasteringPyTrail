@@ -29,11 +29,14 @@ def save_data():
     if len(website) == 0 or len(password) == 0:
         messagebox.showerror(title="Error", message="Please enter all fields!")
     else:
-        with open('password.txt', 'a') as f:
-            f.write(f"{website} | {username} | {password}\n")
+        is_complete = messagebox.askokcancel(title=website, message=f"These are the details entered:\nUsername/Email: {username}\nPassword: {password}\nIs it ok to save?")
+        if is_complete:
+            messagebox.showinfo(title="Success", message="Details saved successfully")
+            with open('password.txt', 'a') as f:
+                f.write(f"{website} | {username} | {password}\n")
 
-        website_input.delete(0,'end')
-        password_input.delete(0,'end')
+            website_input.delete(0,'end')
+            password_input.delete(0,'end')
 # ---------------------------- UI SETUP ------------------------------- #
 
 window = Tk()
