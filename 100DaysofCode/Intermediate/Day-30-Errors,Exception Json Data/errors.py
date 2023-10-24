@@ -54,3 +54,14 @@ else:
 finally:
     file.close()
     print("File Closed")
+
+"""
+Raising our own Exceptions
+"""
+
+height = float(input("height:"))
+weight = int(input("weight:"))
+bmi = weight/height**2
+if height>3:
+    raise ValueError("Human height should not be over 3 meters")
+print(bmi)
