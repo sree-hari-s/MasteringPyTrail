@@ -5,14 +5,19 @@ import pandas as pd
 
 BACKGROUND_COLOR = "#B1DDC6"
 #-----------------------WORD GENERATOR --------------------
-data = pd.read_csv("data/french_words.csv")
-dict_data = data.to_dict(orient="records")
+try:
+    data = pd.read_csv("data/words_to_learn.csv")
+except FileNotFoundError:
+    original_data = pd.read_csv("data/french_words.csv")
+    to_learn = original_data.to_dict(orient="records")
+else:
+    to_learn = data.to_dict(orient="records")
 current_card = {}
 
 def word_generator():
     global current_card,flip_timer
     window.after_cancel(flip_timer)
-    current_card = choice(dict_data)
+    current_card = choice(to_learn)
     canvas.itemconfig(canvas_image,image=card_front)
     canvas.itemconfig(card_title,text="French",fill="black")
     canvas.itemconfig(word,text=current_card['French'],fill="black")
@@ -24,6 +29,13 @@ def flip_card():
     canvas.itemconfig(card_title,text="English",fill="white")
     canvas.itemconfig(word,text=current_card['English'],fill="white")
 
+#----------------------Known Card-------------------------
+def is_known():
+    to_learn.remove(current_card)
+    data = pd.DataFrame(to_learn)
+    data.to_csv("data/words_to_learn.csv",index=False)
+    word_generator()
+    
 #------------------------UI Setup------------------------
 window = Tk()
 window.title("Flash Card App")
@@ -43,7 +55,7 @@ word=canvas.create_text(400,263,text="Word",font=("Arial",60,"bold"))
 
 # Buttons setup
 right = PhotoImage(file='images/right.png')
-right_button = Button(image=right,highlightthickness=0,command=word_generator)
+right_button = Button(image=right,highlightthickness=0,command=is_known)
 right_button.grid(row=1,column=0)
 
 wrong = PhotoImage(file='images/wrong.png')
