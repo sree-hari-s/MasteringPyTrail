@@ -1,6 +1,6 @@
 import pandas as pd
 import smtplib
-from random import choice,randint
+from random import randint
 import datetime as dt
 
 # 1. Update the birthdays.csv
