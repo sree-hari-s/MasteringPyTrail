@@ -25,6 +25,7 @@ This repository contains a collection of various projects showcasing different s
 - [Django Projects](https://github.com/sree-hari-s/MasteringPyTrail/tree/master/Projects/Django-Projects/README.md)
 - [Flask Projects](https://github.com/sree-hari-s/MasteringPyTrail/tree/master/Projects/Flask-Projects/README.md)
 - [ML Projects](https://github.com/sree-hari-s/MasteringPyTrail/tree/master/Projects/ML-Projects/README.md)
+- [Hangman Game](https://github.com/sree-hari-s/MasteringPyTrail/tree/master/Projects/Hangman/README.md)
 
 ## Usage
 
