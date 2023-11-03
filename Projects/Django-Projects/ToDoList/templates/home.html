@@ -26,10 +26,10 @@
         </span>
     </div>
     <div class="additem">
-        <form action="addlist" method="POST">
+        <form id="taskitem" action="addlist" method="POST" onsubmit="return validateForm()">
             {% csrf_token %}
-            <input type="text" name="task" placeholder="Enter Your Task" class="task">
-            <input type="hidden" name="username" value="{{user.username}}">
+            <input type="text" name="task" id="taskInput" placeholder="Enter Your Task" class="task" required>
+            <input type="hidden" name="username" value="{{ user.username }}">
             <input type="submit" value=" + Add Task " class="submit">
         </form>
     </div>
@@ -51,4 +51,14 @@
         {% endfor %}
     </table>
 </body>
+<script>
+    function validateForm() {
+        var taskInput = document.getElementById('taskInput');
+        if (taskInput.value.trim() === '') {
+            alert('Task cannot be empty');
+            return false; // Prevent form submission
+        }
+        return true; // Allow form submission if the input is not empty
+    }
+</script>
 </html>
