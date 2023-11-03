@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+</head>
+<body style="background-image: url(../static/bg1.webp);">
+    <div class="box1">
+        <div class="heading">
+            TO DO LIST
+        </div>
+        <div class="sub">
+            Daily Duties: A To-Do Guide
+        </div>
+        <div style="margin-left: 155px; font-size: 160%;">
+            Login
+        </div>
+        <div class="message">
+            {% for message in messages%}
+            <h4>{{message}}</h4>
+            {% endfor %}
+        </div>
+        <div class="form">
+            <form action="loginpage" method="POST">
+                {% csrf_token %}
+                <input type="text" name="username" placeholder="Enter Username" required="required" class="username">
+                <br>
+                <input type="password" name="password" placeholder="Enter Password" required="required" class="password">
+                <br>
+                <input type="submit" class="submit" value="Login">
+            </form>
+        </div>
+        <div class="register">
+            Dont have account? <a href="{% url 'register' %}" class="button">Register</a>
+        </div>
+    </div>
+</body>
+</html>

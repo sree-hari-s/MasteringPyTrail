@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="{% static 'index.css' %}">
+</head>
+<body style="background-image: url('../static/bg1.webp')";>
+    <div class="box1">
+        <div class="heading">
+            TO DO
+        </div>
+        <div class="sub">
+            Daily Duties: A To-Do Guide
+        </div>
+        <div class="button login">
+            <a href="{% url 'loginpage' %}" class="text1" style="color:rgb(55, 158, 255);">Login</a>
+        </div>
+        <div class="button login">
+            <a href="{% url 'register' %}" class="links" style="color:rgb(55, 158, 255);">Register</a>
+        </div>
+    </div>
+</body>
+</html>

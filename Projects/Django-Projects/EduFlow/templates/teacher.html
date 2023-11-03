@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher</title>
+    <link rel="stylesheet" href="{% static 'teacherform.css' %}">
+</head>
+<body>
+    <div>
+        <div class="form-container">
+            <h1>Teacher Information</h1>
+            <form action="teacher" method="POST">
+              {% csrf_token %}
+              <div class="form-group">
+                <label htmlFor="firstName">First Name:</label>
+                <input type="text" id="firstName" name="first_name" required />
+              </div>
+              <div class="form-group">
+                <label htmlFor="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="last_name" required />
+              </div>
+              <div class="form-group">
+              <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+              <option value="">Select your gender</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+            </div>
+              <div class="form-group">
+                <label htmlFor="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" onChange={handleInputChange} />
+              </div>
+              <div class="form-group">
+                <label htmlFor="Phone">Phone Number:</label>
+                <input
+                  type="tel"
+                  id="Phone_no"
+                  name="phone_no"
+                  placeholder="+91"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label htmlFor="address">Address:</label>
+                <textarea id="address" name="address" rows="2" required></textarea>
+              </div>
+              <div class="form-group">
+                <label >Salary:</label>
+                <input type="text" id="Salary" name="salary" required />
+              </div>
+              <div class="form-group">
+                <label >Email</label>
+                <input type="mail" id="mail" name="email"  />
+              </div>
+              <div class="form-group">
+                <label htmlFor="dob">Date of Hire:</label>
+                <input type="date" id="doh" name="hire_date"  />
+              </div>
+              <div class="form-group">
+                <button type="submit" onClick={handleNextClick}>
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+</body>
+</html>

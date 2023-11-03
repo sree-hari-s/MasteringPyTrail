@@ -1,0 +1,138 @@
+/* Base styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .form-container {
+    max-width: 500px;
+    margin: 0 auto;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  select,
+  input[type="date"] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f0f0f0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  button[type="submit"],
+  button[type="button"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover,
+  button[type="button"]:hover {
+    background-color: #0069d9;
+  }
+  
+  /* Responsive styles */
+  
+  @media only screen and (max-width: 767px) {
+    .container {
+      padding: 10px;
+    }
+    
+    .form-container {
+      max-width: 100%;
+      border-radius: 0;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+      border-bottom: 2px solid #007bff;
+      padding: 10px;
+    }
+    
+    input[type="text"],
+    select,
+    input[type="date"] {
+      font-size: 14px;
+      padding: 8px;
+    }
+    
+    label {
+      font-size: 16px;
+    }
+    
+    button[type="submit"],
+    button[type="button"] {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+      max-width: 90%;
+    }
+  }
+  
+  @media only screen and (min-width: 992px) {
+    .container {
+      max-width: 70%;
+    }
+    
+    .form-container {
+      padding: 40px;
+    }
+    
+    input[type="text"],
+    select,
+    input[type="date"] {
+      font-size: 18px;
+      padding: 12px;
+    }
+    
+    label {
+      font-size: 20px;
+    }
+    
+    button[type="submit"],
+    button[type="button"] {
+      font-size: 18px;
+      padding: 12px 24px;
+    }
+  }
+  

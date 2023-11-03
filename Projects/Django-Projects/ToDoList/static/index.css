@@ -1,0 +1,62 @@
+body{
+    /* background-image: url( "{% static 'bg1.webp' %}"); */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.box1{
+    width: 400px;
+    height:450px;
+    border-style: solid;
+    border-color: rgb(129, 121, 121);
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    margin-left: 700px;
+    margin-top: 220px;
+    border-radius: 15%;
+    z-index: 1000;
+}
+.heading{
+    margin-left: 155px;
+    margin-top: 50px;
+    font-size: 200%;
+}
+.sub{
+    margin-left: 110px;
+    margin-bottom: 130px;
+}
+.button{
+    margin-left: 120px;
+}
+.login{
+    margin-bottom: 20px;
+}
+.links{
+    text-decoration: none;
+    font-size: 150%;
+    border-style: solid;
+    border-color: black;
+    padding-left: 45px;
+    padding-right: 50px;
+    border-radius: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.text1{
+    text-decoration: none;
+    font-size: 150%;
+    border-style: solid;
+    border-color: black;
+    padding-left: 55px;
+    padding-right: 55px;
+    border-radius: 20px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+.text1:hover{
+    background-color: black;
+}
+.links:hover{
+    background-color: black;
+}
