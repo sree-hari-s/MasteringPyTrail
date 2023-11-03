@@ -33,9 +33,9 @@ if will_rain:
 
     message = client.messages \
         .create(
-            from_='+12054303600',
+            from_= os.environ['from_phone'],
             body=msg,
-            to='+918089776183'
+            to=os.environ['to_phone']
         )
 
     print(message.status)
