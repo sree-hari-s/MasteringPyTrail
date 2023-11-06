@@ -2,6 +2,7 @@ import os
 import requests
 from dotenv import load_dotenv
 import datetime as dt
+from twilio.rest import Client
 
 load_dotenv()
 
@@ -32,8 +33,12 @@ print(yesterday_closing_price)
 print(day_before_yesterday_closing_price)
 
 difference = abs(yesterday_closing_price - day_before_yesterday_closing_price)
-
-diff_percent = (difference/yesterday_closing_price)*100
+up_down = None
+if difference > 0:
+    up_down = "🔺"
+else:
+    up_down = "🔻"
+diff_percent = round((difference/yesterday_closing_price)*100)
 
 ## STEP 2: https://newsapi.org/
 # Instead of printing ("Get News"), actually get the first 3 news pieces for the COMPANY_NAME.
@@ -49,9 +54,17 @@ if diff_percent > 5:
 
 ## STEP 3: Use twilio.com/docs/sms/quickstart/python
 # to send a separate message with each article's title and description to your phone number.
-formatted_article =[f"Headline: {article['title']}.\nBrief: {article['description']}" for article in top3_articles]
-print(formatted_article)
+    formatted_article =[f"{STOCK_NAME}: {up_down}{diff_percent}%\nHeadline: {article['title']}.\nBrief: {article['description']}" for article in top3_articles]
+    print(formatted_article)
 
+    client = Client(os.environ["account_sid"], os.environ["auth_token"])
+    for article in formatted_article:
+        message = client.messages.create(
+                body=article,
+                from_= os.environ['from_phone'],
+                to=os.environ['to_phone']
+            )
+        print(message.status)   
 
 # Optional TODO: Format the message like this:
 """
