@@ -1,0 +1,2 @@
+requests==2.31.0
+tkcalendar==1.6.1
