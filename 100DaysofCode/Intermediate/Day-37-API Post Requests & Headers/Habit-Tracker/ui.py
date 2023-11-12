@@ -78,30 +78,36 @@ class TrackerInterface:
 
     def add_pixel(self):
         self.endpoint = f"https://pixe.la/v1/users/{USERNAME}/graphs/graph2/"
-        self.pixel_add = {
-            "date": self.format_date(),
-            "quantity": self.user_in.get(),
-        }
-        requests.post(url=self.endpoint, json=self.pixel_add, headers=self.headers)
-        self.user_in.delete(0, END)
-        messagebox.showinfo(message="Pixel added.")
+        if not self.user_in.get():
+            messagebox.showerror(message="Please enter the hours.",title='Error')
+        else:
+            self.pixel_add = {
+                "date": self.format_date(),
+                "quantity": self.user_in.get(),
+            }
+            requests.post(url=self.endpoint, json=self.pixel_add, headers=self.headers)
+            self.user_in.delete(0, END)
+            messagebox.showinfo(message="Pixel added.",title='Success')
 
     def del_pixel(self):
         self.endpoint = (
             f"https://pixe.la/v1/users/{USERNAME}/graphs/graph2/{self.format_date()}"
         )
         requests.delete(url=self.endpoint, headers=self.headers)
-        messagebox.showinfo(message="Pixel deleted.")
+        messagebox.showinfo(message="Pixel deleted.",title='Success')
 
     def change_pixel(self):
         self.endpoint = (
             f"https://pixe.la/v1/users/{USERNAME}/graphs/graph2/{self.format_date()}"
         )
-        self.pixel_update = {
-            "quantity": self.user_in.get(),
-        }
-        requests.put(
-            url=self.endpoint, json=self.pixel_update, headers=self.headers
-        )
-        self.user_in.delete(0, END)
-        messagebox.showinfo(message="Pixel updated.")
+        if not self.user_in.get():
+            messagebox.showerror(message="Please enter the hours.",title='Error')
+        else:
+            self.pixel_update = {
+                "quantity": self.user_in.get(),
+            }
+            requests.put(
+                url=self.endpoint, json=self.pixel_update, headers=self.headers
+            )
+            self.user_in.delete(0, END)
+            messagebox.showinfo(message="Pixel updated.",title='Success')
