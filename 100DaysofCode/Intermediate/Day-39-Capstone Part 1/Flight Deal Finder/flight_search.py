@@ -1,7 +1,10 @@
+import os
 import requests
+from dotenv import load_dotenv
+
+load_dotenv()
 
 TEQUILA_ENDPOINT = "https://tequila-api.kiwi.com"
-TEQUILA_API_KEY = "YOUR_API_KEY_HERE"
 
 
 class FlightSearch:

@@ -1,8 +1,14 @@
+import os
 import requests
+from dotenv import load_dotenv
 
-SHEETY_PRICES_ENDPOINT = "YOUR ENDPOINT HERE"
+load_dotenv()
 
+SHEETY_PRICES_ENDPOINT = "https://api.sheety.co/2c8f8a6fe47964efb55f3d3f55787223/flightDeals/prices"
 
+sheety_header = {
+    "Authorization": f"Bearer {os.environ['BEARER_TOKEN']}"
+}
 class DataManager:
 
     def __init__(self):
