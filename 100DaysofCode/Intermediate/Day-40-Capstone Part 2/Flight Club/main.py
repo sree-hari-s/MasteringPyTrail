@@ -1,4 +1,4 @@
-import sheety
+from sheety import *
 
 print("Welcome to Flights Club")
 
@@ -18,4 +18,4 @@ while email1 != email2:
 
 print("Welcome to Flights Club")
 
-sheety.post_new_row(firstname, lastname, email1)
+post_new_row(firstname, lastname, email1)
