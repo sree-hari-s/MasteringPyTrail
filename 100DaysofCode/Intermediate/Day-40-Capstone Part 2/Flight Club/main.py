@@ -37,7 +37,6 @@ for destination_code in destinations:
         from_time=tomorrow,
         to_time=six_month_from_today,
     )
-    print(flight.price)
     if flight is None:
         continue
 
