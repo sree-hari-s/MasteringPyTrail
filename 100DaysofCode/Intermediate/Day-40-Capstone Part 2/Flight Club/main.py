@@ -1,21 +1,38 @@
-from sheety import *
+from datetime import datetime, timedelta
+from data_manager import DataManager
+from flight_search import FlightSearch
+from notification_manager import NotificationManager
 
-print("Welcome to Flights Club")
+ORIGIN_CITY_IATA = "LON"
 
-firstname = input("What is your first name? ").title()
-lastname = input("What is your last name? ").title()
+data_manager = DataManager()
+flight_search = FlightSearch()
+notification_manager = NotificationManager()
 
-email1 = "email1"
-email2 = "email2"
+sheet_data = data_manager.get_destination_data()
 
-while email1 != email2:
-    email1 = input("Enter your email address? ")
-    if email1.lower() == "quit" or email1.lower() == "exit":
-        exit()
-    email2 = input("Confirm your email address ")
-    if email2.lower() == "quit" or email2.lower() == "exit":
-        exit()
+if sheet_data[0]["iataCode"] == "":
+    city_names = [row["city"] for row in sheet_data]
+    print(city_names)
+    codes = flight_search.get_destination_codes(city_names)
+    data_manager.update_destination_codes(codes)
+    sheet_data = data_manager.get_destination_data()
 
-print("Welcome to Flights Club")
+today = datetime.now() + timedelta(1)
+six_month_from_today = datetime.now() + timedelta(6 * 30)
 
-post_new_row(firstname, lastname, email1)
+for destination in sheet_data:
+    flight = flight_search.check_flights(
+        ORIGIN_CITY_IATA,
+        destination["iataCode"],
+        from_time=today,
+        to_time=six_month_from_today
+    )
+
+    if flight is None:
+        continue
+    
+    if flight.price < destination["lowestPrice"]:
+        notification_manager.send_sms(
+            message=f"Low price alert! Only £{flight.price} to fly from {flight.origin_city}-{flight.origin_airport} to {flight.destination_city}-{flight.destination_airport}, from {flight.out_date} to {flight.return_date}."
+        )
