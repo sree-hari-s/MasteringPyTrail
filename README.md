@@ -12,6 +12,7 @@
 ![https://github.com/sree-hari-s/MasteringPyTrail/graphs/contributors](https://img.shields.io/github/contributors/sree-hari-s/MasteringPyTrail) &nbsp;
 ![https://github.com/sree-hari-s/MasteringPyTrail/stargazers](https://img.shields.io/github/stars/sree-hari-s/MasteringPyTrail?color=red) &nbsp;
 ![https://github.com/sree-hari-s/MasteringPyTrail/watchers](https://img.shields.io/github/watchers/sree-hari-s/MasteringPyTrail?color=yellow) &nbsp;
+![GitHub repo size](https://img.shields.io/github/repo-size/sree-hari-s/MasteringPyTrail) &nbsp;
 ![https://github.com/sree-hari-s/MasteringPyTrail/license](https://img.shields.io/github/license/sree-hari-s/MasteringPyTrail) &nbsp;
 
 </div>
