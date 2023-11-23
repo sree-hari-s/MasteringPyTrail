@@ -4,11 +4,13 @@ from bs4 import BeautifulSoup
 URL = "https://news.ycombinator.com/"
 page = requests.get(URL)
 
+"""
 # Get the source code of the page to an index.html file that
+
 with open('index.html','w') as file:
     file.write(page.text)
 
-soup = BeautifulSoup(page.text , 'html.parser')
+"""
 
 """
 Finding a single item
@@ -22,6 +24,7 @@ link = link_tag.get('href')
 upvote = subtexts.getText().split()[0]
 """
 
+soup = BeautifulSoup(page.text , 'html.parser')
 articles = soup.find_all('span',class_='titleline')
 subtexts = soup.find_all(name="td", class_="subtext")
 
