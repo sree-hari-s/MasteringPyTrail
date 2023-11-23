@@ -1,3 +1,6 @@
+"""
+Local website data scraped using bs4
+"""
 from bs4 import BeautifulSoup
 
 with open('website.html',encoding="utf-8") as f:
