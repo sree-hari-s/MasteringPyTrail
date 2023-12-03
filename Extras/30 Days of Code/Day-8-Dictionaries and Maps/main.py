@@ -1,16 +1,21 @@
-# Enter your code here. Read input from STDIN. Print output to STDOUT
+# Input the number of entries in the phonebook
 n = int(input())
+
+# Initialize an empty dictionary to store phonebook entries
 phonebook = {}
-for i in range(n):
-    line = input().split()
-    phonebook[line[0]] = phonebook.get(line[0],line[1])
+
+# Input phonebook entries
+for _ in range(n):
+    entry = input().split()
+    name, phone_number = entry[0], entry[1]
+    phonebook[name] = phone_number
 
 while True:
     try:
-        q = input()
-        if q in phonebook:
-            print(f"{str(q)}={str(phonebook[q])}")
+        query_name = input()
+        if query_name in phonebook:
+            print(f"{query_name}={phonebook[query_name]}")
         else:
             print("Not found")
-    except:
+    except EOFError:
         break
