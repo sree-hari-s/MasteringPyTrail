@@ -25,7 +25,7 @@ Solution for [30 Days of Code](https://www.hackerrank.com/domains/tutorials/30-d
 | Day 18 |  [Queues and Stacks](https://github.com/sree-hari-s/MasteringPyTrail/blob/master/Extras/30%20Days%20of%20Code/Day-18-Queues%20and%20Stacks/main.py)|
 | Day 19 |  [Interfaces](https://github.com/sree-hari-s/MasteringPyTrail/blob/master/Extras/30%20Days%20of%20Code/Day-19-Interfaces/main.py)|
 | Day 20 |  [Sorting](https://github.com/sree-hari-s/MasteringPyTrail/blob/master/Extras/30%20Days%20of%20Code/Day-20-Sorting/main.py)|
-| Day 21 |  Generics|
+| Day 21 |  [Generics](https://www.hackerrank.com/challenges/30-generics/problem?isFullScreen=true)|
 | Day 22 |  [Binary Search Trees](https://github.com/sree-hari-s/MasteringPyTrail/blob/master/Extras/30%20Days%20of%20Code/Day-22-Binary%20Search%20Trees/main.py)|
 | Day 23 |  [BST Level-Order Traversal](https://github.com/sree-hari-s/MasteringPyTrail/blob/master/Extras/30%20Days%20of%20Code/Day-23-BST%20Level%20Order-Traversal/main.py)|
 | Day 24 |  [More Linked Lists](https://github.com/sree-hari-s/MasteringPyTrail/blob/master/Extras/30%20Days%20of%20Code/Day-24-More%20Linked%20Lists/main.py)|
