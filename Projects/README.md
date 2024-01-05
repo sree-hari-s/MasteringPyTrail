@@ -4,13 +4,14 @@ This repository contains a collection of various projects showcasing different s
 
 ## Project List
 
-- [Coffee Machine Program](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Coffee%20Machine/README.md)
-- [Coffee Machine Program](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Coffee%20Machine%20using%20OOPs/README.md) (OOP).
-- [Higher Lower Game](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Higher%20Lower%20Game/README.md)
-- [Quiz App](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Quiz%20App/README.md)
-- [Blackjack Game](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/The%20BlackJack/README.md)
-- [BMI Calculator](https://github.com/sree-hari-s/MasteringPyTrail/tree/master/Projects/BMI%20Calculator/README.md)
-- [Keyboard Xylophone](https://github.com/sree-hari-s/MasteringPyTrail/tree/master/Projects/Keyboard%20Xylophone/README.md)
+- [CLI Projects]()
+  - [Coffee Machine Program](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Coffee%20Machine/README.md)
+  - [Coffee Machine Program](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Coffee%20Machine%20using%20OOPs/README.md) (OOP).
+  - [Higher Lower Game](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Higher%20Lower%20Game/README.md)
+  - [Quiz App](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/Quiz%20App/README.md)
+  - [Blackjack Game](https://github.com/sree-hari-s/MasteringPyTrail/blob/main/Projects/The%20BlackJack/README.md)
+  - [BMI Calculator](https://github.com/sree-hari-s/MasteringPyTrail/tree/master/Projects/BMI%20Calculator/README.md)
+  - [Keyboard Xylophone](https://github.com/sree-hari-s/MasteringPyTrail/tree/master/Projects/Keyboard%20Xylophone/README.md)
 - [Pygame Projects](https://github.com/sree-hari-s/MasteringPyTrail/tree/master/Projects/Pygame-Projects/README.md)
   - [NyChess](https://github.com/sree-hari-s/MasteringPyTrail/tree/master/Projects/Pygame-Projects/NyChess/README.md)
 - [Tkinter-Projects](https://github.com/sree-hari-s/MasteringPyTrail/tree/master/Projects/Tkinter-Projects/README.md)
