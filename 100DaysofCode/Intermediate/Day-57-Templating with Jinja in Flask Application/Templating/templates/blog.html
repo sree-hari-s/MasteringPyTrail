@@ -1,0 +1,18 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+</head>
+<body>
+    <h1>Blogs</h1>
+    {% for blog in blogs: %}
+    <h2> {{blog['id']}}.{{blog['title']}}</h2>
+    <h3>{{blog['subtitle']}} </h3>
+    <p>{{blog['body']}}</p>
+    {% endfor %}
+</body>
+<footer>
+    <p>Copyright {{current_year}}</p>
+</footer>
+</html>
