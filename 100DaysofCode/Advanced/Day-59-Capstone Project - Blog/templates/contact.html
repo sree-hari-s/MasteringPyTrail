@@ -1,15 +1,20 @@
-<!-- Navigation-->
 {% include "header.html" %}
+
 <!-- Page Header-->
 <header
   class="masthead"
-  style="background-image: url('static/assets/img/contact-bg.jpg')"
+  style="background-image: url('../static/assets/img/contact-bg.jpg')"
 >
   <div class="container position-relative px-4 px-lg-5">
     <div class="row gx-4 gx-lg-5 justify-content-center">
       <div class="col-md-10 col-lg-8 col-xl-7">
         <div class="page-heading">
+        <!-- Solution: Use an if statement to change the h1-->
+          {% if msg_sent: %}
+          <h1>Successfully sent your message</h1>
+          {% else: %}
           <h1>Contact Me</h1>
+          {% endif %}
           <span class="subheading">Have questions? I have answers.</span>
         </div>
       </div>
@@ -27,95 +32,60 @@
         </p>
         <div class="my-5">
           <!-- * * * * * * * * * * * * * * *-->
-          <!-- * * SB Forms Contact Form * *-->
-          <!-- * * * * * * * * * * * * * * *-->
-          <!-- This form is pre-integrated with SB Forms.-->
-          <!-- To make this form functional, sign up at-->
-          <!-- https://startbootstrap.com/solution/contact-forms-->
-          <!-- to get an API token!-->
-          <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+          <!-- * * Simplified SB Contact Form for the Tutorial* *-->
+          <form
+            id="contactForm"
+            name="sentMessage"
+            action="{{ url_for('contact') }}"
+            method="post"
+          >
             <div class="form-floating">
               <input
                 class="form-control"
                 id="name"
+                name="name"
                 type="text"
                 placeholder="Enter your name..."
-                data-sb-validations="required"
+                required
               />
               <label for="name">Name</label>
-              <div class="invalid-feedback" data-sb-feedback="name:required">
-                A name is required.
-              </div>
             </div>
             <div class="form-floating">
               <input
                 class="form-control"
                 id="email"
+                name="email"
                 type="email"
                 placeholder="Enter your email..."
-                data-sb-validations="required,email"
+                required
               />
               <label for="email">Email address</label>
-              <div class="invalid-feedback" data-sb-feedback="email:required">
-                An email is required.
-              </div>
-              <div class="invalid-feedback" data-sb-feedback="email:email">
-                Email is not valid.
-              </div>
             </div>
             <div class="form-floating">
               <input
                 class="form-control"
                 id="phone"
+                name="phone"
                 type="tel"
                 placeholder="Enter your phone number..."
-                data-sb-validations="required"
+                required
               />
               <label for="phone">Phone Number</label>
-              <div class="invalid-feedback" data-sb-feedback="phone:required">
-                A phone number is required.
-              </div>
             </div>
             <div class="form-floating">
               <textarea
                 class="form-control"
                 id="message"
+                name="message"
                 placeholder="Enter your message here..."
+                required
                 style="height: 12rem"
-                data-sb-validations="required"
               ></textarea>
               <label for="message">Message</label>
-              <div class="invalid-feedback" data-sb-feedback="message:required">
-                A message is required.
-              </div>
             </div>
             <br />
-            <!-- Submit success message-->
-            <!---->
-            <!-- This is what your users will see when the form-->
-            <!-- has successfully submitted-->
-            <div class="d-none" id="submitSuccessMessage">
-              <div class="text-center mb-3">
-                <div class="fw-bolder">Form submission successful!</div>
-                To activate this form, sign up at
-                <br />
-                <a href="https://startbootstrap.com/solution/contact-forms"
-                  >https://startbootstrap.com/solution/contact-forms</a
-                >
-              </div>
-            </div>
-            <!-- Submit error message-->
-            <!---->
-            <!-- This is what your users will see when there is-->
-            <!-- an error submitting the form-->
-            <div class="d-none" id="submitErrorMessage">
-              <div class="text-center text-danger mb-3">
-                Error sending message!
-              </div>
-            </div>
-            <!-- Submit Button-->
             <button
-              class="btn btn-primary text-uppercase disabled"
+              class="btn btn-primary text-uppercase"
               id="submitButton"
               type="submit"
             >
@@ -127,5 +97,5 @@
     </div>
   </div>
 </main>
-<!-- Footer-->
+
 {% include "footer.html" %}
