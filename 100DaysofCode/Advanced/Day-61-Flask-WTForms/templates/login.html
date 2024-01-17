@@ -1,22 +1,21 @@
-<!DOCTYPE HTML>
+{% extends "base.html" %}
+{% from 'bootstrap4/form.html' import render_form %}
+{% block title %}Login{% endblock %}
+{% block content %}
+<div class="container">
+	<h1>Login</h1>
+	<!-- this line of code will do is generate all the labels, inputs, buttons, styling for your form just by taking the WTForm object that was passed to the template (form). -->
+	{{ render_form(form) }}
 
-<html>
-	<head>
-		<title>Login</title>
-	</head>
-	<body>
-		<div class="container">
-			<h1>Login</h1>
-			<form method="POST" action="{{ url_for('login') }}">
-				{{ form.csrf_token }}
-				<p>
-				{{ form.email.label }} <br>{{ form.email(size=30) }}
-			</p>
-			<p>	
+	<!-- <form method="POST" action="{{ url_for('login') }}">
+		{{ form.csrf_token }}
+		<p>
+			{{ form.email.label }} <br>{{ form.email(size=30) }}
+		</p>
+		<p>
 			{{ form.password.label }} <br> {{ form.password(size=30) }}
-		</p>	
-			{{form.submit}}
-			</form>
-		</div>
-	</body>
-</html>
+		</p>
+		{{form.submit}}
+	</form> -->
+</div>
+{% endblock %}
