@@ -1,20 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% block title %}Edit Rating{% endblock %}
 
-<head>
-    <meta charset="UTF-8" />
-    <title>Edit Rating</title>
-</head>
-
-<body>
-    <h1>Edit Rating</h1>
-    <form action="{{ url_for('edit') }}" method="POST">
-        <p>Book Name: {{book.title}}</p>
-        <p>Current Rating {{book.rating}}</p>
-        <input hidden="hidden" name="id" value="{{book.id}}" />
-        <input name="rating" type="number" placeholder="New Rating" required/>
-        <button type="submit">Change Rating</button>
-    </form>
-</body>
-
-</html>
+{% block content %}
+<h1>Edit Rating</h1>
+<form action="{{ url_for('edit') }}" method="POST">
+    <p>Book Name: {{book.title}}</p>
+    <p>Current Rating {{book.rating}}</p>
+    <input hidden="hidden" name="id" value="{{book.id}}" />
+    <input name="rating" type="number" placeholder="New Rating" required />
+    <button type="submit">Change Rating</button>
+</form>
+{% endblock %}

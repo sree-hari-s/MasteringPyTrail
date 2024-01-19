@@ -1,19 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Add Book</title>
-  </head>
-  <body>
-    <h1>Add Book</h1>
-    <form action="/add" method="POST">
-      <label>Book Name</label>
-      <input type="text" name="title" />
-      <label>Book Author</label>
-      <input type="text" name="author" />
-      <label>Rating</label>
-      <input type="text" name="rating" />
-      <button type="submit">Add Book</button>
-    </form>
-  </body>
-</html>
+{% extends 'base.html' %}
+{% block title %}Add Book{% endblock %}
+{% block content %}
+<h1>Add Book</h1>
+<form action="/add" method="POST">
+  <label>Book Name</label>
+  <input type="text" name="title" required />
+  <label>Book Author</label>
+  <input type="text" name="author" required />
+  <label>Rating</label>
+  <input type="number" name="rating" required />
+  <button type="submit">Add Book</button>
+</form>
+<a href="{{ url_for('home') }}"><button>Home</button></a>
+{% endblock %}

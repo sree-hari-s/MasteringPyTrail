@@ -1,26 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'base.html' %}
+{% block title %}Library{% endblock %}
 
-<head>
-  <meta charset="UTF-8" />
-  <title>Library</title>
-</head>
-
-<body>
-  <h1>My Library</h1>
-  {% if books.all() == []: %}
-  <p>Library is empty.</p>
-  {% endif %}
-  <ul>
-    {% for book in books %}
-    <li>
-      {{book.title}} - {{book.author}} - {{book.rating}}/10
-      <a href="{{ url_for('edit', id=book.id) }}"><button>Edit Rating</button></a>
-      <a href="{{ url_for('delete', id=book.id) }}"><button>Delete</button></a>
-    </li>
-    {% endfor %}
-  </ul>
-  <a href="{{ url_for('add') }}"><button>Add New Book</button></a>
-</body>
-
-</html>
+{% block content %}
+<h1>My Library</h1>
+{% if books.all() == []: %}
+<h4>Library is empty.</h4>
+{% endif %}
+<ul>
+  {% for book in books %}
+  <li>
+    {{book.title}} - {{book.author}} - {{book.rating}}/10
+    <a href="{{ url_for('edit', id=book.id) }}"><button>Edit Rating</button></a>
+    <a href="{{ url_for('delete', id=book.id) }}"><button>Delete</button></a>
+  </li>
+  {% endfor %}
+</ul>
+<a href="{{ url_for('add') }}"><button>Add New Book</button></a>
+{% endblock %}

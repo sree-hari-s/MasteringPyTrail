@@ -1,8 +1,9 @@
 from flask import Flask, render_template, request, redirect, url_for
 from flask_sqlalchemy import SQLAlchemy
+from flask_bootstrap import Bootstrap5
 
 app = Flask(__name__)
-
+Bootstrap5(app)
 # all_books = []
 
 # Create a SQLite database
