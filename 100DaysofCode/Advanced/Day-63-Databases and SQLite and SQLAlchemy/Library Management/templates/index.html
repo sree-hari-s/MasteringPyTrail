@@ -8,7 +8,7 @@
 
 <body>
   <h1>My Library</h1>
-  {% if books == []: %}
+  {% if books.all() == []: %}
   <p>Library is empty.</p>
   {% endif %}
   <ul>
@@ -20,7 +20,7 @@
     </li>
     {% endfor %}
   </ul>
-  <a href="{{ url_for('add') }}">Add New Book</a>
+  <a href="{{ url_for('add') }}"><button>Add New Book</button></a>
 </body>
 
 </html>
