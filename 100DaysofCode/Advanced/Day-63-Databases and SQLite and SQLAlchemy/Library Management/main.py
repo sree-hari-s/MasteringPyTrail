@@ -26,7 +26,9 @@ with app.app_context():
 def home():
     # print(all_books)
     result = db.session.execute(db.select(Book).order_by(Book.title))
-    all_books = result.scalars()
+    all_books = list(result.scalars())
+    for book in all_books:
+        print(f"Name:{book.title},Author:{book.author},Rating:{book.rating}")
     return render_template('index.html',books=all_books)
 
 

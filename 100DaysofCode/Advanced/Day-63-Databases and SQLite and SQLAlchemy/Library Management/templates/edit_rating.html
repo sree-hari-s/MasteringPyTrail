@@ -1,13 +1,13 @@
-{% extends 'base.html' %}
-{% block title %}Edit Rating{% endblock %}
-
-{% block content %}
+{% extends 'base.html' %} {% block title %}Edit Rating{% endblock %} {% block
+content %}
 <h1>Edit Rating</h1>
 <form action="{{ url_for('edit') }}" method="POST">
     <p>Book Name: {{book.title}}</p>
-    <p>Current Rating {{book.rating}}</p>
-    <input hidden="hidden" name="id" value="{{book.id}}" />
-    <input name="rating" type="number" placeholder="New Rating" required />
-    <button type="submit">Change Rating</button>
+    <p>Current Rating: <strong>{{book.rating}}/10</strong></p>
+    <div class="mb-3">
+        <input hidden="hidden" name="id" value="{{book.id}}" />
+        <input name="rating" type="number" placeholder="New Rating" min="0" max="10" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Change Rating</button>
 </form>
 {% endblock %}

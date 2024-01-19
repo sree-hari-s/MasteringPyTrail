@@ -1,19 +1,30 @@
 {% extends 'base.html' %}
 {% block title %}Library{% endblock %}
-
+{% from 'bootstrap4/table.html' import render_table %}
 {% block content %}
 <h1>My Library</h1>
-{% if books.all() == []: %}
+{% if books %}
+<table class="table" border="0">
+  <tr>
+    <th>Title-Book Name</th>
+    <th>Author</th>
+    <th>Rating</th>
+    <th>Actions</th>
+  </tr>
+  {% for book in books %}
+  <tr>
+    <td>{{ book.title }}</td>
+    <td>{{ book.author }}</td>
+    <td>{{ book.rating }}/10</td>
+    <td>
+      <a href="{{ url_for('edit', id=book.id) }}"><button type="button" class="btn btn-info">Edit Rating</button></a>
+      <a href="{{ url_for('delete', id=book.id) }}"><button type="button" class="btn btn-danger">Delete</button></a>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+{% else %}
 <h4>Library is empty.</h4>
 {% endif %}
-<ul>
-  {% for book in books %}
-  <li>
-    {{book.title}} - {{book.author}} - {{book.rating}}/10
-    <a href="{{ url_for('edit', id=book.id) }}"><button>Edit Rating</button></a>
-    <a href="{{ url_for('delete', id=book.id) }}"><button>Delete</button></a>
-  </li>
-  {% endfor %}
-</ul>
-<a href="{{ url_for('add') }}"><button>Add New Book</button></a>
+<a href="{{ url_for('add') }}"><button type="button" class="btn btn-primary">Add New Book</button></a>
 {% endblock %}

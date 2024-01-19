@@ -1,15 +1,20 @@
-{% extends 'base.html' %}
-{% block title %}Add Book{% endblock %}
-{% block content %}
+{% extends 'base.html' %} {% block title %}Add Book{% endblock %} {% block
+content %}
 <h1>Add Book</h1>
 <form action="/add" method="POST">
-  <label>Book Name</label>
-  <input type="text" name="title" required />
-  <label>Book Author</label>
-  <input type="text" name="author" required />
-  <label>Rating</label>
-  <input type="number" name="rating" required />
-  <button type="submit">Add Book</button>
+  <div class="mb-3">
+    <label class="form-label">Book Name</label>
+    <input type="text" name="title" class="form-control" required />
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Book Author</label>
+    <input type="text" name="author" class="form-control" required />
+  </div>
+  <div class="mb-3">
+    <label class="form-label">Rating</label>
+    <input type="number" name="rating" min="0" max="10" class="form-control" required />
+  </div>
+  <button type="submit" class="btn btn-primary">Add Book</button>
 </form>
-<a href="{{ url_for('home') }}"><button>Home</button></a>
+<a href="{{ url_for('home') }}"><button type="button" class="btn btn-secondary">Home</button></a>
 {% endblock %}
