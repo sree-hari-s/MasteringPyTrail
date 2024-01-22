@@ -53,10 +53,11 @@ class FindMovieForm(FlaskForm):
 
 @app.route("/")
 def home():
-    movie_data = db.session.execute(db.select(Movie).order_by(Movie.title))
+    movie_data = db.session.execute(db.select(Movie).order_by(Movie.rating))
     all_movies = list(movie_data.scalars())
-    for movie in all_movies:
-        print(f"Name:{movie.title}")
+    for i in range(len(all_movies)):
+        all_movies[i].ranking = len(all_movies) - i
+    db.session.commit()
     return render_template("index.html",movies=all_movies)
 
 @app.route('/edit',methods=["GET", "POST"])
