@@ -68,7 +68,7 @@ Are you passionate about Python programming and eager to share your expertise? T
 
 - If you wish to [contribute](CONTRIBUTING.md) in any way, feel free to get involved. You can suggest improvements, share additional resources, or provide support and encouragement by [opening an issue](https://github.com/sree-hari-s/MasteringPyTrail/issues).
 
-Join us for Hacktober and empower others on their Python journey through 'MasteringPyTrail.
+Join us and empower others on their Python journey through 'MasteringPyTrail.
 
 ## Contributors
 
