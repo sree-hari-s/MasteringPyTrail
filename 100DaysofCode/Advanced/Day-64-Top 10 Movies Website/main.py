@@ -30,6 +30,12 @@ class Movie(db.Model):
 with app.app_context():
     db.create_all()
 
+# CREATE EDIT FORM
+class RateMovieForm(FlaskForm):
+    rating = StringField("Your Rating Out of 10 e.g. 7.5")
+    review = StringField("Your Review")
+    submit = SubmitField("Submit")
+
 @app.route("/")
 def home():
     movie_data = db.session.execute(db.select(Movie).order_by(Movie.title))
@@ -38,6 +44,21 @@ def home():
         print(f"Name:{movie.title}")
     return render_template("index.html",movies=all_movies)
 
+@app.route('/edit',methods=["GET", "POST"])
+def edit():
+    form = RateMovieForm()
+    movie_id = request.args.get('id')
+    movie = db.get_or_404(Movie,movie_id)
+    if form.validate_on_submit():
+        try:
+            movie.rating = float(form.rating.data)
+        except ValueError:
+            movie.rating = movie.rating
+        finally:
+            movie.review = form.review.data
+            db.session.commit()
+        return redirect(url_for('home'))
+    return render_template('edit.html',movie=movie,form=form)
 
 if __name__ == '__main__':
     app.run(debug=True)
