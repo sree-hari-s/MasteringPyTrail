@@ -19,7 +19,7 @@ db = SQLAlchemy(app)
 
 MOVIE_DB_API_KEY=os.environ['API_KEY']
 MOVIE_DB_IMAGE_URL = "https://image.tmdb.org/t/p/w500"
-MOVIE_DB_SEARCH_URL = "https://api.themoviedb.org/3/search/movie?query=avatar&include_adult=false&language=en-US&page=1"
+MOVIE_DB_SEARCH_URL = "https://api.themoviedb.org/3/search/movie"
 
 headers = {
     "accept": "application/json",
