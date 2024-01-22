@@ -112,7 +112,8 @@ def find_movie():
             year = data['release_date'].split('-')[0],
             img_url=f"{MOVIE_DB_IMAGE_URL}/{data['poster_path']}",
             description = data['overview'],
-            rating = data['vote_average']
+            rating = data['vote_average'],
+            review = ''
         )                                          
         db.session.add(new_movie)
         db.session.commit()
