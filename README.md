@@ -1,6 +1,5 @@
 <h1 align="center"> MasteringPyTrail </h1>
 <p align="center">
-    <a href="https://github.com/SVijayB/PyHub"><img src="assets/logo-hacktober.svg" alt="Logo" border="0"></a><br>
     <a href="https://github.com/SVijayB/PyHub"><img src="assets/pyLogo.png" alt="Logo" border="0"></a>
     <br>Blaze Your Python Mastery Trail
 </p>
