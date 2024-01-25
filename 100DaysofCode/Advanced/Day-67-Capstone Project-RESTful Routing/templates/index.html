@@ -30,7 +30,7 @@
         <!-- TODO: Add code to delete posts below -->
         <p class="post-meta">
           Posted by
-          <a href="#">{{post.author}}</a>
+          <a href="#" style="pointer-events: none">{{post.author}}</a>
           on {{post.date}}
         </p>
       </div>
@@ -43,7 +43,7 @@
       <!-- TODO: Adding new posts -->
         <a
           class="btn btn-primary float-right"
-          href="TODO: add code to add_new_post here"
+          href="{{url_for('add_new_post')}}"
           >Create New Post</a
         >
       </div>

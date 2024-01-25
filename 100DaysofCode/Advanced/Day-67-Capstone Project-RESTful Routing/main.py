@@ -2,7 +2,7 @@ import os
 from flask import Flask, render_template, redirect, url_for
 from flask_bootstrap import Bootstrap5
 from flask_sqlalchemy import SQLAlchemy
-from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
+from sqlalchemy.orm import DeclarativeBase
 from sqlalchemy import Integer, String, Text
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField
@@ -12,6 +12,7 @@ from datetime import date
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.urandom(24)
+ckeditor = CKEditor(app)
 Bootstrap5(app)
 
 # CREATE DATABASE
@@ -20,7 +21,6 @@ class Base(DeclarativeBase):
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///posts.db'
 db = SQLAlchemy(model_class=Base)
 db.init_app(app)
-
 
 # CONFIGURE TABLE
 class BlogPost(db.Model):
@@ -36,7 +36,15 @@ class BlogPost(db.Model):
 with app.app_context():
     db.create_all()
 
-
+# FORM 
+class CreatePostForm(FlaskForm):
+    title = StringField("Blog Post Title",validators=[DataRequired()])
+    subtitle = StringField("Blog Post Subtitle",validators=[DataRequired()])
+    author = StringField("Blog Post Author",validators=[DataRequired()])
+    img_url = StringField("Blog Image URL",validators=[DataRequired()])
+    body = CKEditorField("Blog Content", validators=[DataRequired()])
+    submit = SubmitField("Submit Post")
+    
 @app.route('/')
 def get_all_posts():
     # Query the database for all the posts. Convert the data to a python list.
@@ -52,8 +60,22 @@ def show_post(post_id):
     return render_template("post.html", post=requested_post)
 
 
-# TODO: add_new_post() to create a new blog post
-
+@app.route('/new-post',methods=['GET','POST'])
+def add_new_post():
+    form = CreatePostForm()
+    if form.validate_on_submit():
+        new_post = BlogPost(
+            title = form.title.data,
+            subtitle = form.subtitle.data,
+            body = form.body.data,
+            img_url = form.img_url.data,
+            author = form.author.data,
+            date = date.today().strftime("%B %d, %Y")
+        )
+        db.session.add(new_post)
+        db.session.commit()
+        return redirect(url_for('get_all_posts'))
+    return render_template("make-post.html",form=form)
 # TODO: edit_post() to change an existing blog post
 
 # TODO: delete_post() to remove a blog post from the database
