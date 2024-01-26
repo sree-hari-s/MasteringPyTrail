@@ -27,10 +27,9 @@
         {{ post.body|safe }}
 
         <div class="d-flex justify-content-end mb-4">
-          <!-- TODO: Editing posts-->
           <a
             class="btn btn-primary float-right"
-            href="TODO: Add code to edit_post here"
+            href="{{url_for('edit_post',post_id=post.id)}}"
             >Edit Post</a
           >
         </div>
