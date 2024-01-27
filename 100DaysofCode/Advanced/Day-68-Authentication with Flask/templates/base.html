@@ -31,10 +31,11 @@
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('register') }}">Register</a>
           </li>
-          {% endif %}
+          {% else %}
           <li class="nav-item">
             <a class="nav-link" href="{{ url_for('logout') }}">Log Out</a>
           </li>
+          {% endif %}
         </ul>
       </div>
     </nav>

@@ -31,13 +31,13 @@ class User(db.Model):
 
     def is_active(self):
         return True
- 
+
     def is_authenticated(self):
         return True
- 
+
     def is_anonymous(self):
         return False
- 
+
     def get_id(self):
         return self.id
     
@@ -47,7 +47,7 @@ with app.app_context():
 
 @app.route('/')
 def home():
-    return render_template("index.html")
+    return render_template("index.html",logged_in=current_user.is_authenticated)
 
 
 @app.route('/register', methods=["GET", "POST"])
@@ -82,7 +82,7 @@ def register():
         # Can redirect() and get name from the current_user
         return redirect(url_for("secrets"))
 
-    return render_template("register.html")
+    return render_template("register.html",logged_in=current_user.is_authenticated)
 
 
 @app.route('/login', methods=["GET", "POST"])
@@ -101,13 +101,13 @@ def login():
         else:
             login_user(user)
             return redirect(url_for('secrets'))
-    return render_template("login.html")
+    return render_template("login.html",logged_in=current_user.is_authenticated)
 
 
 @app.route('/secrets')
 @login_required
 def secrets():
-    return render_template("secrets.html",name=current_user.name)
+    return render_template("secrets.html",name=current_user.name,logged_in=True)
 
 
 @app.route('/logout')
