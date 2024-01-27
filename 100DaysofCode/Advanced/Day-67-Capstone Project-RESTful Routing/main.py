@@ -1,5 +1,6 @@
 import os
-from flask import Flask, render_template, redirect, url_for
+import smtplib
+from flask import Flask, render_template, redirect, url_for,request
 from flask_bootstrap import Bootstrap5
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import DeclarativeBase
@@ -9,7 +10,12 @@ from wtforms import StringField, SubmitField
 from wtforms.validators import DataRequired, URL
 from flask_ckeditor import CKEditor, CKEditorField
 from datetime import date
+from dotenv import load_dotenv
 
+load_dotenv()
+
+OWN_EMAIL=os.environ['EMAIL']
+OWN_PASSWORD=os.environ['PASSWORD']
 app = Flask(__name__)
 app.config['SECRET_KEY'] = os.urandom(24)
 ckeditor = CKEditor(app)
@@ -110,9 +116,24 @@ def about():
     return render_template("about.html")
 
 
-@app.route("/contact")
+@app.route('/contact',methods=['GET', 'POST'])
 def contact():
-    return render_template("contact.html")
+    if request.method == 'POST':
+        data = request.form
+        name = data.get("name")
+        email = data.get("email")
+        phone = data.get("phone")
+        message = data.get("message")
+        send_email(name,email,phone,message)
+        return render_template('contact.html',msg_sent = True)
+    return render_template('contact.html')
+
+def send_email(name, email, phone, message):
+    email_message = f"Subject:New Message\n\nName: {name}\nEmail: {email}\nPhone: {phone}\nMessage:{message}"
+    with smtplib.SMTP("smtp.gmail.com", port="587") as connection:
+        connection.starttls()
+        connection.login(OWN_EMAIL, OWN_PASSWORD)
+        connection.sendmail(OWN_EMAIL, OWN_EMAIL, email_message)
 
 
 if __name__ == "__main__":
