@@ -14,7 +14,7 @@ from werkzeug.security import generate_password_hash, check_password_hash
 from functools import wraps
 from flask import abort
 # Import your forms from the forms.py
-from forms import CreatePostForm,RegisterForm,LoginForm
+from forms import CreatePostForm,RegisterForm,LoginForm,CommentForm
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -36,6 +36,16 @@ login_manager.init_app(app)
 def load_user(user_id):
     return db.get_or_404(User, user_id)
 
+# For adding profile images to the comment section
+gravatar = Gravatar(app,
+                    size=100,
+                    rating='g',
+                    default='retro',
+                    force_default=False,
+                    force_lower=False,
+                    use_ssl=False,
+                    base_url=None)
+
 # CREATE DATABASE
 class Base(DeclarativeBase):
     pass
@@ -47,24 +57,35 @@ db.init_app(app)
 # CONFIGURE TABLES
 class BlogPost(db.Model):
     __tablename__ = "blog_posts"
-    id: Mapped[int] = db.Column(db.Integer, primary_key=True)
-    author_id: Mapped[int] = db.Column(ForeignKey("blog_users.id"))
+    id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(250), unique=True, nullable=False)
     subtitle = db.Column(db.String(250), nullable=False)
     date = db.Column(db.String(250), nullable=False)
     body = db.Column(db.Text, nullable=False)
-    author: Mapped["User"] = relationship(back_populates="posts")
     img_url = db.Column(db.String(250), nullable=False)
+    author = db.relationship("User", back_populates="blogposts")
+    author_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    comments = db.relationship("Comment", back_populates="blogpost")
 
-#  User table for all your registered users. 
-class User(UserMixin, db.Model):
-    __tablename__ = "blog_users"
-    id: Mapped[int] = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(250), nullable=False)
-    email = db.Column(db.String(250), unique=True, nullable=False)
-    password = db.Column(db.String(250), nullable=False)
-    posts: Mapped[list["BlogPost"]] = relationship(back_populates="author")
+class Comment(db.Model):
+    __tablename__ = "comments"
+    id = db.Column(db.Integer, primary_key=True)
+    body = db.Column(db.Text, nullable=False)
+    author = db.relationship("User", back_populates="comments")
+    author_id = db.Column(db.Integer, db.ForeignKey('user.id'))
+    blogpost = db.relationship("BlogPost", back_populates="comments")
+    blogpost_id = db.Column(db.Integer, db.ForeignKey('blog_posts.id'))
 
+# TODO: Create a User table for all your registered users. 
+class User(db.Model, UserMixin):
+    __tablename__ = "user"
+    id = db.Column(db.Integer, primary_key=True)
+    name = db.Column(db.String(1000))
+    email = db.Column(db.String(100), unique=True)
+    password = db.Column(db.String(100))
+    blogposts = db.relationship("BlogPost", back_populates="author")
+    comments = db.relationship("Comment", back_populates="author")
+    
 with app.app_context():
     db.create_all()
 
@@ -144,11 +165,26 @@ def get_all_posts():
     return render_template("index.html", all_posts=posts)
 
 
-# TODO: Allow logged-in users to comment on posts
-@app.route("/post/<int:post_id>")
+# Allow logged-in users to comment on posts
+@app.route("/post/<int:post_id>", methods=["GET", "POST"])
 def show_post(post_id):
     requested_post = db.get_or_404(BlogPost, post_id)
-    return render_template("post.html", post=requested_post)
+    form = CommentForm()
+    if form.validate_on_submit():
+        if current_user.is_authenticated: # type: ignore
+            new_comment = Comment(
+                body = form.comment.data,
+                author = current_user,
+                blogpost = requested_post
+            )
+            db.session.add(new_comment)
+            db.session.commit()
+            return redirect(url_for('show_post', post_id=post_id)), 201
+        else:
+            error = "Login required, Please log in."
+            flash(error)
+            return redirect(url_for('login')), 401
+    return render_template("post.html", post=requested_post,current_user=current_user, form=form)
 
 
 # decorator so only an admin user can create a new post
