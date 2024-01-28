@@ -12,7 +12,7 @@ from sqlalchemy import Integer, String, Text
 from functools import wraps
 from werkzeug.security import generate_password_hash, check_password_hash
 # Import your forms from the forms.py
-from forms import CreatePostForm,RegisterForm
+from forms import CreatePostForm,RegisterForm,LoginForm
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -20,26 +20,19 @@ load_dotenv()
 OWN_EMAIL=os.environ['EMAIL']
 OWN_PASSWORD=os.environ['PASSWORD']
 
-'''
-Make sure the required packages are installed: 
-Open the Terminal in PyCharm (bottom left). 
-
-On Windows type:
-python -m pip install -r requirements.txt
-
-On MacOS type:
-pip3 install -r requirements.txt
-
-This will install the packages from the requirements.txt for this project.
-'''
-
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '8BYkEfBA6O6donzWlSihBXox7C0sKR6b'
 ckeditor = CKEditor(app)
 Bootstrap5(app)
 
-# TODO: Configure Flask-Login
+# Flask-Login
+login_manager = LoginManager()
+login_manager.init_app(app)
 
+
+@login_manager.user_loader
+def load_user(user_id):
+    return db.get_or_404(User, user_id)
 
 # CREATE DATABASE
 class Base(DeclarativeBase):
@@ -73,11 +66,18 @@ with app.app_context():
     db.create_all()
 
 
-# TODO: Use Werkzeug to hash the user's password when creating a new user.
+# creating a new user.
 @app.route('/register',methods=['GET','POST'])
 def register():
     form = RegisterForm()
     if form.validate_on_submit():
+        # Check if user email is already present in the database.
+        result = db.session.execute(db.select(User).where(User.email == form.email.data))
+        user = result.scalar()
+        if user:
+            # User already exists
+            flash("You've already signed up with that email, log in instead!")
+            return redirect(url_for('login'))
         hash_password = generate_password_hash(
             form.password.data,
             method='pbkdf2:sha256',
@@ -90,18 +90,35 @@ def register():
         )
         db.session.add(new_user)
         db.session.commit()
+        login_user(new_user)  #This line will authenticate the user with Flask-Login
         return redirect(url_for('get_all_posts'))
     return render_template("register.html",form=form)
 
 
-# TODO: Retrieve a user from the database based on their email. 
-@app.route('/login')
+# Retrieve a user from the database based on their email. 
+@app.route('/login',methods=['GET','POST'])
 def login():
-    return render_template("login.html")
+    form = LoginForm()
+    if form.validate_on_submit():
+        email = form.email.data
+        password = form.password.data
+        result = db.session.execute(db.select(User).where(User.email == email))
+        user = result.scalar()
+        if not user:
+            flash("Email does not exist")
+            return redirect(url_for('login'))
+        elif not check_password_hash(user.password,password):
+            flash("Password Incorrect")
+            return redirect(url_for('login'))
+        else:
+            login_user(user)
+            return redirect(url_for('get_all_posts'))
+    return render_template("login.html",form = form)
 
 
 @app.route('/logout')
 def logout():
+    logout_user()
     return redirect(url_for('get_all_posts'))
 
 
