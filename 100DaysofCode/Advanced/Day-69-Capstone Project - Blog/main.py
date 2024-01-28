@@ -73,7 +73,7 @@ def admin_only(f):
     def decorated_function(*args, **kwargs):
         if not current_user.is_authenticated or current_user.id != 1 :
             return abort(403)
-        return f(args, **kwargs)
+        return f(*args, **kwargs)
     return decorated_function
 
 # creating a new user.
@@ -134,8 +134,12 @@ def logout():
 
 @app.route('/')
 def get_all_posts():
-    result = db.session.execute(db.select(BlogPost))
-    posts = result.scalars().all()
+    try:
+        result = db.session.execute(db.select(BlogPost))
+        posts = result.scalars().all()
+    except Exception as e:
+        print(f"Error fetching posts: {str(e)}")
+        posts = None
     return render_template("index.html", all_posts=posts)
 
 
