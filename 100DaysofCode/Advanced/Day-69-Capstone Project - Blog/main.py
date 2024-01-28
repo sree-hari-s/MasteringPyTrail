@@ -1,5 +1,7 @@
+import os
+import smtplib
 from datetime import date
-from flask import Flask, abort, render_template, redirect, url_for, flash
+from flask import Flask, abort, render_template, redirect, url_for, flash, request
 from flask_bootstrap import Bootstrap5
 from flask_ckeditor import CKEditor
 from flask_gravatar import Gravatar
@@ -11,7 +13,12 @@ from functools import wraps
 from werkzeug.security import generate_password_hash, check_password_hash
 # Import your forms from the forms.py
 from forms import CreatePostForm
+from dotenv import load_dotenv
 
+load_dotenv()
+
+OWN_EMAIL=os.environ['EMAIL']
+OWN_PASSWORD=os.environ['PASSWORD']
 
 '''
 Make sure the required packages are installed: 
@@ -147,9 +154,24 @@ def about():
     return render_template("about.html")
 
 
-@app.route("/contact")
+@app.route('/contact',methods=['GET', 'POST'])
 def contact():
-    return render_template("contact.html")
+    if request.method == 'POST':
+        data = request.form
+        name = data.get("name")
+        email = data.get("email")
+        phone = data.get("phone")
+        message = data.get("message")
+        send_email(name,email,phone,message)
+        return render_template('contact.html',msg_sent = True)
+    return render_template('contact.html')
+
+def send_email(name, email, phone, message):
+    email_message = f"Subject:New Message\n\nName: {name}\nEmail: {email}\nPhone: {phone}\nMessage:{message}"
+    with smtplib.SMTP("smtp.gmail.com", port="587") as connection:
+        connection.starttls()
+        connection.login(OWN_EMAIL, OWN_PASSWORD)
+        connection.sendmail(OWN_EMAIL, OWN_EMAIL, email_message)
 
 
 if __name__ == "__main__":
