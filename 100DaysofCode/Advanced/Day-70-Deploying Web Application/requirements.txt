@@ -22,5 +22,5 @@ python-dotenv==1.0.1
 SQLAlchemy==2.0.25
 typing_extensions==4.9.0
 virtualenv==20.25.0
-Werkzeug==3.0.0
+Werkzeug==3.0.1
 WTForms==3.0.1
