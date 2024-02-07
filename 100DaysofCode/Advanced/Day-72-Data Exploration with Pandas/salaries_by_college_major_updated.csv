@@ -1,0 +1,800 @@
+Rank,Major,Degree Type,Early Career Pay,Mid-Career Median Salary,High Meaning
+1,Petroleum Engineering,Bachelors,97500.0,212500.0,61%
+2,Operations Research & Industrial Engineering,Bachelors,98300.0,191800.0,21%
+3,Interaction Design,Bachelors,74700.0,173600.0,54%
+4,Applied Economics and Management,Bachelors,76500.0,164400.0,54%
+5,Building Science,Bachelors,69000.0,163100.0,47%
+6,Actuarial Mathematics,Bachelors,70700.0,160000.0,52%
+6,Operations Research,Bachelors,92200.0,160000.0,57%
+8,Systems Engineering,Bachelors,87000.0,159100.0,58%
+9,Optical Science & Engineering,Bachelors,79600.0,158300.0,73%
+10,Information & Computer Science,Bachelors,76000.0,157800.0,63%
+11,Aeronautics & Astronautics,Bachelors,88200.0,156900.0,56%
+12,Aerospace Studies,Bachelors,62600.0,154300.0,-
+13,Pharmacy,Bachelors,69400.0,154000.0,79%
+14,Cognitive Science,Bachelors,78000.0,153800.0,43%
+15,Managerial Economics,Bachelors,74700.0,153300.0,38%
+16,Quantitative Economics,Bachelors,74500.0,152700.0,43%
+17,Econometrics,Bachelors,72000.0,152100.0,35%
+18,Foreign Affairs,Bachelors,62900.0,152000.0,32%
+19,Chemical Engineering,Bachelors,85600.0,151800.0,55%
+20,Public Accounting,Bachelors,69700.0,151200.0,47%
+21,Political Economy,Bachelors,73100.0,150600.0,31%
+22,Corporate Accounting & Finance,Bachelors,76800.0,149600.0,50%
+23,Actuarial Science,Bachelors,76700.0,149000.0,42%
+24,Computer Engineering (CE),Bachelors,89100.0,148500.0,46%
+25,Electrical Power Engineering,Bachelors,84700.0,148300.0,72%
+26,Computer Science (CS) & Engineering,Bachelors,90500.0,148200.0,44%
+27,Marine Transportation Management,Bachelors,78700.0,148000.0,-
+28,Marine Engineering,Bachelors,87900.0,147500.0,57%
+28,Operations & Information Systems Management,Bachelors,78800.0,147500.0,24%
+30,Electrical & Computer Engineering (ECE),Bachelors,88100.0,147000.0,49%
+31,Entrepreneurship & Marketing,Bachelors,63200.0,145800.0,45%
+32,Astronomy,Bachelors,75300.0,145600.0,52%
+33,Mechatronics,Bachelors,80900.0,144300.0,46%
+34,Computational & Applied Mathematics,Bachelors,85700.0,144100.0,46%
+35,Aeronautical Engineering,Bachelors,84200.0,143400.0,63%
+36,Welding Engineering,Bachelors,86600.0,143300.0,-
+37,Electrical Engineering (EE),Bachelors,84900.0,143000.0,54%
+38,Electrical & Electronics Engineering (EEE),Bachelors,83900.0,142900.0,57%
+39,Naval Architecture & Marine Engineering,Bachelors,82800.0,142800.0,49%
+40,Instrumentation & Control Engineering,Bachelors,82800.0,141900.0,44%
+41,Construction Engineering Management,Bachelors,78100.0,141800.0,53%
+42,Computer Science (CS) & Mathematics,Bachelors,80300.0,141000.0,44%
+43,Engineering Physics,Bachelors,78600.0,140300.0,48%
+44,Mechanical & Aeronautical Engineering,Bachelors,80900.0,139900.0,62%
+45,Chemical & Biomolecular Engineering,Bachelors,86000.0,139700.0,51%
+45,Computer Science (CS),Bachelors,85400.0,139700.0,42%
+47,Jazz Studies,Bachelors,60000.0,139400.0,51%
+48,Bioscience,Bachelors,59900.0,139300.0,-
+49,Information Management,Bachelors,67000.0,139000.0,33%
+50,Aerospace Engineering,Bachelors,83500.0,138100.0,53%
+51,Ocean Engineering (OE),Bachelors,78500.0,137800.0,49%
+51,Pharmacology,Bachelors,63500.0,137800.0,-
+53,Nuclear Engineering,Bachelors,85200.0,137600.0,55%
+54,Bioengineering (BioE),Bachelors,79500.0,137300.0,67%
+55,Applied Mathematics,Bachelors,77200.0,137000.0,40%
+56,Paper Science,Bachelors,84900.0,136500.0,43%
+56,Physician Assistant Studies,Bachelors,109600.0,136500.0,83%
+58,Materials Science,Bachelors,76700.0,136200.0,-
+59,Engineering,Bachelors,77800.0,135800.0,58%
+60,Industrial & Systems Engineering,Bachelors,82000.0,135700.0,48%
+61,Metallurgical Engineering,Bachelors,90800.0,135500.0,63%
+62,Materials Science & Engineering,Bachelors,81200.0,135300.0,47%
+63,Mining Engineering,Bachelors,87400.0,135200.0,59%
+64,Operations Management & Information Systems,Bachelors,75900.0,134900.0,43%
+65,Business & Information Technology (IT),Bachelors,71400.0,134700.0,50%
+66,Interactive Media Design,Bachelors,59600.0,134400.0,33%
+67,Energy Management,Bachelors,70100.0,134100.0,66%
+67,Physics,Bachelors,75500.0,134100.0,49%
+69,Materials Engineering,Bachelors,81200.0,133900.0,58%
+70,Biomedical Engineering (BME),Bachelors,80300.0,133500.0,71%
+71,Industrial Engineering (IE),Bachelors,80500.0,133400.0,44%
+71,Software Engineering,Bachelors,84200.0,133400.0,45%
+73,Global & International Studies,Bachelors,59400.0,133300.0,55%
+74,Computer & Information Science,Bachelors,72600.0,133100.0,58%
+75,Aeronautical/Aerospace Engineering Technology,Bachelors,82400.0,132800.0,51%
+76,Economics and Mathematics,Bachelors,77100.0,132700.0,38%
+76,Industrial Hygiene,Bachelors,65100.0,132700.0,54%
+78,Engineering Mechanics,Bachelors,82800.0,131900.0,-
+79,Business & Economics,Bachelors,66500.0,131700.0,44%
+80,Astrophysics,Bachelors,78600.0,131200.0,61%
+81,Electronics Engineering,Bachelors,77700.0,130900.0,65%
+81,Telecommunications Engineering,Bachelors,78000.0,130900.0,50%
+83,International Business & Finance,Bachelors,69000.0,130800.0,30%
+84,International Economics,Bachelors,66200.0,130600.0,54%
+85,Business Analysis,Bachelors,71000.0,130300.0,47%
+85,Management Science,Bachelors,73000.0,130300.0,43%
+85,Mechanical Engineering (ME),Bachelors,79600.0,130300.0,49%
+88,Economics,Bachelors,70500.0,130200.0,41%
+89,Ceramic Engineering,Bachelors,76400.0,129900.0,46%
+90,Management Information Systems (MIS),Bachelors,73900.0,129500.0,42%
+91,Industrial Distribution,Bachelors,71400.0,129200.0,48%
+92,Structural Engineering (SE),Bachelors,76200.0,128900.0,67%
+93,Accounting & Taxation,Bachelors,61900.0,128600.0,-
+94,Integrated Science & Technology,Bachelors,71600.0,128400.0,55%
+95,Automotive Engineering,Bachelors,75700.0,128300.0,50%
+96,Mathematics & Statistics,Bachelors,71800.0,128100.0,43%
+97,Packaging Science,Bachelors,78600.0,127600.0,41%
+98,Construction Project Management,Bachelors,69400.0,127400.0,64%
+99,Plastics Engineering,Bachelors,79200.0,127200.0,58%
+100,Information & Decision Sciences,Bachelors,73200.0,126800.0,36%
+101,Applied Physics,Bachelors,75800.0,126500.0,53%
+102,Building Construction (BC),Bachelors,73200.0,125900.0,51%
+102,Petroleum Land Management,Bachelors,66600.0,125900.0,-
+104,Industrial Engineering & Management,Bachelors,74800.0,125700.0,54%
+105,Accounting & Economics,Bachelors,74500.0,125400.0,48%
+105,Psychobiology,Bachelors,58600.0,125400.0,69%
+107,Finance & Economics,Bachelors,70300.0,124800.0,42%
+108,Medicine,Bachelors,88700.0,124700.0,94%
+109,Asian Studies,Bachelors,53100.0,123800.0,43%
+110,Marketing & International Business,Bachelors,59600.0,123500.0,36%
+111,Government,Bachelors,63500.0,123400.0,45%
+112,Business Computer Information Systems (BCIS),Bachelors,74200.0,123300.0,40%
+112,Finance & Real Estate,Bachelors,73500.0,123300.0,42%
+114,Biochemistry & Molecular Biology,Bachelors,61700.0,123100.0,70%
+114,Environmental Health & Safety Management,Bachelors,67500.0,123100.0,61%
+114,Financial Economics,Bachelors,70500.0,123100.0,36%
+117,Business Economics,Bachelors,66500.0,122800.0,45%
+117,Nuclear Engineering Technology (NET),Bachelors,92500.0,122800.0,54%
+119,Mathematics,Bachelors,72300.0,122700.0,44%
+120,Civil Engineering (CE),Bachelors,73400.0,122600.0,65%
+121,Business Information Systems,Bachelors,73800.0,122200.0,45%
+121,Information Systems Management,Bachelors,69500.0,122200.0,48%
+121,Polymer Science & Engineering,Bachelors,82900.0,122200.0,-
+124,Information Security & Assurance,Bachelors,70000.0,122000.0,42%
+124,Applied Economics,Bachelors,69200.0,122000.0,41%
+126,International Management,Bachelors,63100.0,121900.0,42%
+126,Political Communication,Bachelors,56000.0,121900.0,51%
+126,Economics & Political Science,Bachelors,64200.0,121900.0,46%
+129,Accounting & Computer Systems,Bachelors,75400.0,121800.0,-
+129,Civil & Environmental Engineering,Bachelors,73500.0,121800.0,66%
+129,Construction Management,Bachelors,71800.0,121800.0,59%
+129,Construction Science,Bachelors,77500.0,121800.0,67%
+133,Control Engineering,Bachelors,77700.0,121700.0,59%
+134,Russian Studies,Bachelors,56500.0,121600.0,41%
+135,Cybersecurity,Bachelors,72600.0,121500.0,56%
+136,Robotics & Automation,Bachelors,72700.0,121200.0,69%
+137,Computer Management Information Systems (CMIS),Bachelors,63900.0,121100.0,50%
+138,Aeronautical Science,Bachelors,64200.0,121000.0,62%
+138,Manufacturing Engineering,Bachelors,77500.0,121000.0,50%
+140,Information Systems (IS),Bachelors,73000.0,120600.0,45%
+141,Engineering Management,Bachelors,77400.0,120500.0,53%
+142,Computing & Information Systems (CIS),Bachelors,68900.0,120000.0,46%
+143,Mechanical,Bachelors,79800.0,119900.0,41%
+144,Business Logistics & Transportation,Bachelors,64700.0,119800.0,42%
+145,Biosystems Engineering,Bachelors,72600.0,119500.0,69%
+146,Agricultural Economics,Bachelors,61700.0,119400.0,57%
+147,Data Processing,Bachelors,73700.0,119300.0,42%
+147,Food Marketing,Bachelors,65000.0,119300.0,29%
+147,Geophysics,Bachelors,62700.0,119300.0,42%
+150,Management & Finance,Bachelors,64100.0,118800.0,61%
+151,Business Finance,Bachelors,65200.0,118600.0,44%
+151,Construction Engineering,Bachelors,75700.0,118600.0,60%
+151,Organic Chemistry,Bachelors,50600.0,118600.0,-
+154,Real Estate,Bachelors,69400.0,118500.0,42%
+155,Finance,Bachelors,68500.0,118400.0,42%
+155,Plastics Engineering Technology,Bachelors,73600.0,118400.0,34%
+157,European Studies,Bachelors,60900.0,118100.0,41%
+157,Safety Science,Bachelors,70000.0,118100.0,68%
+159,Computer Science & Information Technology,Bachelors,73500.0,118000.0,48%
+160,Japanese Language,Bachelors,59900.0,117900.0,39%
+161,Information Sciences and Technology,Bachelors,72900.0,117800.0,45%
+161,International Business,Bachelors,63100.0,117800.0,40%
+163,Architectural Engineering,Bachelors,74600.0,117700.0,57%
+164,International Marketing,Bachelors,66700.0,117600.0,25%
+164,Molecular Biology,Bachelors,61700.0,117600.0,66%
+166,Building Construction Management,Bachelors,70500.0,117500.0,67%
+167,Business Operations,Bachelors,71300.0,117400.0,-
+168,Computer Information Systems (CIS),Bachelors,69400.0,117300.0,47%
+168,Electrical Engineering Technology (EET),Bachelors,74000.0,117300.0,48%
+170,Government & International Politics (GVIP),Bachelors,58100.0,117200.0,44%
+171,Information Security,Bachelors,75000.0,117100.0,40%
+172,East Asian Studies,Bachelors,57500.0,116900.0,49%
+173,Strategic Management,Bachelors,74900.0,116700.0,48%
+174,Labor Relations,Bachelors,55700.0,116600.0,35%
+175,Entrepreneurship & Leadership,Bachelors,64300.0,116400.0,43%
+176,Agricultural Engineering (AE),Bachelors,71500.0,116300.0,62%
+177,Information Technology Management,Bachelors,71900.0,116100.0,48%
+177,International Relations,Bachelors,60500.0,116100.0,49%
+179,Financial Planning,Bachelors,61200.0,115800.0,59%
+180,Computer Engineering Technology (CET),Bachelors,71100.0,115700.0,45%
+180,Corporate Finance,Bachelors,72400.0,115700.0,40%
+182,Engineering Science,Bachelors,77500.0,115600.0,47%
+183,European History,Bachelors,59400.0,115500.0,41%
+184,Rhetoric,Bachelors,59300.0,114900.0,41%
+185,Network Engineering,Bachelors,69400.0,114600.0,51%
+186,Mechanical Design,Bachelors,68400.0,114500.0,50%
+187,Environmental Engineering,Bachelors,70400.0,114400.0,62%
+188,Chinese Language,Bachelors,61000.0,114000.0,42%
+188,Robotics,Bachelors,87900.0,114000.0,57%
+190,Economics & Management,Bachelors,61500.0,113800.0,47%
+191,Computing,Bachelors,71300.0,113600.0,55%
+191,Product Design,Bachelors,70000.0,113600.0,38%
+193,Mechanical Engineering Technology (MET),Bachelors,72300.0,113200.0,48%
+194,Industrial & Labor Relations,Bachelors,77000.0,113000.0,44%
+195,Food Science & Technology,Bachelors,59800.0,112800.0,49%
+196,Accounting & Auditing,Bachelors,65400.0,112700.0,44%
+197,Biochemistry (BCH),Bachelors,57100.0,112600.0,64%
+198,Accounting & Finance,Bachelors,66900.0,112500.0,46%
+198,Agricultural Economics & Business,Bachelors,62100.0,112500.0,56%
+198,Engineering Technology (ET),Bachelors,65800.0,112500.0,49%
+198,Biotechnology,Bachelors,61100.0,112500.0,62%
+202,Dairy Science,Bachelors,57700.0,112200.0,67%
+202,Operations Management (OM),Bachelors,69700.0,112200.0,44%
+202,Web Development,Bachelors,61600.0,112200.0,43%
+205,Industrial Management,Bachelors,65200.0,111900.0,51%
+205,Information Assurance,Bachelors,61600.0,111900.0,60%
+205,Telecommunication & Information Management,Bachelors,66800.0,111900.0,42%
+208,Environmental Policy Analysis & Planning,Bachelors,58200.0,111600.0,67%
+208,Pharmaceutical Sciences (PS),Bachelors,60900.0,111600.0,69%
+210,Aviation,Bachelors,65000.0,111400.0,52%
+210,Business & Marketing,Bachelors,59000.0,111400.0,46%
+210,Computer Networking Systems,Bachelors,64000.0,111400.0,48%
+210,Organizational Behavior,Bachelors,63500.0,111400.0,56%
+214,Consumer Economics,Bachelors,60600.0,111300.0,46%
+214,Information Technology (IT),Bachelors,67800.0,111300.0,46%
+214,Sales & Business Marketing,Bachelors,63900.0,111300.0,55%
+217,Aviation Management,Bachelors,58000.0,111200.0,56%
+217,Informatics,Bachelors,78700.0,111200.0,46%
+219,Industrial Safety,Bachelors,59400.0,111100.0,82%
+219,Structural Design & Construction Engineering Technology,Bachelors,77000.0,111100.0,48%
+221,Computer Security,Bachelors,76500.0,110800.0,43%
+221,Hotel Administration,Bachelors,76800.0,110800.0,37%
+221,Software Applications & Programming,Bachelors,71400.0,110800.0,33%
+224,Occupational Health and Safety,Bachelors,66800.0,110700.0,69%
+225,Database Management,Bachelors,74500.0,110600.0,-
+226,Business Technology Management,Bachelors,69600.0,110400.0,41%
+226,Production Management,Bachelors,55800.0,110400.0,27%
+228,Business & Finance,Bachelors,63600.0,109800.0,54%
+229,Environmental Health & Safety,Bachelors,64800.0,109600.0,66%
+229,Information Technology (IT) & Systems,Bachelors,70400.0,109600.0,47%
+229,Telecommunications Management,Bachelors,60600.0,109600.0,46%
+232,Electronics Engineering Technology (EET),Bachelors,72600.0,109300.0,51%
+232,Marketing & Management,Bachelors,57700.0,109300.0,47%
+232,Operations & Supply Chain Management,Bachelors,69300.0,109300.0,45%
+232,Physical Therapy,Bachelors,54900.0,109300.0,88%
+232,Politics,Bachelors,59500.0,109300.0,51%
+237,Physics & Astronomy,Bachelors,63700.0,109200.0,33%
+238,Agribusiness,Bachelors,57600.0,109000.0,53%
+238,Chemistry,Bachelors,58500.0,109000.0,56%
+238,Finance & Banking,Bachelors,62600.0,109000.0,47%
+241,Aviation Flight Science (AFL),Bachelors,61500.0,108800.0,49%
+242,Construction Science & Management,Bachelors,73800.0,108600.0,75%
+243,Marketing,Bachelors,58200.0,108400.0,41%
+244,Cell Biology,Bachelors,56800.0,108100.0,55%
+244,Civil Engineering Technology (CET),Bachelors,66000.0,108100.0,61%
+244,Genetics,Bachelors,61200.0,108100.0,72%
+247,Government & Politics,Bachelors,59500.0,107800.0,51%
+248,Biopsychology,Bachelors,60300.0,107500.0,74%
+248,Applied Networking & Systems Administration,Bachelors,67200.0,107500.0,44%
+250,Industrial Technology (IT),Bachelors,71700.0,107400.0,50%
+251,Geological Engineering,Bachelors,68400.0,107200.0,51%
+251,Real Estate Development,Bachelors,66600.0,107200.0,-
+253,Accounts,Bachelors,67100.0,107100.0,44%
+253,Electromechanical Engineering,Bachelors,79100.0,107100.0,56%
+255,Risk Management,Bachelors,68500.0,107000.0,37%
+255,Social Ecology,Bachelors,55400.0,107000.0,-
+257,Microbiology & Immunology,Bachelors,63500.0,106800.0,74%
+258,French Literature,Bachelors,53900.0,106600.0,50%
+259,City & Regional Planning,Bachelors,58600.0,106500.0,70%
+259,Construction Technology,Bachelors,71500.0,106500.0,-
+259,Italian Language,Bachelors,56600.0,106500.0,40%
+259,Marketing Communication,Bachelors,52200.0,106500.0,42%
+263,Business Management & Marketing,Bachelors,56900.0,106400.0,45%
+263,Industrial Design (ID),Bachelors,62900.0,106400.0,40%
+265,Marketing & Communications,Bachelors,56400.0,106300.0,46%
+266,Political Science,Bachelors,57700.0,106200.0,47%
+267,Advertising Design,Bachelors,58000.0,106100.0,32%
+267,Manufacturing Management,Bachelors,72300.0,106100.0,48%
+269,Computer Information Systems,Bachelors,65100.0,106000.0,45%
+269,Network Security,Bachelors,68000.0,106000.0,52%
+269,Risk Management & Insurance,Bachelors,67400.0,106000.0,46%
+272,Comparative Literature,Bachelors,53600.0,105800.0,49%
+272,Sales & Marketing,Bachelors,61100.0,105800.0,49%
+274,Welding Engineering Technology,Bachelors,82700.0,105600.0,42%
+275,Philosophy,Bachelors,60500.0,105500.0,42%
+275,Networks & Telecommunications,Bachelors,61600.0,105500.0,49%
+275,Business Data Analysis,Bachelors,72600.0,105500.0,39%
+278,Environmental Science & Policy,Bachelors,56600.0,105400.0,58%
+278,German Language,Bachelors,59000.0,105400.0,43%
+278,Japanese Studies,Bachelors,58000.0,105400.0,21%
+281,Atmospheric Science,Bachelors,55700.0,105200.0,55%
+281,Business Psychology,Bachelors,58000.0,105200.0,-
+281,Digital Design,Bachelors,56400.0,105200.0,39%
+281,International Development Studies,Bachelors,53700.0,105200.0,62%
+285,Accounting,Bachelors,62100.0,105100.0,41%
+286,Spanish Literature,Bachelors,57900.0,105000.0,49%
+286,Technical Communication,Bachelors,55600.0,105000.0,42%
+288,Computer Programming,Bachelors,67000.0,104800.0,47%
+289,Architecture,Bachelors,58000.0,104500.0,52%
+289,Project Management,Bachelors,64400.0,104500.0,56%
+291,Hotel Management,Bachelors,55900.0,104200.0,46%
+291,Music Production & Engineering,Bachelors,53400.0,104200.0,50%
+291,Urban Planning,Bachelors,56100.0,104200.0,53%
+294,Cell & Molecular Biology,Bachelors,58100.0,104000.0,67%
+294,Safety Management,Bachelors,67500.0,104000.0,67%
+296,Manufacturing Engineering Technology,Bachelors,74900.0,103500.0,50%
+297,Advertising,Bachelors,53500.0,103400.0,33%
+298,Marketing Management,Bachelors,58700.0,103300.0,40%
+298,Insurance,Bachelors,63400.0,103300.0,51%
+300,Occupational Therapy (OT),Bachelors,60700.0,103200.0,87%
+301,Applied Computer Science,Bachelors,74000.0,103000.0,42%
+302,Geology,Bachelors,56000.0,102800.0,55%
+302,Meteorology,Bachelors,53100.0,102800.0,55%
+304,Electronic Systems Technology (EST),Bachelors,86900.0,102600.0,44%
+304,Environmental Design,Bachelors,54000.0,102600.0,53%
+304,Radiation Therapy,Bachelors,76100.0,102600.0,91%
+307,Latin American Studies,Bachelors,53200.0,102500.0,61%
+307,Logistics,Bachelors,66400.0,102500.0,40%
+307,Transportation & Logistics Management,Bachelors,65800.0,102500.0,49%
+310,Applied Technology,Bachelors,65500.0,102300.0,49%
+311,Environmental Health,Bachelors,56900.0,102200.0,69%
+312,Design,Bachelors,60500.0,102000.0,39%
+313,Computer Graphics Technology (CGT),Bachelors,55100.0,101800.0,44%
+313,Crop Science,Bachelors,54700.0,101800.0,56%
+315,Industrial Psychology,Bachelors,56400.0,101500.0,50%
+316,Entrepreneurship,Bachelors,61500.0,101300.0,47%
+316,German Studies,Bachelors,57500.0,101300.0,46%
+316,Neuroscience,Bachelors,58900.0,101300.0,60%
+319,Computer & Network Administration,Bachelors,64500.0,101200.0,46%
+319,Financial Accounting,Bachelors,63500.0,101200.0,49%
+319,Food Science,Bachelors,60400.0,101200.0,48%
+319,Microbiology,Bachelors,54800.0,101200.0,69%
+323,Digital Media Design,Bachelors,52200.0,101000.0,28%
+323,Agronomy,Bachelors,55200.0,101000.0,65%
+325,Accounting & Management,Bachelors,62600.0,100600.0,50%
+325,Aeronautics,Bachelors,69600.0,100600.0,62%
+325,Business Communication,Bachelors,57900.0,100600.0,47%
+328,Urban & Regional Planning,Bachelors,59600.0,100500.0,60%
+329,Global Business Management,Bachelors,63800.0,100100.0,53%
+329,Police Science,Bachelors,61500.0,100100.0,-
+331,Math & Science,Bachelors,63900.0,100000.0,64%
+332,Corporate Communications,Bachelors,54700.0,99900.0,45%
+333,Political Science/Public Law,Bachelors,59200.0,99800.0,69%
+334,Accounting Information Systems,Bachelors,70900.0,99700.0,56%
+334,Anthropology & English,Bachelors,53800.0,99700.0,-
+334,Organizational Psychology,Bachelors,56400.0,99700.0,51%
+337,Advertising & Marketing Communications,Bachelors,54900.0,99200.0,38%
+337,Entomology,Bachelors,49900.0,99200.0,-
+339,Product Design Engineering,Bachelors,73500.0,99100.0,41%
+340,Personal Financial Planning,Bachelors,60400.0,99000.0,60%
+341,Biological Sciences,Bachelors,56400.0,98900.0,68%
+341,Pre-law,Bachelors,52900.0,98900.0,50%
+343,Textile Technology,Bachelors,60400.0,98800.0,37%
+344,Strategic Communication,Bachelors,52900.0,98700.0,42%
+344,Technology,Bachelors,63200.0,98700.0,-
+346,Environmental Science,Bachelors,55800.0,98600.0,61%
+347,International Studies,Bachelors,56200.0,98500.0,50%
+348,Cinema Studies,Bachelors,53200.0,98300.0,37%
+349,Professional & Technical Writing,Bachelors,54800.0,98200.0,47%
+350,Automotive Technology,Bachelors,55400.0,97800.0,52%
+351,New Media Design,Bachelors,63100.0,97700.0,28%
+351,Theatre & Drama Studies,Bachelors,53100.0,97700.0,50%
+351,Information Systems Security,Bachelors,64800.0,97700.0,47%
+354,Aviation Maintenance Technology,Bachelors,57300.0,97500.0,60%
+354,Organizational Development,Bachelors,60800.0,97500.0,55%
+356,Financial Management,Bachelors,62700.0,97400.0,53%
+356,International Trade & Business,Bachelors,61500.0,97400.0,29%
+356,Textile & Apparel Studies,Bachelors,53300.0,97400.0,25%
+356,Toxicology,Bachelors,53900.0,97400.0,-
+360,Construction Engineering Technology,Bachelors,63800.0,97200.0,60%
+361,Advertising & Marketing,Bachelors,55200.0,97100.0,38%
+361,English Literature,Bachelors,53800.0,97100.0,46%
+363,Advertising & Promotion,Bachelors,53400.0,97000.0,46%
+364,Agricultural Science,Bachelors,53800.0,96900.0,55%
+364,Fashion Design,Bachelors,53900.0,96900.0,27%
+364,Hydrology,Bachelors,53400.0,96900.0,-
+367,Technical Management,Bachelors,72300.0,96800.0,66%
+368,Electronics & Computer Technology,Bachelors,60500.0,96600.0,-
+369,French Studies,Bachelors,59000.0,96500.0,58%
+369,Magazine Journalism,Bachelors,54300.0,96500.0,37%
+369,Management,Bachelors,58100.0,96500.0,49%
+369,Sociology & Organizational Studies,Bachelors,61400.0,96500.0,55%
+373,International Affairs,Bachelors,58300.0,96300.0,51%
+373,Business Administration,Bachelors,60200.0,96300.0,51%
+375,Finance & Marketing,Bachelors,67800.0,96200.0,41%
+375,Land Surveying,Bachelors,58200.0,96200.0,56%
+377,Journalism & Mass Communication,Bachelors,52800.0,96100.0,44%
+378,Business Management,Bachelors,58700.0,95900.0,52%
+378,Speech & Drama,Bachelors,45100.0,95900.0,-
+380,Agribusiness Management,Bachelors,58700.0,95600.0,43%
+380,Digital Media,Bachelors,52000.0,95600.0,38%
+382,Drama,Bachelors,55600.0,95500.0,43%
+382,Linguistics,Bachelors,58600.0,95500.0,42%
+384,Architectural Engineering Technology,Bachelors,56800.0,95400.0,49%
+384,General Science,Bachelors,56300.0,95400.0,58%
+386,Pre-Medicine,Bachelors,57200.0,95300.0,69%
+387,Business Administration & Accounting,Bachelors,59500.0,95200.0,54%
+387,History & Politics,Bachelors,55300.0,95200.0,58%
+387,Nursing Science,Bachelors,75600.0,95200.0,84%
+390,Global Business,Bachelors,62000.0,95100.0,31%
+390,Integrated Marketing Communications,Bachelors,53500.0,95100.0,38%
+392,American History (United States),Bachelors,58900.0,94900.0,49%
+393,Architectural Studies,Bachelors,50900.0,94800.0,38%
+393,Communication,Bachelors,54800.0,94800.0,46%
+393,Personnel Management,Bachelors,57900.0,94800.0,68%
+396,General Business,Bachelors,56300.0,94700.0,51%
+396,Interior Architecture,Bachelors,53500.0,94700.0,48%
+396,Public Affairs,Bachelors,59400.0,94700.0,52%
+396,Natural Sciences,Bachelors,49500.0,94700.0,54%
+400,Writing,Bachelors,49900.0,94600.0,44%
+401,Human Biology,Bachelors,57400.0,94500.0,72%
+401,Marketing & Mass Communications,Bachelors,53700.0,94500.0,40%
+401,Computer Art,Bachelors,44600.0,94500.0,33%
+404,French Language,Bachelors,56100.0,94100.0,48%
+404,Journalism,Bachelors,52300.0,94100.0,44%
+406,Interpersonal & Organizational Communication,Bachelors,47500.0,94000.0,72%
+406,Organizational Communication,Bachelors,52400.0,94000.0,48%
+406,Textile Design,Bachelors,56200.0,94000.0,36%
+409,Biology & Chemistry,Bachelors,55700.0,93900.0,66%
+409,Nursing,Bachelors,73100.0,93900.0,82%
+409,Public Relations & Communication,Bachelors,51700.0,93900.0,48%
+412,Environmental & Natural Resource Economics,Bachelors,58600.0,93700.0,66%
+413,Biology,Bachelors,53500.0,93600.0,65%
+413,Environmental Management,Bachelors,57500.0,93600.0,63%
+413,General & Strategic Management,Bachelors,56800.0,93600.0,52%
+416,Bachelor in Science Nursing,Bachelors,73700.0,93400.0,80%
+416,History,Bachelors,54300.0,93400.0,47%
+418,Literature,Bachelors,53200.0,93300.0,45%
+419,Law,Bachelors,59900.0,93200.0,51%
+420,Physiology,Bachelors,55500.0,93100.0,66%
+421,Entrepreneurial Studies,Bachelors,54800.0,93000.0,32%
+421,Public Relations (PR),Bachelors,51800.0,93000.0,43%
+421,Retail Management,Bachelors,60400.0,93000.0,39%
+424,Computer Aided Drafting & Design (CADD),Bachelors,56300.0,92900.0,49%
+424,Management & Organization,Bachelors,78600.0,92900.0,55%
+424,Agriculture,Bachelors,53600.0,92900.0,62%
+424,Music Technology,Bachelors,50900.0,92900.0,38%
+428,Administration of Justice,Bachelors,51300.0,92800.0,53%
+428,Publishing,Bachelors,52000.0,92800.0,40%
+428,Urban Studies,Bachelors,57700.0,92800.0,60%
+431,Media Studies,Bachelors,57000.0,92700.0,38%
+432,Apparel & Textile Manufacture,Bachelors,54200.0,92600.0,31%
+432,Philosophy & Religion,Bachelors,51300.0,92600.0,54%
+434,Environmental Geography,Bachelors,55900.0,92500.0,54%
+435,Communication Studies & Journalism,Bachelors,51200.0,92300.0,46%
+435,Interpersonal Communications,Bachelors,50200.0,92300.0,48%
+435,Logistics Management,Bachelors,66000.0,92300.0,38%
+435,Retail & Consumer Science,Bachelors,58800.0,92300.0,27%
+435,Web Design & Development,Bachelors,60100.0,92300.0,44%
+440,Accounting & Business,Bachelors,58700.0,92200.0,49%
+440,Architectural Technology,Bachelors,55700.0,92200.0,62%
+440,Geographic Information Systems (GIS),Bachelors,56100.0,92200.0,53%
+443,Environmental Studies,Bachelors,55000.0,92100.0,59%
+443,Interactive Media,Bachelors,61300.0,92100.0,39%
+445,Retail Merchandising,Bachelors,59000.0,91900.0,36%
+446,Diagnostic Medical Sonography,Bachelors,71700.0,91800.0,86%
+447,Agricultural Business,Bachelors,61400.0,91600.0,58%
+447,Network Administration,Bachelors,54400.0,91600.0,54%
+449,Environmental Biology,Bachelors,50500.0,91300.0,69%
+449,Dental Hygiene,Bachelors,81200.0,91300.0,81%
+451,Journalism & Electronic Media,Bachelors,51400.0,91200.0,46%
+451,Web & Digital Media Development,Bachelors,60400.0,91200.0,35%
+451,Workforce Education & Development,Bachelors,67100.0,91200.0,73%
+454,Diagnostic Medical Ultrasound,Bachelors,73800.0,91100.0,71%
+454,Health Policy & Administration,Bachelors,57300.0,91100.0,63%
+456,Quality Management,Bachelors,66000.0,90800.0,62%
+457,Bachelor of Science in Nursing,Bachelors,72000.0,90700.0,85%
+457,Speech Communication,Bachelors,53300.0,90700.0,56%
+459,Retailing,Bachelors,56700.0,90500.0,33%
+459,Visual Effects & Motion Graphics,Bachelors,54100.0,90500.0,38%
+461,Foreign Languages,Bachelors,55600.0,90300.0,54%
+462,Landscape Architecture,Bachelors,58700.0,90200.0,65%
+463,Global Studies,Bachelors,58100.0,90100.0,47%
+464,American Sign Language Interpreting,Bachelors,49400.0,89900.0,87%
+464,Spanish Language Teacher Education,Bachelors,55100.0,89900.0,-
+466,Technical & Scientific Communication,Bachelors,57000.0,89800.0,35%
+467,Broadcast & Cinematic Arts,Bachelors,48000.0,89700.0,41%
+468,Computer Animation,Bachelors,52800.0,89600.0,41%
+468,Geography,Bachelors,56200.0,89600.0,52%
+470,Environmental Resource Management,Bachelors,54100.0,89500.0,64%
+470,Fashion,Bachelors,54900.0,89500.0,39%
+470,Film Studies,Bachelors,51000.0,89500.0,41%
+470,Forestry,Bachelors,52800.0,89500.0,68%
+474,Business Leadership,Bachelors,56800.0,89300.0,43%
+474,Nursing Education,Bachelors,76300.0,89300.0,-
+476,English Language,Bachelors,50900.0,89100.0,47%
+477,Ancient History,Bachelors,51700.0,89000.0,-
+477,Botany,Bachelors,48700.0,89000.0,71%
+477,Geosciences,Bachelors,55100.0,89000.0,62%
+480,Computer Aided Design (CAD),Bachelors,54700.0,88900.0,-
+480,Digital Arts,Bachelors,50800.0,88900.0,36%
+482,Leadership,Bachelors,53700.0,88700.0,55%
+483,Automotive Technology & Service Management,Bachelors,59300.0,88600.0,29%
+483,Business Management & Administration,Bachelors,58500.0,88600.0,53%
+483,Business Management & Human Resources Management (HRM),Bachelors,54600.0,88600.0,-
+483,Human Resources Management (HRM),Bachelors,54300.0,88600.0,55%
+483,Radio/Television & Film Production,Bachelors,51200.0,88600.0,40%
+488,Allied Health,Bachelors,49900.0,88500.0,77%
+488,English Language & Literature,Bachelors,52200.0,88500.0,44%
+490,Marine Biology,Bachelors,48500.0,88400.0,64%
+490,Security Management,Bachelors,53900.0,88400.0,-
+492,Organizational Leadership,Bachelors,56600.0,88300.0,57%
+492,Public Administration,Bachelors,53000.0,88300.0,57%
+494,Forestry Management,Bachelors,54600.0,88200.0,67%
+494,Management (MGT),Bachelors,52300.0,88200.0,-
+496,Merchandising Management,Bachelors,53500.0,88100.0,48%
+497,Administrative Management,Bachelors,59100.0,88000.0,47%
+497,Spanish Language,Bachelors,54300.0,88000.0,49%
+497,Sports Management,Bachelors,51200.0,88000.0,43%
+500,Arts Management,Bachelors,45200.0,87900.0,48%
+500,Homeland Security,Bachelors,55300.0,87900.0,71%
+500,Electronic Media,Bachelors,50700.0,87900.0,37%
+503,3D Animation,Bachelors,56900.0,87800.0,42%
+503,Film Production,Bachelors,50500.0,87800.0,37%
+505,Marine Science,Bachelors,51800.0,87600.0,61%
+506,Information & Communication Technology,Bachelors,53700.0,87500.0,54%
+506,Mass Communication,Bachelors,50700.0,87500.0,45%
+506,Museum Studies,Bachelors,42800.0,87500.0,37%
+506,Technical Writing,Bachelors,63300.0,87500.0,37%
+510,Religious Studies,Bachelors,50700.0,87400.0,52%
+510,Travel Industry Management,Bachelors,58700.0,87400.0,-
+512,Art History,Bachelors,53400.0,87200.0,44%
+512,Fashion Merchandising,Bachelors,53300.0,87200.0,30%
+512,Nuclear Medicine Technology,Bachelors,68800.0,87200.0,81%
+515,Marketing & Advertising,Bachelors,55400.0,87100.0,45%
+516,Musicology,Bachelors,48100.0,87000.0,-
+517,Broadcast Journalism,Bachelors,49800.0,86800.0,52%
+518,Animation,Bachelors,50900.0,86700.0,35%
+519,Historic Preservation,Bachelors,48300.0,86600.0,-
+519,Music Performance,Bachelors,51700.0,86600.0,56%
+519,Organizational Leadership & Supervision,Bachelors,54600.0,86600.0,53%
+522,Multimedia,Bachelors,50400.0,86500.0,45%
+523,Business Technology,Bachelors,59200.0,86400.0,51%
+523,Radiologic Science,Bachelors,64000.0,86400.0,80%
+523,Human Nutrition,Bachelors,55100.0,86400.0,82%
+523,Acting,Bachelors,50400.0,86400.0,48%
+527,Liberal Arts,Bachelors,51400.0,86300.0,52%
+528,Apparel Merchandising,Bachelors,53900.0,86200.0,34%
+528,German Language & Literature,Bachelors,56400.0,86200.0,44%
+528,Organizational Management,Bachelors,55500.0,86200.0,60%
+531,Zoology,Bachelors,46800.0,86100.0,66%
+532,Creative Writing,Bachelors,51200.0,85900.0,41%
+533,Geomatics,Bachelors,57800.0,85800.0,67%
+534,Law Enforcement,Bachelors,52800.0,85700.0,62%
+535,Administration,Bachelors,49200.0,85600.0,59%
+535,Cytotechnology,Bachelors,66800.0,85600.0,86%
+535,Fashion Marketing & Management,Bachelors,54400.0,85600.0,27%
+538,Applied Management,Bachelors,49800.0,85400.0,61%
+538,Management & Leadership,Bachelors,59500.0,85400.0,56%
+540,Human Resources (HR),Bachelors,53800.0,85300.0,55%
+541,Animal Science & Management,Bachelors,51500.0,85200.0,61%
+542,Adult Education & Training,Bachelors,55200.0,85100.0,78%
+543,Agricultural Communication,Bachelors,51300.0,84900.0,49%
+543,Health & Fitness,Bachelors,44100.0,84900.0,71%
+545,Criminal Justice Administration,Bachelors,51900.0,84800.0,61%
+545,Emergency Management,Bachelors,58100.0,84800.0,77%
+545,Media Arts,Bachelors,51300.0,84800.0,33%
+545,Sociology & Anthropology,Bachelors,51200.0,84800.0,53%
+545,Radiology,Bachelors,62300.0,84800.0,81%
+550,Communication Design,Bachelors,58500.0,84700.0,34%
+550,Earth Science,Bachelors,56800.0,84700.0,52%
+550,Modern Languages,Bachelors,57700.0,84700.0,55%
+550,Training and Development,Bachelors,59600.0,84700.0,-
+554,Hospital Administration,Bachelors,59800.0,84400.0,53%
+554,Human Relations,Bachelors,51100.0,84400.0,63%
+556,Natural Resources,Bachelors,54200.0,84300.0,58%
+557,Ethnic Studies,Bachelors,54500.0,84200.0,62%
+557,Hotel & Restaurant Management,Bachelors,54200.0,84200.0,49%
+559,Broadcast Communication,Bachelors,45900.0,83800.0,45%
+559,Mass Media,Bachelors,45800.0,83800.0,45%
+561,Advertising & Graphic Design,Bachelors,53000.0,83700.0,39%
+561,Radiologic Technology,Bachelors,62000.0,83700.0,81%
+563,Merchandising,Bachelors,59300.0,83600.0,32%
+563,Romance Languages,Bachelors,57400.0,83600.0,55%
+565,Environmental Health Science,Bachelors,61500.0,83500.0,-
+566,Criminology,Bachelors,50700.0,83400.0,54%
+566,Psychology,Bachelors,51000.0,83400.0,56%
+568,Cardiopulmonary Science,Bachelors,56500.0,83200.0,92%
+568,Labor Studies,Bachelors,53700.0,83200.0,51%
+570,Medical Laboratory Technology,Bachelors,64300.0,83000.0,83%
+570,Visual Communications,Bachelors,51200.0,83000.0,34%
+572,Audio Engineering,Bachelors,53800.0,82800.0,40%
+573,Middle Eastern Studies,Bachelors,65300.0,82700.0,47%
+573,Health,Bachelors,49600.0,82700.0,70%
+575,Hospitality Management,Bachelors,53100.0,82600.0,43%
+575,Health Care Management,Bachelors,51700.0,82600.0,75%
+575,Painting & Printmaking,Bachelors,39300.0,82600.0,46%
+578,Multimedia & Web Design,Bachelors,55700.0,82500.0,31%
+579,Health Administration,Bachelors,48700.0,82400.0,66%
+579,Natural Resource Management,Bachelors,52800.0,82400.0,54%
+579,Psychology & Social Behavior,Bachelors,51100.0,82400.0,58%
+582,Communication Management,Bachelors,51700.0,82300.0,45%
+582,Health Sciences,Bachelors,50700.0,82300.0,70%
+582,Nutrition Science,Bachelors,57100.0,82300.0,67%
+582,Web Design,Bachelors,53900.0,82300.0,29%
+586,Health Management,Bachelors,50400.0,82200.0,70%
+586,Life Sciences,Bachelors,59700.0,82200.0,60%
+588,Anthropology,Bachelors,53200.0,82100.0,47%
+588,Music,Bachelors,51000.0,82100.0,55%
+590,Ecology,Bachelors,53200.0,82000.0,59%
+590,Human Resources Development,Bachelors,55200.0,82000.0,51%
+590,SocialStudies,Bachelors,52700.0,82000.0,56%
+593,New Media,Bachelors,51600.0,81900.0,37%
+593,Psychiatry,Bachelors,64300.0,81900.0,50%
+595,Sociology,Bachelors,52800.0,81800.0,55%
+596,Health Care Administration,Bachelors,52100.0,81600.0,68%
+597,Interior Design,Bachelors,51300.0,81500.0,51%
+597,Respiratory Care,Bachelors,61800.0,81500.0,85%
+599,Health Information Management,Bachelors,55000.0,81300.0,68%
+599,Art & Design,Bachelors,51100.0,81300.0,39%
+601,Child Psychology,Bachelors,48400.0,81100.0,62%
+602,Clinical Laboratory Science,Bachelors,61700.0,81000.0,82%
+602,Diagnostic Medical Imaging,Bachelors,68300.0,81000.0,73%
+602,Humanities,Bachelors,55900.0,81000.0,54%
+602,Medical Laboratory Science,Bachelors,62700.0,81000.0,86%
+602,Theater,Bachelors,51200.0,81000.0,49%
+607,Kinesiology,Bachelors,51100.0,80900.0,66%
+608,Exercise Physiology,Bachelors,49100.0,80800.0,75%
+608,Forensic Accounting,Bachelors,51900.0,80800.0,44%
+608,Secondary Education,Bachelors,50700.0,80800.0,58%
+611,Multidisciplinary Studies,Bachelors,49600.0,80700.0,52%
+612,Archaeology,Bachelors,51100.0,80500.0,45%
+612,Communication Arts,Bachelors,47800.0,80500.0,40%
+614,Arts & Science,Bachelors,51700.0,80400.0,-
+614,Illustration,Bachelors,51300.0,80400.0,38%
+614,Sustainability,Bachelors,54900.0,80400.0,58%
+617,Hotel & Restaurant Tourism,Bachelors,48900.0,80300.0,-
+617,Radiography,Bachelors,62400.0,80300.0,83%
+619,Media Communication,Bachelors,53000.0,80200.0,44%
+619,Respiratory Therapy,Bachelors,61800.0,80200.0,83%
+621,Applied Behavior Analysis,Bachelors,43400.0,80000.0,88%
+622,Technology Teacher Education,Bachelors,54000.0,79800.0,-
+623,Professional Studies,Bachelors,47500.0,79300.0,67%
+624,Communications Technology,Bachelors,52500.0,79200.0,32%
+625,Biological Anthropology,Bachelors,52200.0,79000.0,46%
+625,Art Therapy,Bachelors,46100.0,79000.0,84%
+625,Commercial Photography,Bachelors,48900.0,79000.0,28%
+628,Liberal Studies,Bachelors,51000.0,78900.0,56%
+628,Radio & Television,Bachelors,49000.0,78900.0,40%
+630,Nutrition,Bachelors,52800.0,78600.0,65%
+631,Plant Sciences,Bachelors,55500.0,78400.0,57%
+632,Graphic Design,Bachelors,51300.0,78300.0,38%
+633,Legal Studies,Bachelors,53300.0,78200.0,52%
+633,Nutrition & Dietetics,Bachelors,57200.0,78200.0,71%
+635,Turfgrass Management,Bachelors,53300.0,78100.0,38%
+636,Dietetics,Bachelors,57500.0,78000.0,74%
+636,Interdisciplinary Studies (IS),Bachelors,50700.0,78000.0,57%
+638,Fashion Design & Marketing,Bachelors,55900.0,77900.0,50%
+639,Applied Sociology,Bachelors,47500.0,77800.0,57%
+639,Hospital Management,Bachelors,62300.0,77800.0,-
+639,Religion,Bachelors,50500.0,77800.0,56%
+642,Medical Technology,Bachelors,61000.0,77700.0,82%
+643,Art Administration,Bachelors,45600.0,77600.0,53%
+643,Criminal Justice,Bachelors,48600.0,77600.0,56%
+643,Fine Arts,Bachelors,49000.0,77600.0,45%
+646,Criminal Law,Bachelors,62800.0,77400.0,-
+646,Forensic Science,Bachelors,51300.0,77400.0,63%
+648,Philosophy & Religious Studies,Bachelors,55600.0,77300.0,61%
+648,Public Health (PH),Bachelors,52300.0,77300.0,70%
+650,Speech-Language Pathology,Bachelors,49600.0,77100.0,68%
+651,Landscape Management,Bachelors,58700.0,77000.0,-
+651,Women's Studies,Bachelors,51200.0,77000.0,60%
+653,Forensic Psychology,Bachelors,48300.0,76900.0,57%
+653,Modern Language Spanish,Bachelors,51100.0,76900.0,63%
+655,Educational Studies (ED),Bachelors,45300.0,76800.0,66%
+655,Physical Geography,Bachelors,55000.0,76800.0,58%
+657,Culture Studies,Bachelors,50700.0,76700.0,53%
+657,Pastoral Studies,Bachelors,58900.0,76700.0,-
+659,Dramatic Art,Bachelors,47100.0,76600.0,-
+660,Music Industry,Bachelors,52200.0,76400.0,38%
+661,Performing Arts,Bachelors,51300.0,76300.0,56%
+662,African American & African Studies,Bachelors,54300.0,76100.0,61%
+663,Animal Science,Bachelors,46800.0,76000.0,66%
+663,Ornamental Horticulture,Bachelors,51600.0,76000.0,67%
+665,Hospitality & Tourism,Bachelors,51400.0,75900.0,40%
+666,Education,Bachelors,50600.0,75800.0,65%
+667,Foods & Nutrition,Bachelors,52800.0,75300.0,68%
+668,Fashion & Retail Management,Bachelors,55800.0,75000.0,30%
+669,Music Composition,Bachelors,49400.0,74900.0,52%
+669,Small Business Management,Bachelors,52900.0,74900.0,36%
+671,Clinical Nutrition,Bachelors,58700.0,74800.0,-
+672,Painting,Bachelors,47400.0,74700.0,44%
+673,Speech Pathology & Audiology,Bachelors,51400.0,74600.0,75%
+674,Psychology & Sociology,Bachelors,48600.0,74400.0,53%
+674,Physical Education Teaching,Bachelors,48000.0,74400.0,68%
+676,Clinical Psychology,Bachelors,47500.0,74300.0,65%
+677,Health Studies,Bachelors,49500.0,74200.0,64%
+677,Instrumental Music Teacher Education,Bachelors,48000.0,74200.0,69%
+679,Technical Theatre,Bachelors,46400.0,74100.0,41%
+680,Art,Bachelors,49500.0,73900.0,46%
+680,Social & Criminal Justice,Bachelors,49900.0,73900.0,55%
+682,Consumer Affairs,Bachelors,57200.0,73800.0,44%
+682,Family & Consumer Science,Bachelors,49400.0,73800.0,61%
+684,Network Technology,Bachelors,63500.0,73700.0,60%
+685,Photography,Bachelors,49600.0,73600.0,39%
+685,Video Production,Bachelors,48600.0,73600.0,36%
+687,International Trade,Bachelors,54100.0,73400.0,44%
+688,Horticulture & Agronomy,Bachelors,58900.0,73200.0,-
+688,Missions,Bachelors,45400.0,73200.0,-
+690,General Studies,Bachelors,49600.0,73100.0,53%
+690,Health Services Administration,Bachelors,49000.0,73100.0,64%
+692,Justice Studies,Bachelors,51500.0,73000.0,49%
+693,Culinary Arts,Bachelors,44600.0,72800.0,55%
+693,Physical Therapist Assistant Studies,Bachelors,55100.0,72800.0,-
+695,English Teacher Education,Bachelors,48800.0,72600.0,56%
+695,Exercise & Sports Science,Bachelors,48000.0,72600.0,71%
+695,Health & Exercise Science,Bachelors,46900.0,72600.0,66%
+695,Recreation & Leisure Studies,Bachelors,47100.0,72600.0,59%
+695,Sports Administration,Bachelors,49700.0,72600.0,47%
+700,Graphic Arts,Bachelors,48000.0,72400.0,44%
+701,Supervision & Management,Bachelors,48000.0,72100.0,60%
+701,Secondary English Teacher Education,Bachelors,49800.0,72100.0,62%
+703,Exercise Science,Bachelors,47300.0,72000.0,72%
+703,Interior Design & Merchandising,Bachelors,50200.0,72000.0,41%
+705,Health & Wellness,Bachelors,45500.0,71900.0,69%
+706,Restaurant & Food Service Management,Bachelors,50100.0,71800.0,40%
+707,Behavioral Science,Bachelors,49800.0,71700.0,60%
+707,Culinary Arts & Food Service Management,Bachelors,48300.0,71700.0,48%
+707,Event Management,Bachelors,48200.0,71700.0,42%
+707,Theology,Bachelors,49600.0,71700.0,68%
+711,Wildlife Management,Bachelors,44500.0,71600.0,46%
+712,Health & Physical Education Teaching,Bachelors,44000.0,71500.0,62%
+712,Ministry,Bachelors,41500.0,71500.0,80%
+712,Mortuary Science,Bachelors,48800.0,71500.0,78%
+715,Media Production,Bachelors,49000.0,71200.0,35%
+716,Communicative Disorders,Bachelors,53300.0,71000.0,71%
+716,Health Services Management,Bachelors,47400.0,71000.0,87%
+718,Paralegal Studies,Bachelors,45200.0,70800.0,49%
+718,Social Science Teacher Education,Bachelors,51000.0,70800.0,-
+720,Recreation Administration,Bachelors,54200.0,70600.0,66%
+720,Rehabilitation Counseling,Bachelors,44100.0,70600.0,-
+722,Audio Production,Bachelors,49800.0,70500.0,45%
+722,Radio Broadcasting,Bachelors,51000.0,70500.0,39%
+724,Community Health,Bachelors,52500.0,70300.0,73%
+725,Drawing,Bachelors,43400.0,70100.0,37%
+726,Dance,Bachelors,50600.0,69900.0,59%
+727,Music Teacher Education,Bachelors,47700.0,69800.0,58%
+728,Gender Studies,Bachelors,51200.0,69700.0,55%
+728,Photojournalism,Bachelors,46800.0,69700.0,55%
+730,Family & Community Services,Bachelors,48400.0,69600.0,77%
+731,Conservation Biology,Bachelors,48100.0,69500.0,53%
+731,Drawing & Painting,Bachelors,48900.0,69500.0,45%
+733,Organizational Administration,Bachelors,51100.0,69400.0,-
+733,Vocal Performance,Bachelors,48400.0,69400.0,62%
+735,Clinical Social Work (CSW),Bachelors,48600.0,69200.0,-
+735,Tourism & Travel,Bachelors,45200.0,69200.0,38%
+735,Tourism Management,Bachelors,48900.0,69200.0,38%
+738,Wildlife Biology,Bachelors,48200.0,68900.0,58%
+739,Teaching English as a Second Language (ESL),Bachelors,48800.0,68800.0,67%
+740,Parks & Recreation Management,Bachelors,49000.0,68700.0,59%
+741,Social Services,Bachelors,44800.0,68500.0,78%
+742,Elementary Special Education,Bachelors,51200.0,68300.0,81%
+743,Ceramics,Bachelors,49500.0,68000.0,45%
+743,Horticulture,Bachelors,48400.0,68000.0,56%
+743,Landscape Design,Bachelors,57100.0,68000.0,62%
+746,Rehabilitation Services,Bachelors,41300.0,67600.0,74%
+746,Speech & Hearing,Bachelors,51400.0,67600.0,72%
+748,Sculpture,Bachelors,44700.0,67200.0,48%
+749,Health Promotion,Bachelors,47700.0,67000.0,71%
+750,Athletic Training,Bachelors,47700.0,66900.0,75%
+751,Family Studies,Bachelors,45000.0,66800.0,60%
+752,History Teacher Education,Bachelors,51800.0,66700.0,47%
+752,Social Studies Teacher Education,Bachelors,49200.0,66700.0,59%
+754,Biblical Studies & Practical Ministries,Bachelors,45400.0,66600.0,-
+755,Communication Sciences & Disorders,Bachelors,49900.0,66500.0,75%
+756,Emergency Medical Services (EMS),Bachelors,47300.0,66300.0,-
+757,Deaf Studies,Bachelors,43700.0,66100.0,-
+758,Community Health Education,Bachelors,48600.0,65800.0,70%
+759,Musical Theatre,Bachelors,50000.0,65500.0,46%
+760,Pastoral Ministry,Bachelors,43500.0,65200.0,76%
+761,Bible Studies & Theology,Bachelors,44800.0,65100.0,68%
+762,Biblical Studies,Bachelors,47000.0,65000.0,71%
+763,Christian Ministry,Bachelors,43000.0,64500.0,75%
+764,Human Development & Family Studies,Bachelors,45400.0,64400.0,63%
+765,Church Ministries,Bachelors,43600.0,64300.0,79%
+766,Community Development,Bachelors,50300.0,63600.0,69%
+767,Music Therapy,Bachelors,48500.0,63500.0,95%
+768,Voice & Opera,Bachelors,38700.0,63200.0,53%
+769,Legal Assistant Studies,Bachelors,42000.0,63000.0,39%
+770,Health and Human Services,Bachelors,48800.0,62900.0,64%
+771,Home Economics,Bachelors,47700.0,62800.0,69%
+772,Special Education,Bachelors,46400.0,62700.0,75%
+773,Conflict Resolution,Bachelors,52000.0,62100.0,50%
+774,Educational Psychology,Bachelors,45900.0,61800.0,-
+774,Developmental Psychology,Bachelors,42900.0,61800.0,-
+776,Youth Ministry,Bachelors,42800.0,61700.0,74%
+777,Therapeutic Recreation,Bachelors,44900.0,61500.0,83%
+778,Community & Human Services,Bachelors,48100.0,61300.0,79%
+778,Social Work (SW),Bachelors,43300.0,61300.0,76%
+780,Elementary Education,Bachelors,45800.0,60700.0,68%
+781,Office Administration,Bachelors,43400.0,60500.0,67%
+782,Christian Education,Bachelors,45300.0,60300.0,84%
+783,Counseling,Bachelors,45100.0,59600.0,79%
+783,Human Services (HS),Bachelors,44400.0,59600.0,70%
+785,Health & Human Performance,Bachelors,43000.0,58900.0,67%
+786,Mental Health Counseling,Bachelors,40600.0,58500.0,-
+786,Middle School Education,Bachelors,47200.0,58500.0,76%
+788,Child Development,Bachelors,42200.0,57900.0,73%
+789,Recreational Therapy,Bachelors,44900.0,57200.0,84%
+790,Early Childhood & Elementary Education,Bachelors,43400.0,56500.0,76%
+791,Outdoor Education,Bachelors,42200.0,55200.0,51%
+792,Baking & Pastry Arts,Bachelors,42400.0,54900.0,38%
+793,Mental Health,Bachelors,42700.0,52900.0,76%
+794,Child & Family Studies,Bachelors,41600.0,52700.0,73%
+795,Equine Studies,Bachelors,40300.0,52500.0,50%
+796,Addictions Counseling,Bachelors,45900.0,52200.0,78%
+797,Nonprofit Administration,Bachelors,42800.0,52100.0,72%
+798,Early Childhood Education,Bachelors,41700.0,50600.0,77%
+799,Metalsmithing,Bachelors,44700.0,44900.0,36%
