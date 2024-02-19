@@ -1,19 +1,7 @@
 id,name,parent_id
 1,Technic,
-2,Arctic Technic,1
 3,Competition,1
 4,Expert Builder,1
-5,Model,1
-6,Airport,5
-7,Construction,5
-8,Farm,5
-9,Fire,5
-10,Harbor,5
-11,Off-Road,5
-12,Race,5
-13,Riding Cycle,5
-14,Robot,5
-15,Traffic,5
 16,RoboRiders,1
 17,Speed Slammers,1
 18,Star Wars,1
@@ -21,33 +9,11 @@ id,name,parent_id
 20,Throwbot Slizer,1
 21,Universal Building Set,1
 22,Creator,
-23,Basic Model,22
-24,Airport,23
-25,Castle,23
-26,Construction,23
-27,Race,23
-28,Harbor,23
-29,Train,23
-30,Traffic,23
-31,Creature,23
-32,Robot,23
-33,Food & Drink,23
-34,Building,23
-35,Cargo,23
-37,Basic Set,22
-38,Model,22
-39,Traffic,38
-40,Creature,38
-42,Airport,38
-43,Building,38
-44,Recreation,38
-45,Cargo,38
-46,Harbor,38
-48,Supplemental,22
-49,Mecha,22
+34,Make & Create,
+35,Bricks & More,34
 50,Town,
 51,Arctic,50
-52,City,50
+52,City,
 53,Airport,52
 54,Cargo,52
 55,Coast Guard,52
@@ -57,30 +23,11 @@ id,name,parent_id
 59,Harbor,52
 60,Hospital,52
 61,Police,52
-62,Supplemental,52
 63,Traffic,52
 64,Off-Road,52
 65,Arctic,52
 66,Trains,52
 67,Classic Town,50
-68,Airport,67
-69,Building,67
-70,Cargo,67
-71,Coast Guard,67
-72,Construction,67
-73,Farm,67
-74,Fire,67
-75,Food & Drink,67
-76,Station,67
-77,Harbor,67
-78,Hospital,67
-79,Off-Road,67
-80,Police,67
-81,Post Office,67
-82,Race,67
-83,Recreation,67
-84,Supplemental,67
-85,Traffic,67
 86,Divers,50
 87,Extreme Team,50
 88,Launch Command,50
@@ -90,34 +37,14 @@ id,name,parent_id
 92,Res-Q,50
 93,Space Port,50
 94,Town Jr.,50
-95,Cargo,94
-96,Coast Guard,94
-97,Construction,94
-98,Fire,94
-99,Gas Station,94
-100,Police,94
-101,Race,94
-102,Supplemental,94
-103,Traffic,94
 104,Town Plan,50
 105,World City,50
-106,Airport,105
-107,Coast Guard,105
-108,Fire,105
-111,Police,105
+106,City Center,50
 112,Racers,
-113,Drome Racers,112
 114,Ferrari,112
-115,Lamborghini,112
-116,Power Racers,112
-117,Radio Control,112
-118,Speed Racer,112
-119,Supplemental,112
-120,Tiny Turbos,112
-121,Track System,112
-122,Williams F1,112
+118,Promotional,112
+122,RC,112
 123,World Racers,112
-125,Xalax,112
 126,Space,
 127,Alien Conquest,126
 128,Blacktron I,126
@@ -141,21 +68,18 @@ id,name,parent_id
 146,Galaxy Squad,126
 147,Pirates,
 148,Pirates I,147
-149,Imperial Armada,148
-151,Imperial Soldiers,148
-152,Islanders,148
 153,Pirates II,147
 154,Pirates III,147
 155,Modular Buildings,
 156,Mini,155
-157,Bricktober,155
+157,Bricktober,598
 158,Star Wars,
 171,Ultimate Collector Series,158
 186,Castle,
 187,Black Falcons,186
 188,Black Knights,186
 189,Classic Castle,186
-190,Crusaders,186
+190,Dragon Knights,186
 191,Dark Forest,186
 193,Fantasy Era,186
 194,Forestmen,186
@@ -164,12 +88,9 @@ id,name,parent_id
 197,Knights Kingdom I,186
 198,Knights Kingdom II,186
 199,Lion Knights,186
-200,My Own Creation,186
 201,Royal Knights,186
-202,Supplemental,186
 203,Wolfpack,186
-204,Designer Sets,
-205,Building,204
+204,Designer Sets,22
 206,Seasonal,
 207,Advent,206
 208,City,207
@@ -191,32 +112,22 @@ id,name,parent_id
 234,12V,233
 235,4.5V,233
 236,9V,233
-237,My Own Creation,236
-238,My Own Train,236
-239,World City,236
 240,RC Train,233
 241,Supplemental,233
-242,12V,241
-243,4.5V,241
-244,9V,241
-245,RC Train,241
 246,Harry Potter,
 252,Architecture,
 253,Skylines,252
 254,Bulk Bricks,
-255,Castle,254
-256,Technic,254
-257,Train,254
 258,Mindstorms,
 259,NXT,258
 260,RCX,258
 261,Star Wars,258
 262,EV3,258
-263,Pirates of the Caribbean,
+263,Pirates of the Caribbean,608
 264,Indiana Jones,
 269,Cars,
 270,Ben 10,
-271,Prince of Persia,
+271,Prince of Persia,608
 272,SpongeBob SquarePants,
 273,Studios,
 274,Jurassic Park III,273
@@ -246,78 +157,22 @@ id,name,parent_id
 312,Hydronauts,307
 313,Stingrays,307
 315,Atlantis,
-317,Avatar,
+317,Avatar: The Last Airbender,
 318,Belville,
-319,Fairy-Tale,318
-320,Golden Land,318
-321,Hospital,318
-322,Playhouse,318
-323,Recreation,318
 324,Bionicle,
-325,Agori,324
-326,Barraki,324
-327,Battle Vehicles,324
-328,Bohrok,324
-329,Bohrok Va,324
-330,Bohrok-Kal,324
-331,Glatorian,324
-332,Glatorian Legends,324
-333,Matoran of Light,324
-334,Matoran of Mahri Nui,324
-335,Matoran of Mata Nui,324
-336,Matoran of Metru Nui,324
-337,Matoran of Voya Nui,324
-338,Mistika,324
-339,Phantoka,324
-340,Piraka,324
 341,Playsets,324
-342,Rahaga,324
-343,Rahi,324
-344,Rahkshi,324
-345,Stars,324
-346,Supplemental,324
-347,Titans,324
-348,Toa,324
-349,Toa Hagah,324
-350,Toa Hordika,324
-351,Toa Inika,324
-352,Toa Mahri,324
-353,Toa Metru,324
-354,Toa Nuva,324
-355,Tohunga,324
-356,Turaga,324
-357,Vahki,324
-358,Visorak,324
-359,Warriors,324
 360,Protectors,324
-361,Skull Spiders,324
-362,Toa Okoto,324
 363,Boat,
 364,Building Set with People,
 365,System,
-366,Basic Set,365
-367,Building,365
 368,HO 1:87 Vehicles,365
 369,Jumbo Bricks,365
-370,Mosaic,365
 371,Supplemental,365
 372,Town Plan,365
-373,Vehicle,365
-374,Airport,373
-375,Farm,373
-376,Fire,373
-377,Harbor,373
-378,Traffic,373
-379,Supplemental,373
-380,Train,373
-381,Construction,373
-382,Cargo,373
-383,Wooden Box Set,365
-384,Dino 2010,
-385,Dino Attack,
+385,Dino Attack / Dino 2010,
 386,Dinosaurs,
 387,Discovery,
-388,Disney's Mickey Mouse,
+388,Mickey Mouse,608
 389,Exo-Force,
 390,Fabuland,
 397,Factory,
@@ -325,11 +180,10 @@ id,name,parent_id
 399,Freestyle,
 400,Hero Factory,
 401,Heroes,400
-402,Vehicles,400
 403,Villains,400
 404,Hobby Sets,
 405,Homemaker,
-406,Inventor,
+406,Inventor,22
 407,Island Xtreme Stunts,
 408,LEGO Brand Store,
 409,Monthly Mini Model Build,408
@@ -349,14 +203,10 @@ id,name,parent_id
 423,Vehicle,411
 424,Western,411
 425,Legoland Parks,
-426,Bionicle,425
-427,Holiday,425
-430,Pirates,425
-432,Master Building Academy,
+432,Master Builder Academy,
 433,Minitalia,
 434,Ninja,
 435,Ninjago,
-436,Airjitzu,435
 437,Pharaoh's Quest,
 438,Power Functions,
 439,Power Miners,
@@ -364,62 +214,40 @@ id,name,parent_id
 441,Quatro,
 442,Rock Raiders,
 443,Service Packs,
-444,Adventurers,443
-445,Aquazone,443
-446,Belville,443
-447,Castle,443
-448,Fabuland,443
-449,Pirates,443
-450,Primo,443
-451,Scala,443
-452,Space,443
 453,Technic,443
-454,Town,443
-455,Classic Town,454
 456,Train,443
-457,Western,443
 458,Sports,
 459,Basketball,458
 460,Gravity Games,458
 461,Hockey,458
 462,Soccer,458
-463,Spybiotics,
+463,Spybotics,
 464,Time Cruisers,
 465,Universal Building Set,
-466,Airport,465
 467,Basic,465
-468,Basic Model,465
-469,Basic Set,465
 470,Classic Basic,465
-471,Ferries,465
+471,Ferries,598
 472,Gears,465
 473,Supplemental,465
 474,Vikings,
 475,Western,
-476,Cowboys,475
-477,Indians,475
-478,X-Pod,
+478,X-Pod,22
 480,Znap,
 481,Dino,
 494,Friends,
 497,Books,
 498,Technic,497
-499,Train,497
 500,Clikits,
 501,Gear,
-502,Game,501
+502,Games,
 503,Key Chain,501
 504,Duplo,
 505,Basic Set,504
-506,Cars,504
+506,Cars,754
 507,Educational and Dacta,
-509,Adventurers,507
-510,Boat,507
+509,SPIKE,507
+510,Serious Play,507
 511,Building Set with People,507
-512,Castle,507
-513,Classic,507
-514,Creator,507
-515,Dinosaurs,507
 516,Duplo and Explore,507
 517,Learning,507
 518,Mindstorms,507
@@ -430,12 +258,10 @@ id,name,parent_id
 524,Service Packs,507
 525,Technic,524
 526,Soft Bricks,507
-527,Space,507
 528,Supplemental,507
 529,Technic,507
 530,Control Lab,529
 531,eLAB,529
-532,Supplemental,529
 533,Town,507
 534,Universal Building Set,507
 535,Collectible Minifigures,
@@ -452,8 +278,8 @@ id,name,parent_id
 546,Team GB,535
 547,Series 11 Minifigures,535
 548,Series 12 Minifigures,535
-549,The LEGO Movie Series,535
-550,The Simpsons,535
+549,The LEGO Movie,535
+550,The Simpsons Series 1,535
 551,Series 13 Minifigures,535
 552,Series 14 Minifigures,535
 553,The Simpsons Series 2,535
@@ -471,22 +297,12 @@ id,name,parent_id
 571,Legends of Chima,
 572,Speedorz,571
 573,Constraction,571
-574,Legend Beasts,571
 575,The Lone Ranger,
 576,LEGO Ideas and CUUSOO,
 577,Minecraft,
 578,The LEGO Movie,
-579,Disney Princess,
+579,Disney Princess,608
 580,Mixels,
-581,Series 1,580
-582,Series 2,580
-583,Series 3,580
-584,Series 4,580
-585,Series 5,580
-586,Series 6,580
-587,Series 7,580
-588,Series 8,580
-589,Series 9,580
 590,Fusion,
 591,Juniors,
 592,DC Comics Super Heroes,591
@@ -505,37 +321,37 @@ id,name,parent_id
 606,Angry Birds,
 607,Ghostbusters,
 608,Disney,
-609,The LEGO Batman Movie,535
+609,The LEGO Batman Movie Series 1,535
 610,Brickheadz,
 611,Series 17 Minifigures,535
 614,Jungle,52
 615,Cars,591
-616,Ninjago The Movie,435
+616,The LEGO Ninjago Movie,435
 617,DC Super Hero Girls,
-618,Ninjago The Movie,535
+618,The LEGO Ninjago Movie,535
 619,Cities of Wonders,408
 620,Jurassic World: Fallen Kingdom,591
 621,Classic,
 622,Series 18 Minifigures,535
 625,Unikitty!,
 626,Bob the Builder,504
-627,Disney Planes,504
+627,Planes,754
 628,Dora the Explorer,504
-629,Miles From Tomorrowland,504
-630,Spiderman,504
+629,Miles From Tomorrowland,754
+630,Marvel,504
 631,Thomas & Friends,504
 632,Town,504
-633,Toy Story,504
+633,Toy Story,754
 634,Trains,504
-635,Winnie the Pooh,504
+635,Winnie the Pooh,754
 636,My Town,632
-638,Jake and the Never Land Pirates,504
+638,Jake and the Never Land Pirates,754
 639,Sofia the First,504
-640,Disney Princess,504
-641,Disney's Mickey Mouse,504
+640,Disney Princess,754
+641,Mickey & Friends,754
 646,Xtra,
 647,Castle,504
-648,Doc McStuffins,504
+648,Doc McStuffins,754
 650,Legoville,632
 651,Pirates,504
 652,Playhouse,504
@@ -561,7 +377,7 @@ id,name,parent_id
 672,Creator 3-in-1,22
 673,Creator Expert,22
 674,Early Creator,22
-675,The LEGO Movie Series II,535
+675,The LEGO Movie II,535
 676,Hidden Side,
 677,Disney Series 2,535
 679,Mars Exploration,52
@@ -572,7 +388,7 @@ id,name,parent_id
 684,DC Super Heroes,535
 685,Galidor,
 686,Chinese Traditional Festivals,
-687,Frozen II,608
+687,Frozen,608
 688,DOTS,
 689,Minions,
 690,Super Mario,
@@ -584,14 +400,61 @@ id,name,parent_id
 696,Super Heroes Marvel,
 697,Batman,695
 698,UCS,697
-699,Constraction,695
 700,Justice League,695
 701,Superman,695
 702,Avengers,696
-703,Constraction,696
 704,Guardians of the Galaxy,696
 705,Iron Man,696
 706,Spider-Man,696
 707,X-Men,696
 708,The LEGO Batman Movie,697
 709,LEGO Art,
+710,Harry Potter,207
+711,The LEGO Batman Movie Series 2,535
+712,Series 21 Minifigures,535
+713,VIDIYO,
+714,Looney Tunes,535
+715,Marvel Series 1,535
+716,Modulex,
+717,Speed Racer,
+718,Series 22 Minifigures,535
+719,BrickLink Designer Program,
+720,The Muppets,535
+721,Icons,
+722,Jurassic World,504
+724,Avatar,
+725,Series 23 Minifigures,535
+728,McDonalds,598
+729,Airlines,598
+730,Audio and Visual Media,501
+731,Bag and Luggage Tags,501
+732,Clocks and Watches,501
+733,Houseware,501
+734,Magnets,501
+735,Plush Toys,501
+736,Posters and Art Prints,501
+737,Role Play Toys and Costumes,501
+738,Seasonal,501
+739,Stationery and Office Supplies,501
+740,Storage,501
+741,Tabletop Games and Puzzles,501
+742,Video Games and Accessories,501
+743,Series 24 Minifigures,535
+744,Stuntz,52
+745,Disney 100,535
+746,Database Sets,301
+747,Sonic The Hedgehog,
+748,Gabby’s Dollhouse,
+749,Dreamzzz,
+750,Marvel Series 2,535
+751,Marvel,207
+752,Animal Crossing,
+753,Series 25 Minifigures,535
+754,Disney,504
+755,Spidey and His Amazing Friends,706
+756,Samsonite,365
+757,Ideas Books,497
+758,Non-fiction Books,497
+759,Story Books,497
+760,Activity Books,497
+761,Activity Books with LEGO Parts,497
